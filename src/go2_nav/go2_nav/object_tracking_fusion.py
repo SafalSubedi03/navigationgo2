@@ -19,12 +19,14 @@ import sensor_msgs_py.point_cloud2 as pc2
 from image_geometry import PinholeCameraModel
 
 import tf2_ros
+import tf2_ros
+import tf2_geometry_msgs  # noqa: F401 -- REQUIRED: registers PoseStamped support in tf2, even though nothing in this file calls it directly
 
 
 TIMEOUT_SECONDS = 2.0
 LOCK_ON_HITS = 3
 STANDOFF_DISTANCE = 0.5  # meters -- stop this far short of the object, facing it
-ARRIVAL_TOLERANCE = 0.3
+ARRIVAL_TOLERANCE = 0.6 #Make sure this is greater then the offset set in the navigation parameter
 
 
 
@@ -121,7 +123,7 @@ class ObjectPursuitNode(Node):
                     rclpy.time.Time(),
                     timeout=Duration(seconds=0.1))
         except Exception as e:
-            self.get_logger().warn(f"TF Lidar->Camera failed ({cloud_msg.header.frame_id} -> camera_link): {e}", throttle_duration_sec=5.0)
+            self.get_logger().warn(f"1TF Lidar->Camera failed ({cloud_msg.header.frame_id} -> camera_link): {e}", throttle_duration_sec=5.0)
             return
 
         # Read x/y/z from the ORIGINAL cloud (no transform yet)

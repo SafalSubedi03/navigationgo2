@@ -11,7 +11,7 @@ from vision_msgs.msg import Detection2DArray, Detection2D, ObjectHypothesisWithP
 from ultralytics import YOLO
 from std_msgs.msg import String
 from ament_index_python.packages import get_package_share_directory
-
+from std_msgs.msg import Bool
 MODEL_PATH = 'yolo26n.engine'
 
 CAMERA_TOPIC = "/go2/camera/compressed"  
@@ -49,7 +49,9 @@ class YoloCameraNode(Node):
         self.locked_track_id = None
         self.target_class = DEFAULT_CLASS[0]  
         self.last_seen_time = time.time()
+        self.newObject = True 
 
+        self.detection = self.create_publisher(Bool,"go2/objectDetected",10)
         self.sub = self.create_subscription(
             CompressedImage, CAMERA_TOPIC, self.image_callback, 10
         )
@@ -64,17 +66,19 @@ class YoloCameraNode(Node):
             f"YOLO tracker started. Subscribed to {CAMERA_TOPIC}, "
             f"publishing to /yolo/annotated_image/compressed and /yolo/detections "
             f"(processing every {PROCESS_EVERY_N_FRAMES} frames)."
+            "Saving images when new objects are detected"
         )
         self.create_subscription(String,'/go2/select_target_class',self.on_target_change,10)
 
-    def on_target_change(self, msg:String):
+    def on_target_change(self, msg: String):
         new_class = msg.data.strip()
         if not new_class:
-            return 
+            return
         self.target_class = new_class
         self.locked_track_id = None
+        self.seen_track_ids.clear()  # switching class means "new" objects should recapture
         self.get_logger().info(f"*** Target class switched to: '{self.target_class}' ***")
-        
+
 
     def image_callback(self, msg: CompressedImage):
         self.frame_counter += 1
@@ -103,52 +107,58 @@ class YoloCameraNode(Node):
         inference_ms = (time.time() - t0) * 1000.0
 
         if not self._device_confirmed:
-            # Check if model has PyTorch parameters; if not (like with TensorRT engines), default to CUDA
             if hasattr(self.model, 'model') and not isinstance(self.model.model, str):
                 actual_device = next(self.model.model.parameters()).device
             else:
                 actual_device = "cuda:0"
-            self.get_logger().info(
-                f"Model is running on: {actual_device} (requested: {DEVICE})"
-            )
+            self.get_logger().info(f"Model is running on: {actual_device} (requested: {DEVICE})")
             if str(actual_device) != DEVICE and DEVICE != "cpu":
-                self.get_logger().warn(
-                    "Requested GPU but model is NOT on GPU — check CUDA/torch install."
-                )
+                self.get_logger().warn("Requested GPU but model is NOT on GPU — check CUDA/torch install.")
             self._device_confirmed = True
+
+        # Staleness check for the followed/locked target — runs every frame
+        # regardless of whether any matching-class box exists this frame.
+        if self.locked_track_id is not None and (time.time() - self.last_seen_time > 5.0):
+            self.get_logger().warn("Locked target lost. Resetting tracker!")
+            self.locked_track_id = None
 
         det_array = Detection2DArray()
         det_array.header = msg.header
+        found_locked_target = False
 
         if results.boxes is not None and results.boxes.id is not None:
             for box in results.boxes:
                 cls_id = int(box.cls[0])
                 cls_name = self.model.names[cls_id]
                 track_id = int(box.id[0]) if box.id is not None else -1
-                self.get_logger().debug(f"raw detection: class={cls_name}, track_id={track_id}, conf={float(box.conf[0]):.2f}")
+                self.get_logger().debug(
+                    f"raw detection: class={cls_name}, track_id={track_id}, conf={float(box.conf[0]):.2f}"
+                )
 
-
-                if  cls_name != self.target_class:
+                if cls_name != self.target_class:
                     continue
 
-                track_id = int(box.id[0])
+                # --- Capture trigger: fires for ANY never-before-seen track_id
+                #     of the target class, independent of the lock ---
+                if track_id not in self.seen_track_ids:
+                    self.seen_track_ids.add(track_id)
+                    self.get_logger().info(
+                        f"*** NEW {cls_name} detected (ID: {track_id}) — requesting capture ***"
+                    )
+                    self.detection.publish(Bool(data=True))
 
+                # --- Lock acquisition (following logic, unchanged) ---
                 if self.locked_track_id is None:
                     self.locked_track_id = track_id
                     self.last_seen_time = time.time()
                     self.get_logger().info(f"*** LOCKED ONTO {cls_name} (ID: {track_id}) ***")
 
-                if self.locked_track_id is not None:
-                    if time.time() - self.last_seen_time > 5.0:
-                        self.get_logger().warn("Locked target lost. Resetting tracker!")
-                        self.locked_track_id = None
-
                 if track_id != self.locked_track_id:
-                    continue
+                    continue  # only the locked target gets published to /yolo/detections
 
-
-
+                found_locked_target = True
                 self.last_seen_time = time.time()
+
                 conf = float(box.conf[0])
                 x1, y1, x2, y2 = map(float, box.xyxy[0])
 
@@ -173,7 +183,7 @@ class YoloCameraNode(Node):
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2
                 )
 
-                break  # only process the locked target
+                break  # only draw/publish the locked target's box
 
         self.detections_pub.publish(det_array)
 
@@ -186,7 +196,6 @@ class YoloCameraNode(Node):
             self.annotated_pub.publish(out_msg)
         else:
             self.get_logger().warn("Failed to encode annotated frame.", throttle_duration_sec=5.0)
-
 
 def main(args=None):
     rclpy.init(args=args)
