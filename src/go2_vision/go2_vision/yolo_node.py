@@ -47,7 +47,8 @@ class YoloCameraNode(Node):
         self.frame_counter = 0
         self._device_confirmed = False
         self.locked_track_id = None
-        self.target_class = DEFAULT_CLASS[0]  
+        self.target_class = DEFAULT_CLASS
+        self.seen_track_ids = set() 
         self.last_seen_time = time.time()
         self.newObject = True 
 
