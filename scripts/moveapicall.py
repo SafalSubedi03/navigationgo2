@@ -15,12 +15,12 @@ from unitree_sdk2py.go2.sport.sport_client import SportClient
 
 # CONFIGURABLE PARAMETERS
 
-NETWORK_INTERFACE = "eth0"   # <-- Change to your interface 
+NETWORK_INTERFACE = "eth4s0"   # <-- Change to your interface 
 VX            =  0.5
 VY            =  0.0
 VYAW          =  0.0
-DURATION_SEC  =  5.0
-COMMAND_HZ    = 10
+DURATION_SEC  =  2.0
+COMMAND_HZ    = 25
 # ─────────────────────────────────────────
 
 def main():
@@ -38,18 +38,18 @@ def main():
     client.BalanceStand()
     time.sleep(1.0)
 
-    print(f"Moving: vx={VX}, vy={VY}, vyaw={VYAW} for {DURATION_SEC} seconds...")
-    start = time.time()
+    # print(f"Moving: vx={VX}, vy={VY}, vyaw={VYAW} for {DURATION_SEC} seconds...")
+    # start = time.time()
 
-    while time.time() - start < DURATION_SEC:
-        code = client.Move(VX, VY, VYAW)
-        if code != 0:
-            print(f"Warning: Move returned code {code}")
-        time.sleep(1.0 / COMMAND_HZ)
+    # while time.time() - start < DURATION_SEC:
+    #     code = client.Move(VX, VY, VYAW)
+    #     if code != 0:
+    #         print(f"Warning: Move returned code {code}")
+    #     time.sleep(1.0 / COMMAND_HZ)
 
-    print("Duration reached. Stopping...")
-    client.StopMove()
-    print("Done.")
+    # print("Duration reached. Stopping...")
+    # client.StopMove()
+    # print("Done.")
 
 if __name__ == "__main__":
     main()
