@@ -1,15 +1,21 @@
+import os
 import sys
 import time
 
-sys.path.append('/home/safal/Desktop/unitreego2nav/sdk/unitree_sdk2_python')
+# Dynamically inject the local Unitree SDK into sys.path
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(SCRIPT_DIR)
+SDK_PATH = os.path.join(ROOT_DIR, 'sdk', 'unitree_sdk2_python')
+if SDK_PATH not in sys.path:
+    sys.path.append(SDK_PATH)
 
+# Import Section
 from unitree_sdk2py.core.channel import ChannelFactoryInitialize
 from unitree_sdk2py.go2.sport.sport_client import SportClient
 
-# ─────────────────────────────────────────
-#  CONFIGURABLE PARAMETERS
-# ─────────────────────────────────────────
-NETWORK_INTERFACE = "eth0"   # <-- Change to your interface (check with: ip addr)
+# CONFIGURABLE PARAMETERS
+
+NETWORK_INTERFACE = "eth0"   # <-- Change to your interface 
 VX            =  0.5
 VY            =  0.0
 VYAW          =  0.0
