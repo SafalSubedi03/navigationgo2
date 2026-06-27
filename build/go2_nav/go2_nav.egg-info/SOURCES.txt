@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+go2_nav/__init__.py
+go2_nav.egg-info/PKG-INFO
+go2_nav.egg-info/SOURCES.txt
+go2_nav.egg-info/dependency_links.txt
+go2_nav.egg-info/entry_points.txt
+go2_nav.egg-info/requires.txt
+go2_nav.egg-info/top_level.txt
+go2_nav.egg-info/zip-safe
+resource/go2_nav

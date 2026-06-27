@@ -1,0 +1,1 @@
+/home/safal/Desktop/unitreego2nav/sdk/unitree_sdk2_python/setup.py
