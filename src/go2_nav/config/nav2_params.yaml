@@ -92,7 +92,7 @@ controller_server:
   ros__parameters:
   
     topic_remappings:
-      - /cmd_vel:=/nav2/cmd_vel_raw                 #----------------------------------------------------------------------------#
+      - /cmd_vel:=/cmd_vel_manual                #----------------------------------------------------------------------------#
     use_sim_time: False
     controller_frequency: 20.0
     min_x_velocity_threshold: 0.001
