@@ -71,9 +71,10 @@ class Go2SportapiBridge(Node):
 
         self.get_logger().debug(f"Sending Move: vx={vx:.2f}, vy={vy:.2f}, vyaw={vyaw:.2f}")
 
-        ret = self.client.Move(vx,vy,vyaw)
-        if ret != 0:
-            self.get_logger().warn(f"SportClient Move failed return code: {ret}")
+        #Check for proper velocites for now
+        # ret = self.client.Move(vx,vy,vyaw)
+        # if ret != 0:
+        #     self.get_logger().warn(f"SportClient Move failed return code: {ret}")
 
     def stop_robot(self):
         """Safe shutdown sequence when the node is killed."""
