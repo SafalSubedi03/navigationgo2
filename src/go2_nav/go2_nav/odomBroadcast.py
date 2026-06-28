@@ -1,4 +1,3 @@
-# odom_tf_broadcaster.py
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
@@ -17,7 +16,7 @@ class OdomTFBroadcaster(Node):
 
     def odom_callback(self, msg):
         t = TransformStamped()
-        t.header.stamp = msg.header.stamp
+        t.header.stamp = msg.header.stamp  # revert back to message timestamp
         t.header.frame_id = 'odom'
         t.child_frame_id = 'base_link'
         t.transform.translation.x = msg.pose.pose.position.x

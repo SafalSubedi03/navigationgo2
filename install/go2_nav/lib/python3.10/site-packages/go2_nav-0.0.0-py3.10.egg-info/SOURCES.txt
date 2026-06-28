@@ -12,6 +12,7 @@ config/nav2_params.yaml
 go2_nav/__init__.py
 go2_nav/moveapicall.py
 go2_nav/moveapinode.py
+go2_nav/odomBroadcast.py
 launch/navigatio.launch.py
 maps/rtabmap.db
 maps/rtabmap.pgm

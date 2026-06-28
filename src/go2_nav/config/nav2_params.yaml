@@ -30,7 +30,7 @@ amcl:
     save_pose_rate: 0.5
     sigma_hit: 0.2
     tf_broadcast: true
-    transform_tolerance: 1.0
+    transform_tolerance: 2.0
     update_min_a: 0.2
     update_min_d: 0.25
     z_hit: 0.5
@@ -49,7 +49,7 @@ bt_navigator:
     use_sim_time: False
     global_frame: map
     robot_base_frame: base_link
-    odom_topic: /odom                        #----------------------------------------------------------------------------#
+    odom_topic: /utlidar/robot_odom                        #----------------------------------------------------------------------------#
     bt_loop_duration: 10
     default_server_timeout: 20
     enable_groot_monitoring: False
@@ -245,7 +245,7 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: False
-    yaml_filename: "map.yaml"
+    yaml_filename: "/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps/rtabmap.yaml"
 
 map_saver:
   ros__parameters:

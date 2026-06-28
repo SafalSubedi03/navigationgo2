@@ -20,7 +20,7 @@ def generate_launch_description():
         executable='pointcloud_to_laserscan_node',
         name='pointcloud_to_laserscan',
         remappings=[
-            ('cloud_in', '/velodyne_points'),
+            ('cloud_in', '/utlidar/cloud_deskewed'),
             ('scan', '/scan')
         ],
         parameters=[{
@@ -54,6 +54,13 @@ def generate_launch_description():
         )
     ])
 
+    odomtfBroadcaster = Node(
+        package='go2_nav',
+        executable='odom_broadcast',
+        name='odom_tf_broadcaster',
+        output='screen'
+    )
+
     return LaunchDescription([
         DeclareLaunchArgument('use_sim_time', default_value='false', description='Use simulation clock if true'),
         DeclareLaunchArgument('params_file', default_value=params_file, description='Full path to the ROS2 parameters file to use'),
@@ -65,5 +72,6 @@ def generate_launch_description():
         ),
         # Nodes to run
         pointcloud_to_laserscan_node,
-        nav2_launch
+        nav2_launch,
+        odomtfBroadcaster
     ])
