@@ -12,7 +12,7 @@ def generate_launch_description():
     # 2. Launch Configurations
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     params_file = LaunchConfiguration('params_file', default=os.path.join(go2_nav_dir, 'config', 'nav2_params.yaml'))
-    map_yaml_file = LaunchConfiguration('map', default=os.path.join(go2_nav_dir, 'maps', 'map.yaml'))
+    map_yaml_file = LaunchConfiguration('map', default=os.path.join(go2_nav_dir, 'maps', 'rtabmap.yaml'))
 
     # 3. PointCloud to LaserScan Node
     pointcloud_to_laserscan_node = Node(
@@ -24,7 +24,7 @@ def generate_launch_description():
             ('scan', '/scan')
         ],
         parameters=[{
-            'target_frame': 'base_link',
+            'target_frame': 'odom',
             'transform_tolerance': 0.01,
             'min_height': 0.20,
             'max_height': 1.5,
