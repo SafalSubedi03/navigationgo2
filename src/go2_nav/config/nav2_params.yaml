@@ -127,7 +127,7 @@ controller_server:
       min_speed_theta: 0.0
       acc_lim_x: 1.5
       acc_lim_y: 1.5
-      acc_lim_theta: 2
+      acc_lim_theta: 2.0
       decel_lim_x: -2.5
       decel_lim_y: -1.0
       decel_lim_theta: -2.2
@@ -273,11 +273,11 @@ behavior_server:
     cycle_frequency: 10.0
     behavior_plugins: ["spin", "backup", "wait"]
     spin:
-      plugin: "nav2_behaviors::Spin" 
+      plugin: "nav2_behaviors/Spin" 
     backup:
-      plugin: "nav2_behaviors::BackUp"
+      plugin: "nav2_behaviors/BackUp"
     wait:
-      plugin: "nav2_behaviors::Wait"
+      plugin: "nav2_behaviors/Wait"
     global_frame: odom
     robot_base_frame: base_link
     transform_timeout: 0.1
