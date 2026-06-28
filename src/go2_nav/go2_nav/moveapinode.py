@@ -29,7 +29,7 @@ from unitree_sdk2py.go2.sport.sport_client import SportClient
 
 NETWORK_INTERFACE = "enp4s0"
 
-#Limiters 
+#Limiters Optional, though kept for absolute safety
 vxlimit = 0.4
 vylimit = 0.4 
 vyawlimit = 0.2

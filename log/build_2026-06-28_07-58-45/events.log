@@ -1,0 +1,144 @@
+[0.000000] (-) TimerEvent: {}
+[0.004717] (go2_nav) JobQueued: {'identifier': 'go2_nav', 'dependencies': OrderedDict()}
+[0.012325] (go2_nav) JobStarted: {'identifier': 'go2_nav'}
+[0.103132] (-) TimerEvent: {}
+[0.204437] (-) TimerEvent: {}
+[0.305340] (-) TimerEvent: {}
+[0.408533] (-) TimerEvent: {}
+[0.509415] (-) TimerEvent: {}
+[0.610171] (-) TimerEvent: {}
+[0.711637] (-) TimerEvent: {}
+[0.815401] (-) TimerEvent: {}
+[0.916002] (-) TimerEvent: {}
+[1.017079] (-) TimerEvent: {}
+[1.117921] (-) TimerEvent: {}
+[1.219100] (-) TimerEvent: {}
+[1.322420] (-) TimerEvent: {}
+[1.423018] (-) TimerEvent: {}
+[1.527094] (-) TimerEvent: {}
+[1.628425] (-) TimerEvent: {}
+[1.733321] (-) TimerEvent: {}
+[1.838574] (-) TimerEvent: {}
+[1.939765] (-) TimerEvent: {}
+[2.041959] (-) TimerEvent: {}
+[2.142905] (-) TimerEvent: {}
+[2.245737] (-) TimerEvent: {}
+[2.347531] (-) TimerEvent: {}
+[2.449670] (-) TimerEvent: {}
+[2.551590] (-) TimerEvent: {}
+[2.652695] (-) TimerEvent: {}
+[2.754824] (-) TimerEvent: {}
+[2.856532] (-) TimerEvent: {}
+[2.957583] (-) TimerEvent: {}
+[3.060542] (-) TimerEvent: {}
+[3.161638] (-) TimerEvent: {}
+[3.262529] (-) TimerEvent: {}
+[3.363442] (-) TimerEvent: {}
+[3.466800] (-) TimerEvent: {}
+[3.567998] (-) TimerEvent: {}
+[3.670033] (-) TimerEvent: {}
+[3.771844] (-) TimerEvent: {}
+[3.872500] (-) TimerEvent: {}
+[3.973069] (-) TimerEvent: {}
+[4.073436] (go2_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/safal/Desktop/unitreego2nav/build/go2_nav/build'], 'cwd': '/home/safal/Desktop/unitreego2nav/build/go2_nav', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'safal', 'LC_TIME': 'bho_NP', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/safal', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/safal/Desktop/unitreego2nav/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'bho_NP', 'SYSTEMD_EXEC_PID': '107742', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/safal/miniconda3', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'safal', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'safal', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/safal/miniconda3/condabin:/home/safal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/safal:@/tmp/.ICE-unix/1643,unix/safal:/tmp/.ICE-unix/1643', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'bho_NP', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/281eed6c_286f_43a0_a537_fb7c8c27c837', 'GNOME_SETUP_DISPLAY': ':1', 'COLCON_CMAKE_ARGS': '-DCMAKE_POLICY_VERSION_MINIMUM=3.5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'bho_NP', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.SGGHR3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.301', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/safal/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'bho_NP', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'bho_NP', '_CONDA_EXE': '/home/safal/miniconda3/bin/conda', 'LC_IDENTIFICATION': 'bho_NP', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/safal/Desktop/unitreego2nav/build/go2_nav', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/safal/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'bho_NP', 'LC_PAPER': 'bho_NP', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.081241] (-) TimerEvent: {}
+[4.182829] (-) TimerEvent: {}
+[4.286530] (-) TimerEvent: {}
+[4.391823] (-) TimerEvent: {}
+[4.492819] (-) TimerEvent: {}
+[4.595723] (-) TimerEvent: {}
+[4.696653] (-) TimerEvent: {}
+[4.797695] (-) TimerEvent: {}
+[4.901466] (-) TimerEvent: {}
+[5.004032] (-) TimerEvent: {}
+[5.105123] (-) TimerEvent: {}
+[5.206430] (-) TimerEvent: {}
+[5.308704] (-) TimerEvent: {}
+[5.409593] (-) TimerEvent: {}
+[5.510581] (-) TimerEvent: {}
+[5.611422] (-) TimerEvent: {}
+[5.645521] (go2_nav) StdoutLine: {'line': b'running develop\n'}
+[5.711912] (-) TimerEvent: {}
+[5.813983] (-) TimerEvent: {}
+[5.917012] (-) TimerEvent: {}
+[6.018146] (-) TimerEvent: {}
+[6.025924] (go2_nav) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.22.1ubuntu1.2 is an invalid version and will not be supported in a future release\n'}
+[6.026325] (go2_nav) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.118855] (-) TimerEvent: {}
+[6.222110] (-) TimerEvent: {}
+[6.323282] (-) TimerEvent: {}
+[6.427168] (-) TimerEvent: {}
+[6.528906] (-) TimerEvent: {}
+[6.629633] (-) TimerEvent: {}
+[6.730707] (-) TimerEvent: {}
+[6.827942] (go2_nav) StdoutLine: {'line': b'Removing /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2-nav.egg-link (link to .)\n'}
+[6.830944] (-) TimerEvent: {}
+[6.931682] (-) TimerEvent: {}
+[7.036988] (-) TimerEvent: {}
+[7.064444] (go2_nav) CommandEnded: {'returncode': 0}
+[7.073649] (go2_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_nav', 'build', '--build-base', '/home/safal/Desktop/unitreego2nav/build/go2_nav/build', 'install', '--record', '/home/safal/Desktop/unitreego2nav/build/go2_nav/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/home/safal/Desktop/unitreego2nav/src/go2_nav', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'safal', 'LC_TIME': 'bho_NP', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/safal', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/safal/Desktop/unitreego2nav/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'bho_NP', 'SYSTEMD_EXEC_PID': '107742', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/safal/miniconda3', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'safal', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'safal', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/safal/miniconda3/condabin:/home/safal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/safal:@/tmp/.ICE-unix/1643,unix/safal:/tmp/.ICE-unix/1643', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'bho_NP', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/281eed6c_286f_43a0_a537_fb7c8c27c837', 'GNOME_SETUP_DISPLAY': ':1', 'COLCON_CMAKE_ARGS': '-DCMAKE_POLICY_VERSION_MINIMUM=3.5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'bho_NP', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.SGGHR3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.301', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/safal/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'bho_NP', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'bho_NP', '_CONDA_EXE': '/home/safal/miniconda3/bin/conda', 'LC_IDENTIFICATION': 'bho_NP', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/safal/Desktop/unitreego2nav/build/go2_nav', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/safal/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'bho_NP', 'LC_PAPER': 'bho_NP', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.137153] (-) TimerEvent: {}
+[7.238894] (-) TimerEvent: {}
+[7.339671] (-) TimerEvent: {}
+[7.440287] (-) TimerEvent: {}
+[7.540713] (-) TimerEvent: {}
+[7.641606] (-) TimerEvent: {}
+[7.745067] (-) TimerEvent: {}
+[7.845815] (-) TimerEvent: {}
+[7.952906] (-) TimerEvent: {}
+[8.053818] (-) TimerEvent: {}
+[8.155290] (-) TimerEvent: {}
+[8.261824] (-) TimerEvent: {}
+[8.365106] (-) TimerEvent: {}
+[8.466923] (-) TimerEvent: {}
+[8.555522] (go2_nav) StdoutLine: {'line': b'running egg_info\n'}
+[8.566177] (go2_nav) StdoutLine: {'line': b'writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO\n'}
+[8.572235] (-) TimerEvent: {}
+[8.573681] (go2_nav) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt\n'}
+[8.574106] (go2_nav) StdoutLine: {'line': b'writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt\n'}
+[8.574306] (go2_nav) StdoutLine: {'line': b'writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt\n'}
+[8.574492] (go2_nav) StdoutLine: {'line': b'writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt\n'}
+[8.577339] (go2_nav) StdoutLine: {'line': b"reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[8.581142] (go2_nav) StdoutLine: {'line': b"writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[8.582413] (go2_nav) StdoutLine: {'line': b'running build\n'}
+[8.583956] (go2_nav) StdoutLine: {'line': b'running build_py\n'}
+[8.587413] (go2_nav) StdoutLine: {'line': b'creating /home/safal/Desktop/unitreego2nav/build/go2_nav/build\n'}
+[8.590427] (go2_nav) StdoutLine: {'line': b'creating /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib\n'}
+[8.593443] (go2_nav) StdoutLine: {'line': b'creating /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav\n'}
+[8.596291] (go2_nav) StdoutLine: {'line': b'copying go2_nav/moveapicall.py -> /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav\n'}
+[8.596827] (go2_nav) StdoutLine: {'line': b'copying go2_nav/__init__.py -> /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav\n'}
+[8.599532] (go2_nav) StdoutLine: {'line': b'copying go2_nav/moveapinode.py -> /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav\n'}
+[8.603468] (go2_nav) StdoutLine: {'line': b'running install\n'}
+[8.607749] (go2_nav) StdoutLine: {'line': b'running install_lib\n'}
+[8.608276] (go2_nav) StdoutLine: {'line': b'creating /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[8.608699] (go2_nav) StdoutLine: {'line': b'copying /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav/moveapicall.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[8.608913] (go2_nav) StdoutLine: {'line': b'copying /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav/__init__.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[8.609231] (go2_nav) StdoutLine: {'line': b'copying /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav/moveapinode.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[8.609769] (go2_nav) StdoutLine: {'line': b'byte-compiling /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapicall.py to moveapicall.cpython-310.pyc\n'}
+[8.614425] (go2_nav) StdoutLine: {'line': b'byte-compiling /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__init__.py to __init__.cpython-310.pyc\n'}
+[8.615106] (go2_nav) StdoutLine: {'line': b'byte-compiling /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapinode.py to moveapinode.cpython-310.pyc\n'}
+[8.617046] (go2_nav) StdoutLine: {'line': b'running install_data\n'}
+[8.618023] (go2_nav) StdoutLine: {'line': b'copying resource/go2_nav -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/ament_index/resource_index/packages\n'}
+[8.619434] (go2_nav) StdoutLine: {'line': b'copying package.xml -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav\n'}
+[8.623276] (go2_nav) StdoutLine: {'line': b'creating /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch\n'}
+[8.624881] (go2_nav) StdoutLine: {'line': b'copying launch/navigatio.launch.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch\n'}
+[8.626704] (go2_nav) StdoutLine: {'line': b'creating /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config\n'}
+[8.627371] (go2_nav) StdoutLine: {'line': b'copying config/nav2_params.yaml -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config\n'}
+[8.629946] (go2_nav) StdoutLine: {'line': b'creating /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps\n'}
+[8.630535] (go2_nav) StdoutLine: {'line': b'copying maps/rtabmap.db -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps\n'}
+[8.673651] (-) TimerEvent: {}
+[8.775427] (-) TimerEvent: {}
+[8.795739] (go2_nav) StdoutLine: {'line': b'copying maps/rtabmap.pgm -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps\n'}
+[8.796834] (go2_nav) StdoutLine: {'line': b'copying maps/rtabmap.yaml -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps\n'}
+[8.798494] (go2_nav) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.813738] (go2_nav) StdoutLine: {'line': b'Copying ../../build/go2_nav/go2_nav.egg-info to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info\n'}
+[8.817325] (go2_nav) StdoutLine: {'line': b'running install_scripts\n'}
+[8.875432] (-) TimerEvent: {}
+[8.928183] (go2_nav) StdoutLine: {'line': b'Installing go2_sport_bridge script to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav\n'}
+[8.933944] (go2_nav) StdoutLine: {'line': b"writing list of installed files to '/home/safal/Desktop/unitreego2nav/build/go2_nav/install.log'\n"}
+[8.976425] (-) TimerEvent: {}
+[9.077253] (-) TimerEvent: {}
+[9.178004] (-) TimerEvent: {}
+[9.191890] (go2_nav) CommandEnded: {'returncode': 0}
+[9.256533] (go2_nav) JobEnded: {'identifier': 'go2_nav', 'rc': 0}
+[9.261432] (-) EventReactorShutdown: {}

@@ -1,0 +1,49 @@
+[4.068s] Invoking command in '/home/safal/Desktop/unitreego2nav/build/go2_nav': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/safal/Desktop/unitreego2nav/build/go2_nav/build
+[5.634s] running develop
+[6.014s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.22.1ubuntu1.2 is an invalid version and will not be supported in a future release
+[6.014s]   warnings.warn(
+[6.816s] Removing /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2-nav.egg-link (link to .)
+[7.053s] Invoked command in '/home/safal/Desktop/unitreego2nav/build/go2_nav' returned '0': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/safal/Desktop/unitreego2nav/build/go2_nav/build
+[7.066s] Invoking command in '/home/safal/Desktop/unitreego2nav/src/go2_nav': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /home/safal/Desktop/unitreego2nav/build/go2_nav/build install --record /home/safal/Desktop/unitreego2nav/build/go2_nav/install.log --single-version-externally-managed install_data --force
+[8.544s] running egg_info
+[8.557s] writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO
+[8.562s] writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt
+[8.562s] writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt
+[8.562s] writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt
+[8.562s] writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt
+[8.565s] reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+[8.569s] writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+[8.571s] running build
+[8.574s] running build_py
+[8.578s] creating /home/safal/Desktop/unitreego2nav/build/go2_nav/build
+[8.580s] creating /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib
+[8.583s] creating /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav
+[8.584s] copying go2_nav/moveapicall.py -> /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav
+[8.585s] copying go2_nav/__init__.py -> /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav
+[8.588s] copying go2_nav/moveapinode.py -> /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav
+[8.595s] running install
+[8.596s] running install_lib
+[8.596s] creating /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav
+[8.596s] copying /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav/moveapicall.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav
+[8.597s] copying /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav/__init__.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav
+[8.597s] copying /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav/moveapinode.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav
+[8.598s] byte-compiling /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapicall.py to moveapicall.cpython-310.pyc
+[8.602s] byte-compiling /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__init__.py to __init__.cpython-310.pyc
+[8.603s] byte-compiling /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapinode.py to moveapinode.cpython-310.pyc
+[8.605s] running install_data
+[8.606s] copying resource/go2_nav -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/ament_index/resource_index/packages
+[8.608s] copying package.xml -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav
+[8.612s] creating /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch
+[8.613s] copying launch/navigatio.launch.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch
+[8.615s] creating /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config
+[8.615s] copying config/nav2_params.yaml -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config
+[8.618s] creating /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps
+[8.618s] copying maps/rtabmap.db -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps
+[8.784s] copying maps/rtabmap.pgm -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps
+[8.785s] copying maps/rtabmap.yaml -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps
+[8.786s] running install_egg_info
+[8.802s] Copying ../../build/go2_nav/go2_nav.egg-info to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info
+[8.805s] running install_scripts
+[8.917s] Installing go2_sport_bridge script to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav
+[8.922s] writing list of installed files to '/home/safal/Desktop/unitreego2nav/build/go2_nav/install.log'
+[9.180s] Invoked command in '/home/safal/Desktop/unitreego2nav/src/go2_nav' returned '0': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /home/safal/Desktop/unitreego2nav/build/go2_nav/build install --record /home/safal/Desktop/unitreego2nav/build/go2_nav/install.log --single-version-externally-managed install_data --force
