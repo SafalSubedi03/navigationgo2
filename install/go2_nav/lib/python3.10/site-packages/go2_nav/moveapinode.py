@@ -30,7 +30,7 @@ from unitree_sdk2py.go2.sport.sport_client import SportClient
 NETWORK_INTERFACE = "enp4s0"
 
 #Limiters Optional, though kept for absolute safety
-vxlimit = 0.4
+vxlimit = 1.5
 vylimit = 0.4 
 vyawlimit = 0.2
 
@@ -72,13 +72,13 @@ class Go2SportapiBridge(Node):
         self.get_logger().debug(f"Sending Move: vx={vx:.2f}, vy={vy:.2f}, vyaw={vyaw:.2f}")
 
         #Check for proper velocites for now
-        # ret = self.client.Move(vx,vy,vyaw)
-        # if ret != 0:
-        #     self.get_logger().warn(f"SportClient Move failed return code: {ret}")
+        ret = self.client.Move(vx,vy,vyaw)
+        if ret != 0:
+            self.get_logger().warn(f"SportClient Move failed return code: {ret}")
 
     def stop_robot(self):
         """Safe shutdown sequence when the node is killed."""
-        self.get_logger().info("Stopping robot motion...")
+        
         for _ in range(5):
             self.client.StopMove()
             time.sleep(0.05)
