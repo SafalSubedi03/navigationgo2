@@ -2,13 +2,19 @@
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/odomBroadcast.py
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__init__.py
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapinode.py
+/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/cloud_relay.py
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__pycache__/moveapicall.cpython-310.pyc
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__pycache__/odomBroadcast.cpython-310.pyc
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__pycache__/__init__.cpython-310.pyc
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__pycache__/moveapinode.cpython-310.pyc
+/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__pycache__/cloud_relay.cpython-310.pyc
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/ament_index/resource_index/packages/go2_nav
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/package.xml
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch/exploration.launch.py
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch/slam.launch.py
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch/navigatio.launch.py
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config/slam_params.yaml
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config/slam_nav2_params.yaml
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config/nav2_params.yaml
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps/rtabmap.db
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps/rtabmap.pgm
@@ -20,5 +26,6 @@
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info/PKG-INFO
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info/zip-safe
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info/entry_points.txt
+/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav/cloud_relay
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav/go2_sport_bridge
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav/odom_broadcast

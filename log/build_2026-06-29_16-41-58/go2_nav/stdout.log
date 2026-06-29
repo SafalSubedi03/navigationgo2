@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt
+writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt
+writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt
+reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/exploration.launch.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch
+copying config/slam_nav2_params.yaml -> /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config
+running install_egg_info
+removing '/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/go2_nav/go2_nav.egg-info to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing go2_sport_bridge script to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav
+Installing odom_broadcast script to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav
+writing list of installed files to '/home/safal/Desktop/unitreego2nav/build/go2_nav/install.log'

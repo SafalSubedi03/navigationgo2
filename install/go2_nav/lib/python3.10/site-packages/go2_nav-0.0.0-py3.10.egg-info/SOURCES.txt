@@ -9,11 +9,16 @@ setup.py
 ../../build/go2_nav/go2_nav.egg-info/top_level.txt
 ../../build/go2_nav/go2_nav.egg-info/zip-safe
 config/nav2_params.yaml
+config/slam_nav2_params.yaml
+config/slam_params.yaml
 go2_nav/__init__.py
+go2_nav/cloud_relay.py
 go2_nav/moveapicall.py
 go2_nav/moveapinode.py
 go2_nav/odomBroadcast.py
+launch/exploration.launch.py
 launch/navigatio.launch.py
+launch/slam.launch.py
 maps/rtabmap.db
 maps/rtabmap.pgm
 maps/rtabmap.yaml
