@@ -1,0 +1,70 @@
+# RTAB-Map SLAM parameters for Go2 lidar-only exploration
+# Used with slam.launch.py and exploration.launch.py
+
+rtabmap:
+  ros__parameters:
+
+    # Frames
+    frame_id: base_link
+    odom_frame_id: odom
+    map_frame_id: map
+
+    # Input — lidar pointcloud only, no camera
+    subscribe_scan_cloud: true
+    subscribe_rgb: false
+    subscribe_depth: false
+    subscribe_stereo: false
+    subscribe_scan: false
+
+    # Odometry — use existing TF from odom_tf_broadcaster
+    visual_odometry: false
+
+    # Synchronization — important for our timestamp situation
+    approx_sync: true
+    approx_sync_max_interval: 0.5
+
+    # Map saving
+    database_path: ~/.ros/rtabmap_exploration.db
+
+    # Publish map → odom TF
+    publish_tf_map: true
+
+    # Queue sizes
+    topic_queue_size: 10
+    queue_size: 10
+
+    # RTAB-Map core parameters
+    Rtabmap/DetectionRate: "1.0"          # Map update rate in Hz
+    Rtabmap/TimeThr: "0"                  # No time threshold
+    Rtabmap/MemoryThr: "0"               # No memory threshold
+
+    # Loop closure
+    Kp/MaxFeatures: "400"
+    Vis/MaxDepth: "20.0"
+
+    # ICP parameters for lidar-only matching
+    Icp/MaxTranslation: "1.0"
+    Icp/MaxRotation: "0.785"             # 45 degrees
+    Icp/VoxelSize: "0.1"
+    Icp/Iterations: "30"
+    Icp/RangeMin: "0.5"
+    Icp/RangeMax: "30.0"
+    Icp/PointToPlane: "true"
+
+    # Grid map parameters for Nav2 costmap
+    Grid/Sensor: "1"                      # 1 = lidar pointcloud
+    Grid/RangeMin: "0.5"
+    Grid/RangeMax: "20.0"
+    Grid/CellSize: "0.05"                # 5cm resolution matches nav2_params
+    Grid/FloorDetectionThreshold: "0.15"
+    Grid/MaxObstacleHeight: "1.5"
+    Grid/MinGroundHeight: "-0.1"
+    Grid/NormalsSegmentation: "true"
+    Grid/3D: "false"                      # 2D occupancy grid for Nav2
+
+    # Occupancy grid
+    OccupancyGrid/RawOutput: "false"
+    OccupancyGrid/MinSize: "0"
+
+    # Wait for transform
+    wait_for_transform: 0.5
