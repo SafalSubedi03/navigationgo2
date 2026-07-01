@@ -1,0 +1,121 @@
+[0.012s] Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore -DCMAKE_INSTALL_PREFIX=/home/safal/Desktop/unitreego2nav/install/explore_lite
+[0.017s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.017s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.017s]   CMake.
+[0.017s] 
+[0.017s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.017s]   to tell CMake that the project requires at least <min> but has been updated
+[0.017s]   to work with policies introduced by <max> or earlier.
+[0.017s] 
+[0.018s] [0m
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.137s] -- The CXX compiler identification is GNU 11.4.0
+[0.145s] -- Detecting C compiler ABI info
+[0.207s] -- Detecting C compiler ABI info - done
+[0.226s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.226s] -- Detecting C compile features
+[0.227s] -- Detecting C compile features - done
+[0.239s] -- Detecting CXX compiler ABI info
+[0.318s] -- Detecting CXX compiler ABI info - done
+[0.337s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.338s] -- Detecting CXX compile features
+[0.339s] -- Detecting CXX compile features - done
+[0.344s] -- BuilD for ROS2: humble
+[0.347s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.537s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.648s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.709s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.718s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.729s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.746s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.769s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.833s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.838s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.873s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.885s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.954s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.955s] -- Found Threads: TRUE
+[1.036s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.087s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.239s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.261s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.262s] -- Found Eigen3: TRUE (found version "3.4.0")
+[1.263s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.278s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.346s] -- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)
+[1.379s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.417s] -- Found nav2_costmap_2d: 1.1.20 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[1.627s] -- Found explore_lite_msgs: 1.0.0 (/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/cmake)
+[1.647s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.792s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.807s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.811s] [0mCMake Deprecation Warning at /opt/ros/humble/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[1.811s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.811s]   CMake.
+[1.811s] 
+[1.811s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.812s]   to tell CMake that the project requires at least <min> but has been updated
+[1.812s]   to work with policies introduced by <max> or earlier.
+[1.812s] 
+[1.812s] [0m
+[1.821s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.822s] -- Configured cppcheck include dirs: /home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore/include;$<BUILD_INTERFACE:/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore/include>
+[1.822s] -- Configured cppcheck exclude dirs and/or files: 
+[1.823s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.824s] -- Added test 'lint_cmake' to check CMake code style
+[1.825s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.828s] -- Added test 'uncrustify' to check C / C++ code style
+[1.828s] -- Configured uncrustify additional arguments: 
+[1.828s] -- Added test 'xmllint' to check XML markup files
+[1.832s] -- Configuring done (1.8s)
+[1.899s] -- Generating done (0.1s)
+[2.001s] -- Build files have been written to: /home/safal/Desktop/unitreego2nav/build/explore_lite
+[2.017s] Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore -DCMAKE_INSTALL_PREFIX=/home/safal/Desktop/unitreego2nav/install/explore_lite
+[2.019s] Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite -- -j8 -l8
+[2.056s] [ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.056s] [ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.058s] [ 40%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[2.058s] [ 40%] [32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o[0m
+[2.061s] [ 50%] [32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o[0m
+[3.350s] [ 60%] [1m[32mLinking CXX static library libgtest_main.a[0m
+[3.444s] [ 60%] Built target gtest_main
+[6.385s] [ 70%] [1m[32mLinking CXX static library libgtest.a[0m
+[6.585s] [ 70%] Built target gtest
+[6.599s] [ 80%] [32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o[0m
+[7.652s] [ 90%] [1m[32mLinking CXX executable test_explore[0m
+[7.868s] [ 90%] Built target test_explore
+[21.851s] [100%] [1m[32mLinking CXX executable explore[0m
+[24.161s] [100%] Built target explore
+[24.169s] Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite -- -j8 -l8
+[24.172s] Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite
+[24.176s] -- Install configuration: ""
+[24.176s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore/
+[24.177s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//costmap_tools.h
+[24.177s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//costmap_client.h
+[24.177s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//explore.h
+[24.177s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//frontier_search.h
+[24.178s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/config
+[24.178s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/config/params.yaml
+[24.178s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+[24.178s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/launch
+[24.178s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/launch/explore.launch.py
+[24.179s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/lib/explore_lite/explore
+[24.186s] -- Set non-toolchain portion of runtime path of "/home/safal/Desktop/unitreego2nav/install/explore_lite/lib/explore_lite/explore" to ""
+[24.186s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+[24.186s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+[24.186s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+[24.186s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+[24.187s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/path.sh
+[24.187s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/path.dsv
+[24.187s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.bash
+[24.187s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.sh
+[24.187s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.zsh
+[24.187s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.dsv
+[24.188s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.dsv
+[24.188s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+[24.188s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.188s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.188s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+[24.188s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+[24.189s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.xml
+[24.191s] Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite
