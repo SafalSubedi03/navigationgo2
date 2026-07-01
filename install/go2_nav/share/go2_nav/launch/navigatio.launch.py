@@ -25,7 +25,7 @@ def generate_launch_description():
         ],
         parameters=[{
             'target_frame': 'odom',
-            'transform_tolerance': 0.01,
+            'transform_tolerance': 1,
             'min_height': 0.20,
             'max_height': 1.5,
             'angle_min': -3.14159,

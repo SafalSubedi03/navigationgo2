@@ -8,8 +8,12 @@
 /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/__pycache__/moveapinode.cpython-310.pyc
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/ament_index/resource_index/packages/go2_nav
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/package.xml
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch/slam_explore_sim.launch.py
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch/explore_slam_sim.launch.py
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/launch/navigatio.launch.py
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config/nav2_slam_params.yaml
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config/nav2_params.yaml
+/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/config/explore_lite_params.yaml
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps/rtabmap.db
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps/rtabmap.pgm
 /home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/maps/rtabmap.yaml

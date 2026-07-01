@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/safal/Desktop/unitreego2nav/build/multirobot_map_merge/cmake_install.cmake",
+		"/home/safal/Desktop/unitreego2nav/build/multirobot_map_merge/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

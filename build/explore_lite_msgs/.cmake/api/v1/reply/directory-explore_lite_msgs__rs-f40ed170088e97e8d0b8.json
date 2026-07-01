@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "explore_lite_msgs__rs",
+		"source" : "/home/safal/Desktop/unitreego2nav/build/explore_lite_msgs/explore_lite_msgs__rs"
+	}
+}

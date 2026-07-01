@@ -8,12 +8,16 @@ setup.py
 ../../build/go2_nav/go2_nav.egg-info/requires.txt
 ../../build/go2_nav/go2_nav.egg-info/top_level.txt
 ../../build/go2_nav/go2_nav.egg-info/zip-safe
+config/explore_lite_params.yaml
 config/nav2_params.yaml
+config/nav2_slam_params.yaml
 go2_nav/__init__.py
 go2_nav/moveapicall.py
 go2_nav/moveapinode.py
 go2_nav/odomBroadcast.py
+launch/explore_slam_sim.launch.py
 launch/navigatio.launch.py
+launch/slam_explore_sim.launch.py
 maps/rtabmap.db
 maps/rtabmap.pgm
 maps/rtabmap.yaml
