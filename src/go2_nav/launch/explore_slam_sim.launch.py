@@ -89,7 +89,7 @@ def generate_launch_description():
         name='explore_node',
         output='screen',
         parameters=[{
-            'use_sim_time': False,
+            'use_sim_time': use_sim_time,
             'robot_base_frame': 'base_link',
             'costmap_topic': '/global_costmap/costmap',
             'costmap_updates_topic': '/global_costmap/costmap_updates',

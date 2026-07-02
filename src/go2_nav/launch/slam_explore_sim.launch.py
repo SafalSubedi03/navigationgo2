@@ -57,6 +57,10 @@ def generate_launch_description():
         'RGBD/ProximityPathMaxNeighbors': '10',
 
         'Reg/Force3DoF': 'false',
+        'Grid/NormalsSegmentation': 'true',  # Enable ground detection
+        'Grid/MaxGroundHeight': '0.2',       # Ignore points below 10cm 
+        'Grid/MaxObstacleHeight': '1.5',     # Ignore ceilings/high overhead points
+        'Grid/RangeMax':  '20.0',
     }
 
     # --- FIX 4: Clean up remappings (Odom is handled via TF now) ---
@@ -85,7 +89,8 @@ def generate_launch_description():
         package='go2_nav',
         executable='odom_broadcast',
         name='odom_tf_broadcaster',
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time':use_sim_time}]
     )
 
     return LaunchDescription([
