@@ -27,5 +27,15 @@ class OdomTFBroadcaster(Node):
 
 def main():
     rclpy.init()
-    rclpy.spin(OdomTFBroadcaster())
-    rclpy.shutdown()
+    node = OdomTFBroadcaster()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
