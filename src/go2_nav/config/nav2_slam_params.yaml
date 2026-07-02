@@ -19,7 +19,7 @@ bt_navigator:
     use_sim_time: False
     global_frame: map
     robot_base_frame: base_link
-    odom_topic: /utlidar/robot_odom   #-- changed from /odom to RTAB-Map's odom output --#
+    odom_topic: /utlidar/robot_odom   
     bt_loop_duration: 10
     default_server_timeout: 20
     enable_groot_monitoring: False
@@ -154,7 +154,7 @@ local_costmap:
         observation_sources: lidar_pointCloud
         
         lidar_pointCloud:
-          topic: /utlidar/cloud_deskewed
+          topic: /utlidar/cloud_deskewed_restamped
           data_type: "PointCloud2"
           raytrace_min_range: 0.3
           raytrace_max_range: 5.0
@@ -201,7 +201,7 @@ global_costmap:
         min_obstacle_height: 0.20
         max_obstacle_height: 2.0
         lidar_pointCloud:
-          topic: /utlidar/cloud_deskewed
+          topic: /utlidar/cloud_deskewed_restamped
           data_type: "PointCloud2"
           raytrace_min_range: 0.5
           raytrace_max_range: 5.0

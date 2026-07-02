@@ -22,7 +22,7 @@ from launch_ros.substitutions import FindPackageShare
 from launch_ros.actions import Node, SetRemap
 from ament_index_python.packages import get_package_share_directory
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction, GroupAction
-
+from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
 
     this_package = FindPackageShare('go2_nav')
@@ -39,9 +39,11 @@ def generate_launch_description():
     nav2_params_path = PathJoinSubstitution(
         [this_package, 'config', 'nav2_slam_params.yaml']
     )
-    explore_params_path = PathJoinSubstitution(
-        [this_package, 'config', 'explore_lite_params.yaml']
-    )
+    # explore_params_path = os.path.join(
+    #     get_package_share_directory('go2_nav'),
+    #     'config',
+    #     'explore_lite_params.yaml'
+    # )
 
     # -------------------------------------------------------------------
     # 1. RTAB-Map SLAM (included from slam_explore_sim.launch.py)
@@ -72,7 +74,12 @@ def generate_launch_description():
             }.items(),
         ),
     ])
-
+    restamp_node = Node(
+        package='go2_nav',
+        executable='restamp_node',
+        name='restamp_node',
+        output='screen',
+    )
     # -------------------------------------------------------------------
     # 3. explore_lite -- frontier selection, sends NavigateToPose goals
     # -------------------------------------------------------------------
@@ -81,12 +88,31 @@ def generate_launch_description():
         executable='explore',
         name='explore_node',
         output='screen',
-        parameters=[explore_params_path, {'use_sim_time': use_sim_time}],
+        parameters=[{
+            'use_sim_time': False,
+            'robot_base_frame': 'base_link',
+            'costmap_topic': '/global_costmap/costmap',
+            'costmap_updates_topic': '/global_costmap/costmap_updates',
+            'visualize': True,
+            'planner_frequency': 0.5,
+            'progress_timeout': 60.0,
+            'potential_scale': 3.0,
+            'orientation_scale': 0.0,
+            'gain_scale': 1.0,
+            'transform_tolerance': 0.5,
+            'min_frontier_size': 1.0,
+            'return_to_init': False,
+        }],
     )
 
     return LaunchDescription([
         declare_use_sim_time,
-        slam_launch,
+        restamp_node,          # start first -- must restamp before rtabmap subscribes
+        TimerAction(
+            period=3.0,        # give restamp node 3 seconds to start before SLAM
+            actions=[slam_launch],
+        ),
+        
         navigation_launch,
         TimerAction(
             period=20.0,

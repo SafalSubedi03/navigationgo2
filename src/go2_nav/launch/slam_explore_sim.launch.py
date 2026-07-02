@@ -36,12 +36,13 @@ def generate_launch_description():
         
         'subscribe_scan':       False,
         'subscribe_scan_cloud': True,
-
+        'wait_for_transform': 0.2,
         # --- FIX 2: Since there's only 1 sensor topic now, approx_sync is for TF synchronization ---
         'approx_sync':          True,
-        'sync_queue_size':      50,    # Give it room to match frames
-        'topic_queue_size':     50,
-
+        'sync_queue_size':      5,    # Give it room to match frames
+        'topic_queue_size':     5,
+        'qos_image': 2,          # BEST_EFFORT -- skip old buffered messages
+        'qos_scan_cloud': 2,     # BEST_EFFORT for point cloud
         'Reg/Strategy':   '1',     # ICP-based registration
         'Grid/FromDepth': 'false', # 2D occupancy grid built from LiDAR, not depth
         'Grid/RangeMax':  '20.0',
@@ -60,7 +61,7 @@ def generate_launch_description():
 
     # --- FIX 4: Clean up remappings (Odom is handled via TF now) ---
     remappings = [
-        ('scan_cloud', '/utlidar/cloud_deskewed'),
+        ('scan_cloud', '/utlidar/cloud_deskewed_restamped'),
     ]
 
     rtabmap_node = Node(

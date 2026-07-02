@@ -34,6 +34,7 @@ setup(
         'console_scripts': [    
             'go2_sport_bridge = go2_nav.moveapinode:main',
             'odom_broadcast = go2_nav.odomBroadcast:main',
+            'restamp_node = go2_nav.restamp_node:main',
         ],
     },
 )
