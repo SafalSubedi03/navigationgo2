@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/safal/Desktop/unitreego2nav/build/explore_lite/cmake_install.cmake",
-		"/home/safal/Desktop/unitreego2nav/build/explore_lite/gtest/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
