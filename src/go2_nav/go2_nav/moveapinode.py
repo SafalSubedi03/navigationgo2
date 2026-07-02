@@ -30,9 +30,9 @@ from unitree_sdk2py.go2.sport.sport_client import SportClient
 NETWORK_INTERFACE = "enp4s0"
 
 #Limiters Optional, though kept for absolute safety
-vxlimit = 1.5
+vxlimit = 1.3
 vylimit = 0.4 
-vyawlimit = 0.2
+vyawlimit = 0.4
 
 class Go2SportapiBridge(Node):
     def __init__(self):
@@ -67,7 +67,10 @@ class Go2SportapiBridge(Node):
         #hardcoded clamping
         if (vxlimit < vx or vylimit < vy or vyawlimit < vyaw):
             self.get_logger().warn(f"Received velocity is above the limiting value. vx={vx:.2f}, vy={vy:.2f}, vyaw={vyaw:.2f}")
-            return
+            self.get_logger().info(f"Claming input velocites to absolute limit")
+            vx = vxlimit
+            vy = vylimit
+            vyaw = vyawlimit
 
         self.get_logger().debug(f"Sending Move: vx={vx:.2f}, vy={vy:.2f}, vyaw={vyaw:.2f}")
 

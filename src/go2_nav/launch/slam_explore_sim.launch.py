@@ -3,11 +3,7 @@
 # Live SLAM mapping with RTAB-Map for simulation.
 # No pre-saved map -- RTAB-Map builds /map from scratch as the robot moves.
 #
-# Topics:
-#   IN:  /velodyne_points (sensor_msgs/PointCloud2) -- Gazebo LiDAR plugin
-#   OUT: /rtabmap/odom    (nav_msgs/Odometry)        -- ICP-computed odometry
-#   OUT: /map             (nav_msgs/OccupancyGrid)   -- live growing map
-#
+
 # Run standalone to test SLAM only:
 #   ros2 launch go2_config slam_explore_sim.launch.py
 
@@ -56,10 +52,6 @@ def generate_launch_description():
         'Icp/PointToPlaneRadius':       '1.0',
         'Icp/PointToPlaneK':            '0',  
 
-        # --- FIX 3: Change guess frame to link properly ---
-        'guess_frame_id':        'odom',
-        'guess_min_translation': '0.0',
-
         'RGBD/ProximityBySpace':          'true',
         'RGBD/ProximityPathMaxNeighbors': '10',
 
@@ -70,20 +62,6 @@ def generate_launch_description():
     remappings = [
         ('scan_cloud', '/utlidar/cloud_deskewed'),
     ]
-
-    remappings = [
-        ('scan_cloud', '/utlidar/cloud_deskewed'),
-        ('odom',       '/utlidar/robot_odom'),
-        # ('guess',      '/odom'), 
-    ]
-
-    # icp_odometry_node = Node(
-    #     package='rtabmap_odom',
-    #     executable='icp_odometry',
-    #     output='screen',
-    #     parameters=[rtabmap_parameters],
-    #     remappings=remappings,
-    # )
 
     rtabmap_node = Node(
         package='rtabmap_slam',
@@ -111,8 +89,9 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_use_sim_time,
+        odomtfBroadcaster,
         # icp_odometry_node,
         rtabmap_node,
         rtabmap_viz_node,
-        odomtfBroadcaster
+        
     ])

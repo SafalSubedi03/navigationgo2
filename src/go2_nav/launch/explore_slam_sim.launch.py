@@ -1,6 +1,6 @@
 # explore_slam_sim.launch.py
 #
-# Full autonomous frontier-exploration stack, simulation only.
+# Full autonomous frontier-exploration stack
 # Robot builds the map live with RTAB-Map while explore_lite drives it
 # toward unexplored frontiers via Nav2.
 #
@@ -89,7 +89,7 @@ def generate_launch_description():
         slam_launch,
         navigation_launch,
         TimerAction(
-            period=10.0,
+            period=20.0,
             actions=[explore_node],
         ),
     ])
