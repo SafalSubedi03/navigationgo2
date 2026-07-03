@@ -1,0 +1,343 @@
+[0.177s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.177s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79e5c299c940>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79e5c2977fa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79e5c2977fa0>>, mixin_verb=('build',))
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.513s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/safal/Desktop/unitreego2nav'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'ignore'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) ignored
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'ignore'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'ignore_ament_install'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['colcon_pkg']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'colcon_pkg'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['colcon_meta']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'colcon_meta'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['ros']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'ros'
+[0.542s] DEBUG:colcon.colcon_core.package_identification:Package 'src/go2_nav' with type 'ros.ament_python' and name 'go2_nav'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore_ament_install'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_pkg']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_pkg'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_meta']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_meta'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ros']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ros'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['cmake', 'python']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'cmake'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['python_setup_py']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python_setup_py'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ignore', 'ignore_ament_install']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore_ament_install'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_pkg']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_pkg'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_meta']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_meta'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ros']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ros'
+[0.545s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/explore' with type 'ros.ament_cmake' and name 'explore_lite'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ignore'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ignore_ament_install'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['colcon_pkg']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'colcon_pkg'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['colcon_meta']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'colcon_meta'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['ros']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ros'
+[0.546s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/explore_lite_msgs' with type 'ros.ament_cmake' and name 'explore_lite_msgs'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['ignore', 'ignore_ament_install']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ignore'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ignore_ament_install'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['colcon_pkg']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'colcon_pkg'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['colcon_meta']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'colcon_meta'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['ros']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ros'
+[0.548s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/map_merge' with type 'ros.ament_cmake' and name 'multirobot_map_merge'
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.582s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.582s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.592s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 508 installed packages in /opt/ros/humble
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.682s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/safal/Desktop/unitreego2nav/build/explore_lite_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs', 'merge_install': False, 'path': '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore_lite_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_args' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_target' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.682s] DEBUG:colcon.colcon_core.verb:Building package 'go2_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/safal/Desktop/unitreego2nav/build/go2_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/safal/Desktop/unitreego2nav/install/go2_nav', 'merge_install': False, 'path': '/home/safal/Desktop/unitreego2nav/src/go2_nav', 'symlink_install': False, 'test_result_base': None}
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_first' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_force_configure' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'ament_cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.683s] DEBUG:colcon.colcon_core.verb:Building package 'multirobot_map_merge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/safal/Desktop/unitreego2nav/build/multirobot_map_merge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge', 'merge_install': False, 'path': '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/map_merge', 'symlink_install': False, 'test_result_base': None}
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target' from command line to 'None'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_cache' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_first' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_force_configure' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'ament_cmake_args' from command line to 'None'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_cmake_args' from command line to 'None'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.684s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/safal/Desktop/unitreego2nav/build/explore_lite', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/safal/Desktop/unitreego2nav/install/explore_lite', 'merge_install': False, 'path': '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore', 'symlink_install': False, 'test_result_base': None}
+[0.684s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.685s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.685s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore_lite_msgs' with build type 'ament_cmake'
+[0.685s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore_lite_msgs'
+[0.688s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.688s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.688s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.693s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/safal/Desktop/unitreego2nav/src/go2_nav' with build type 'ament_python'
+[0.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_nav', 'ament_prefix_path')
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/hook/ament_prefix_path.ps1'
+[0.695s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/hook/ament_prefix_path.dsv'
+[0.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/hook/ament_prefix_path.sh'
+[0.696s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.701s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/map_merge' with build type 'ament_cmake'
+[0.702s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/map_merge'
+[0.702s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.702s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite_msgs -- -j8 -l8
+[1.215s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/safal/Desktop/unitreego2nav/src/go2_nav'
+[1.215s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.215s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/safal/Desktop/unitreego2nav/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/multirobot_map_merge -- -j8 -l8
+[1.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite_msgs -- -j8 -l8
+[1.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite_msgs
+[1.329s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/safal/Desktop/unitreego2nav/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/multirobot_map_merge -- -j8 -l8
+[1.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/safal/Desktop/unitreego2nav/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/multirobot_map_merge
+[1.341s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[1.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/safal/Desktop/unitreego2nav/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/multirobot_map_merge
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge' for CMake module files
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge' for CMake config files
+[1.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[1.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[1.349s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[1.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[1.351s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib'
+[1.351s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/bin'
+[1.351s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[1.352s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib/python3.10/site-packages'
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/bin'
+[1.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[1.356s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[1.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[1.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[1.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[1.361s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[1.368s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[1.369s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge' for CMake module files
+[1.372s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge' for CMake config files
+[1.373s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[1.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[1.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[1.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/bin'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[1.380s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib/python3.10/site-packages'
+[1.381s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/bin'
+[1.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[1.384s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[1.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[1.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[1.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[1.393s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[1.395s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[1.395s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs' for CMake module files
+[1.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite_msgs
+[1.398s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs' for CMake config files
+[1.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[1.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[1.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[1.401s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib'
+[1.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/bin'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib/python3.10/site-packages'
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/bin'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[1.407s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[1.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[1.416s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[1.420s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[1.422s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs' for CMake module files
+[1.424s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs' for CMake config files
+[1.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[1.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[1.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib'
+[1.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[1.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[1.434s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/bin'
+[1.434s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[1.434s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib/python3.10/site-packages'
+[1.434s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/bin'
+[1.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[1.436s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[1.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[1.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[1.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[1.438s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[1.438s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore' with build type 'ament_cmake'
+[1.439s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/safal/Desktop/unitreego2nav/src/m-explore-ros2/explore'
+[1.439s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.439s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite': AMENT_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite -- -j8 -l8
+[1.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite -- -j8 -l8
+[1.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite': AMENT_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite
+[1.539s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite' for CMake module files
+[1.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite' for CMake config files
+[1.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[1.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/lib'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/bin'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/lib/python3.10/site-packages'
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/bin'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.ps1'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.dsv'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.sh'
+[1.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.bash'
+[1.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.zsh'
+[1.548s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/safal/Desktop/unitreego2nav/install/explore_lite/share/colcon-core/packages/explore_lite)
+[1.550s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite' for CMake module files
+[1.551s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite' for CMake config files
+[1.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[1.553s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/lib'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/bin'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/lib/python3.10/site-packages'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/explore_lite/bin'
+[1.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.ps1'
+[1.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.dsv'
+[1.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.sh'
+[1.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.bash'
+[1.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.zsh'
+[1.558s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/safal/Desktop/unitreego2nav/install/explore_lite/share/colcon-core/packages/explore_lite)
+[1.913s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/safal/Desktop/unitreego2nav/src/go2_nav': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /home/safal/Desktop/unitreego2nav/build/go2_nav/build install --record /home/safal/Desktop/unitreego2nav/build/go2_nav/install.log --single-version-externally-managed install_data
+[2.389s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/go2_nav' for CMake module files
+[2.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/safal/Desktop/unitreego2nav/src/go2_nav' returned '0': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /home/safal/Desktop/unitreego2nav/build/go2_nav/build install --record /home/safal/Desktop/unitreego2nav/build/go2_nav/install.log --single-version-externally-managed install_data
+[2.390s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/go2_nav' for CMake config files
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/go2_nav/lib'
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/go2_nav/bin'
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/pkgconfig/go2_nav.pc'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages'
+[2.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_nav', 'pythonpath')
+[2.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/hook/pythonpath.ps1'
+[2.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/hook/pythonpath.dsv'
+[2.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/hook/pythonpath.sh'
+[2.395s] Level 1:colcon.colcon_core.environment:checking '/home/safal/Desktop/unitreego2nav/install/go2_nav/bin'
+[2.395s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(go2_nav)
+[2.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/package.ps1'
+[2.397s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/package.dsv'
+[2.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/package.sh'
+[2.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/package.bash'
+[2.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/safal/Desktop/unitreego2nav/install/go2_nav/share/go2_nav/package.zsh'
+[2.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/safal/Desktop/unitreego2nav/install/go2_nav/share/colcon-core/packages/go2_nav)
+[2.402s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.403s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.404s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.404s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.419s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.419s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.420s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.434s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.438s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/safal/Desktop/unitreego2nav/install/local_setup.ps1'
+[2.446s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/safal/Desktop/unitreego2nav/install/_local_setup_util_ps1.py'
+[2.450s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/safal/Desktop/unitreego2nav/install/setup.ps1'
+[2.454s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/safal/Desktop/unitreego2nav/install/local_setup.sh'
+[2.455s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/safal/Desktop/unitreego2nav/install/_local_setup_util_sh.py'
+[2.456s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/safal/Desktop/unitreego2nav/install/setup.sh'
+[2.458s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/safal/Desktop/unitreego2nav/install/local_setup.bash'
+[2.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/safal/Desktop/unitreego2nav/install/setup.bash'
+[2.462s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/safal/Desktop/unitreego2nav/install/local_setup.zsh'
+[2.462s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/safal/Desktop/unitreego2nav/install/setup.zsh'

@@ -1,0 +1,37 @@
+[0.012s] Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite -- -j8 -l8
+[0.052s] [ 20%] Built target gtest_main
+[0.052s] [ 40%] Built target gtest
+[0.066s] [ 80%] Built target explore
+[0.067s] [100%] Built target test_explore
+[0.074s] Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/safal/Desktop/unitreego2nav/build/explore_lite -- -j8 -l8
+[0.076s] Invoking command in '/home/safal/Desktop/unitreego2nav/build/explore_lite': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite
+[0.079s] -- Install configuration: ""
+[0.080s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore/
+[0.080s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//costmap_tools.h
+[0.080s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//costmap_client.h
+[0.080s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//explore.h
+[0.080s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/include/explore//frontier_search.h
+[0.080s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/config
+[0.080s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/config/params.yaml
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/launch
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/launch/explore.launch.py
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/lib/explore_lite/explore
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/path.sh
+[0.081s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/environment/path.dsv
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.bash
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.sh
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.zsh
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/local_setup.dsv
+[0.082s] -- Installing: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.dsv
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+[0.082s] -- Up-to-date: /home/safal/Desktop/unitreego2nav/install/explore_lite/share/explore_lite/package.xml
+[0.084s] Invoked command in '/home/safal/Desktop/unitreego2nav/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge:/home/safal/Desktop/unitreego2nav/install/explore_lite:/home/safal/Desktop/unitreego2nav/install/go2_nav:/opt/ros/humble LD_LIBRARY_PATH=/home/safal/Desktop/unitreego2nav/install/explore_lite_msgs/lib:/home/safal/Desktop/unitreego2nav/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/safal/Desktop/unitreego2nav/build/explore_lite

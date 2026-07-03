@@ -1,0 +1,5 @@
+  File "/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/odomBroadcast.py", line 19
+    t.header.stamp = self.get_clock().now().to_msg()        t.header.frame_id = 'odom'
+                                                            ^
+SyntaxError: invalid syntax
+

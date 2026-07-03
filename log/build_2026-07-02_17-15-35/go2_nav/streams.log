@@ -1,0 +1,31 @@
+[0.993s] Invoking command in '/home/safal/Desktop/unitreego2nav/src/go2_nav': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /home/safal/Desktop/unitreego2nav/build/go2_nav/build install --record /home/safal/Desktop/unitreego2nav/build/go2_nav/install.log --single-version-externally-managed install_data
+[1.271s] running egg_info
+[1.272s] writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO
+[1.272s] writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt
+[1.273s] writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt
+[1.273s] writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt
+[1.273s] writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt
+[1.275s] reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+[1.277s] writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+[1.277s] running build
+[1.277s] running build_py
+[1.277s] copying go2_nav/odomBroadcast.py -> /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav
+[1.278s] running install
+[1.278s] running install_lib
+[1.279s] copying /home/safal/Desktop/unitreego2nav/build/go2_nav/build/lib/go2_nav/odomBroadcast.py -> /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav
+[1.280s] byte-compiling /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/odomBroadcast.py to odomBroadcast.cpython-310.pyc
+[1.281s]   File "/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav/odomBroadcast.py", line 19
+[1.281s]     t.header.stamp = self.get_clock().now().to_msg()        t.header.frame_id = 'odom'
+[1.281s]                                                             ^
+[1.281s] SyntaxError: invalid syntax
+[1.282s] 
+[1.282s] running install_data
+[1.282s] running install_egg_info
+[1.284s] removing '/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info' (and everything under it)
+[1.285s] Copying ../../build/go2_nav/go2_nav.egg-info to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info
+[1.286s] running install_scripts
+[1.310s] Installing go2_sport_bridge script to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav
+[1.310s] Installing odom_broadcast script to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav
+[1.310s] Installing restamp_node script to /home/safal/Desktop/unitreego2nav/install/go2_nav/lib/go2_nav
+[1.311s] writing list of installed files to '/home/safal/Desktop/unitreego2nav/build/go2_nav/install.log'
+[1.341s] Invoked command in '/home/safal/Desktop/unitreego2nav/src/go2_nav' returned '0': PYTHONPATH=/home/safal/Desktop/unitreego2nav/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/safal/Desktop/unitreego2nav/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /home/safal/Desktop/unitreego2nav/build/go2_nav/build install --record /home/safal/Desktop/unitreego2nav/build/go2_nav/install.log --single-version-externally-managed install_data
