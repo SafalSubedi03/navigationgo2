@@ -181,8 +181,7 @@ global_costmap:
       plugins: ["static_layer", "voxel3d_layer", "inflation_layer"]
 
       # -- KEY CHANGE: static_layer now reads RTAB-Map's LIVE /map topic --
-      # Your original config relied on map_server (loaded from map.yaml).
-      # Here, RTAB-Map publishes /map directly and grows it as the robot explores.
+      
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
@@ -217,8 +216,7 @@ global_costmap:
         inflation_radius: 0.4
       always_send_full_costmap: True
 
-# Kept in case you want to save the explored map after a run:
-#   ros2 run nav2_map_server map_saver_cli -f ~/my_explored_map
+
 map_saver:
   ros__parameters:
     use_sim_time: False

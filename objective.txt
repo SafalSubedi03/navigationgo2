@@ -1,0 +1,7 @@
+Deploy everthing to run locally 
+deploy computer vision 
+
+
+
+While mapping if a person is detected move to that place and play an audio. 
+
