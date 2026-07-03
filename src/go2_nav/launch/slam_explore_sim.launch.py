@@ -59,7 +59,7 @@ def generate_launch_description():
         'Reg/Force3DoF': 'false',
         'Grid/NormalsSegmentation': 'true',  # Enable ground detection
         'Grid/MaxGroundHeight': '0.2',       # Ignore points below 10cm 
-        'Grid/MaxObstacleHeight': '1.5',     # Ignore ceilings/high overhead points
+        'Grid/MaxObstacleHeight': '2',     # Ignore ceilings/high overhead points
         'Grid/RangeMax':  '20.0',
     }
 
