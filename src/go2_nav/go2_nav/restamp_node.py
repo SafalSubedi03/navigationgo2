@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-# restamp_node.py
-# Fixes Unitree SDK ~126s clock offset by restamping all messages to system time.
-# Subscribes to raw Unitree topics and republishes with current ROS2 clock stamp.
-
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2

@@ -1,18 +1,9 @@
-# explore_slam_sim.launch.py
-#
+
 # Full autonomous frontier-exploration stack
 # Robot builds the map live with RTAB-Map while explore_lite drives it
 # toward unexplored frontiers via Nav2.
-#
-# Pipeline:
-#   slam_explore_sim.launch.py (included) -> RTAB-Map produces /map (live)
-#   /scan                                  -> already published by your sim setup
-#   nav2_bringup/navigation_launch.py      -> controller/planner/bt_navigator
-#                                              (NO AMCL, NO map_server)
-#   explore_lite                           -> reads costmap, sends NavigateToPose goals
-#
 # Run with:
-#   ros2 launch go2_config explore_slam_sim.launch.py
+#   ros2 launch go2_config explore_slam.launch.py
 
 import os
 from launch import LaunchDescription
@@ -34,7 +25,7 @@ def generate_launch_description():
     )
 
     slam_launch_path = PathJoinSubstitution(
-        [this_package, 'launch', 'slam_explore_sim.launch.py']
+        [this_package, 'launch', 'slam_explore.launch.py']
     )
     nav2_params_path = PathJoinSubstitution(
         [this_package, 'config', 'nav2_slam_params.yaml']
@@ -107,13 +98,14 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_use_sim_time,
-        restamp_node,          # start first -- must restamp before rtabmap subscribes
+        restamp_node,          
         TimerAction(
-            period=3.0,        # give restamp node 3 seconds to start before SLAM
+            period=3.0,        
             actions=[slam_launch],
         ),
         
         navigation_launch,
+
         TimerAction(
             period=20.0,
             actions=[explore_node],
