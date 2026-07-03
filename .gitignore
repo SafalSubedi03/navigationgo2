@@ -1,2 +1,5 @@
 sdk/
 .vscode/
+build/
+log/
+install/
