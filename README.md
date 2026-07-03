@@ -40,7 +40,7 @@ RTAB-Map builds the map and provides odometry/loop-closure entirely from LiDAR �
 - Custom `restamp_node` — corrects a ~126s clock offset between the robot's internal clock and the laptop by restamping odometry and LiDAR data before they're used in the exploration pipeline
 - Custom `go2_sport_bridge` node — redirects Nav2 velocity output to the Go2 high-level sport client move API
 - 3D voxel layer costmaps using the Go2's native UtiLidar pointcloud
-- Separate, tuned configuration files for navigation, SLAM, and `explore_lite`
+
 
 ---
 
@@ -218,7 +218,6 @@ go2_nav/
 - [ ] Full indoor navigation testing
 - [ ] Onboard computation — migrate from external laptop to Go2's internal computer
 - [ ] Dynamic obstacle avoidance improvements
-- [ ] Finish renaming launch/config files to drop the `_sim` suffix
 
 ---
 
@@ -228,7 +227,7 @@ go2_nav/
 - The robot's initial pose in RViz must closely match the actual physical starting position for AMCL to localize correctly (navigation branch).
 - Ensure CycloneDDS is configured correctly on both the laptop and the robot before launching.
 - The robot's internal clock and the laptop clock have been observed to drift ~126s out of phase; `restamp_node` corrects this for the exploration pipeline before odometry/LiDAR data is consumed downstream.
-- Launch and config filenames containing `_sim` are being renamed — expect some inconsistency until that cleanup lands.
+
 
 ---
 
