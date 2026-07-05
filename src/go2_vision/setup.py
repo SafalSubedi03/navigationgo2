@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'cameraimg = go2_vision.cameraaccess:main',
         ],
     },
 )

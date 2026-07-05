@@ -5,3 +5,17 @@ deploy computer vision
 
 While mapping if a person is detected move to that place and play an audio. 
 
+[Vision Node] → per-class router:
+    ├── "log-only" classes (person)     → semantic memory only, no Nav2/explore_lite interaction
+    ├── "hazard" classes (stairs)       → inject into costmap (keepout/high-cost layer), no goal interaction
+    └── "go-to" classes (football)      → semantic memory + notify Supervisor
+
+[Supervisor node] (only wakes up for "go-to" class events):
+    1. publish False → explore/resume        (stops explore_lite, robot halts)
+    2. send goal directly to Nav2's navigate_to_pose action server (target's map pose)
+    3. wait for result (success/failure/timeout)
+    4. mark object visited in semantic memory
+    5. publish True → explore/resume         (explore_lite resumes, picks new frontier)
+
+
+    
