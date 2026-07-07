@@ -18,7 +18,7 @@ from unitree_sdk2py.go2.sport.sport_client import SportClient
 
 # CONFIG
 
-NETWORK_INTERFACE = "lo" #enp4s0
+NETWORK_INTERFACE = "lo" #eth0
 
 # Very small motion
 VX = 0.4     # forward (m/s)

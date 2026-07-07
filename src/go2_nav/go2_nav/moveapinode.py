@@ -27,7 +27,7 @@ else:
 from unitree_sdk2py.core.channel import ChannelFactoryInitialize
 from unitree_sdk2py.go2.sport.sport_client import SportClient
 
-NETWORK_INTERFACE = "enp4s0"
+NETWORK_INTERFACE = "eth0"
 
 #Limiters Optional, though kept for absolute safety
 vxlimit = 0.4

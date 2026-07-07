@@ -25,7 +25,7 @@ else:
 from unitree_sdk2py.core.channel import ChannelFactoryInitialize
 from unitree_sdk2py.go2.video.video_client import VideoClient
 
-NETWORK_INTERFACE = "enp4s0"
+NETWORK_INTERFACE = "eth0"
 
 
 class cameraimg(Node):
