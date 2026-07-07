@@ -1,0 +1,987 @@
+[0.000000] (-) TimerEvent: {}
+[0.001030] (explore_lite_msgs) JobQueued: {'identifier': 'explore_lite_msgs', 'dependencies': OrderedDict()}
+[0.001290] (go2_nav) JobQueued: {'identifier': 'go2_nav', 'dependencies': OrderedDict()}
+[0.001527] (go2_vision) JobQueued: {'identifier': 'go2_vision', 'dependencies': OrderedDict()}
+[0.001663] (multirobot_map_merge) JobQueued: {'identifier': 'multirobot_map_merge', 'dependencies': OrderedDict()}
+[0.001734] (unitree_sdk2py) JobQueued: {'identifier': 'unitree_sdk2py', 'dependencies': OrderedDict()}
+[0.001824] (explore_lite) JobQueued: {'identifier': 'explore_lite', 'dependencies': OrderedDict([('explore_lite_msgs', '/workspace/install/explore_lite_msgs')])}
+[0.001896] (explore_lite_msgs) JobStarted: {'identifier': 'explore_lite_msgs'}
+[0.012326] (go2_nav) JobStarted: {'identifier': 'go2_nav'}
+[0.019922] (go2_vision) JobStarted: {'identifier': 'go2_vision'}
+[0.026363] (multirobot_map_merge) JobStarted: {'identifier': 'multirobot_map_merge'}
+[0.030702] (unitree_sdk2py) JobStarted: {'identifier': 'unitree_sdk2py'}
+[0.037265] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'cmake'}
+[0.037990] (explore_lite_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/m-explore-ros2/explore_lite_msgs', '-DCMAKE_INSTALL_PREFIX=/workspace/install/explore_lite_msgs'], 'cwd': '/workspace/build/explore_lite_msgs', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099345] (-) TimerEvent: {}
+[0.199887] (-) TimerEvent: {}
+[0.300458] (-) TimerEvent: {}
+[0.401049] (-) TimerEvent: {}
+[0.501835] (-) TimerEvent: {}
+[0.602401] (-) TimerEvent: {}
+[0.703373] (-) TimerEvent: {}
+[0.712208] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'cmake'}
+[0.712957] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/m-explore-ros2/map_merge', '-DCMAKE_INSTALL_PREFIX=/workspace/install/multirobot_map_merge'], 'cwd': '/workspace/build/multirobot_map_merge', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/multirobot_map_merge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.803553] (-) TimerEvent: {}
+[0.904140] (-) TimerEvent: {}
+[1.004733] (-) TimerEvent: {}
+[1.079598] (explore_lite_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.080760] (explore_lite_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.081454] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.081690] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.081834] (explore_lite_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.081951] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.082055] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.082154] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.082248] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.082339] (explore_lite_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.082432] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.082524] (explore_lite_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.082615] (explore_lite_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.082710] (explore_lite_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.082806] (explore_lite_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.082930] (explore_lite_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.083029] (explore_lite_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.083128] (explore_lite_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.083232] (multirobot_map_merge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.083421] (multirobot_map_merge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.083523] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.083616] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.083707] (multirobot_map_merge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.083796] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.083887] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.083980] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.104850] (-) TimerEvent: {}
+[1.105459] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.109528] (multirobot_map_merge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.109931] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.110696] (multirobot_map_merge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.115142] (multirobot_map_merge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.205056] (-) TimerEvent: {}
+[1.302106] (explore_lite_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.305123] (-) TimerEvent: {}
+[1.320210] (multirobot_map_merge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.405296] (-) TimerEvent: {}
+[1.466986] (multirobot_map_merge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.505464] (-) TimerEvent: {}
+[1.529936] (multirobot_map_merge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.537651] (multirobot_map_merge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.551822] (multirobot_map_merge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.562690] (explore_lite_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.571940] (multirobot_map_merge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.598639] (go2_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_nav', 'build', '--build-base', '/workspace/build/go2_nav/build', 'install', '--record', '/workspace/build/go2_nav/install.log', '--install-scripts', '$base/lib/go2_nav', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/go2_nav', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/go2_nav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_nav/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.601218] (multirobot_map_merge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.605390] (go2_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_vision', 'build', '--build-base', '/workspace/build/go2_vision/build', 'install', '--record', '/workspace/build/go2_vision/install.log', '--install-scripts', '$base/lib/go2_vision', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/go2_vision', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/go2_vision', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/go2_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_vision/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.609463] (-) TimerEvent: {}
+[1.610588] (unitree_sdk2py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/unitree_sdk2py', 'build', '--build-base', '/workspace/build/unitree_sdk2py/build', 'install', '--record', '/workspace/build/unitree_sdk2py/install.log', '--single-version-externally-managed'], 'cwd': '/workspace/sdk/unitree_sdk2_python', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/unitree_sdk2py', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/unitree_sdk2py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.669809] (multirobot_map_merge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.673812] (multirobot_map_merge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.709629] (-) TimerEvent: {}
+[1.804868] (multirobot_map_merge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.809731] (-) TimerEvent: {}
+[1.844363] (multirobot_map_merge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.891085] (explore_lite_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.909881] (-) TimerEvent: {}
+[1.910780] (multirobot_map_merge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.917240] (go2_nav) StdoutLine: {'line': b'running egg_info\n'}
+[1.917797] (explore_lite_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.918878] (go2_nav) StdoutLine: {'line': b'creating ../../build/go2_nav/go2_nav.egg-info\n'}
+[1.919096] (go2_vision) StdoutLine: {'line': b'running egg_info\n'}
+[1.919277] (go2_nav) StdoutLine: {'line': b'writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO\n'}
+[1.919636] (go2_nav) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt\n'}
+[1.919913] (go2_nav) StdoutLine: {'line': b'writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt\n'}
+[1.920128] (go2_nav) StdoutLine: {'line': b'writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt\n'}
+[1.920373] (go2_vision) StdoutLine: {'line': b'creating ../../build/go2_vision/go2_vision.egg-info\n'}
+[1.920558] (explore_lite_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.920676] (go2_nav) StdoutLine: {'line': b'writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt\n'}
+[1.920775] (go2_vision) StdoutLine: {'line': b'writing ../../build/go2_vision/go2_vision.egg-info/PKG-INFO\n'}
+[1.920910] (go2_nav) StdoutLine: {'line': b"writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[1.921032] (go2_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_vision/go2_vision.egg-info/dependency_links.txt\n'}
+[1.921179] (go2_vision) StdoutLine: {'line': b'writing entry points to ../../build/go2_vision/go2_vision.egg-info/entry_points.txt\n'}
+[1.921325] (go2_vision) StdoutLine: {'line': b'writing requirements to ../../build/go2_vision/go2_vision.egg-info/requires.txt\n'}
+[1.921468] (go2_vision) StdoutLine: {'line': b'writing top-level names to ../../build/go2_vision/go2_vision.egg-info/top_level.txt\n'}
+[1.921668] (go2_vision) StdoutLine: {'line': b"writing manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'\n"}
+[1.923558] (go2_nav) StdoutLine: {'line': b"reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[1.924353] (go2_vision) StdoutLine: {'line': b"reading manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'\n"}
+[1.924574] (multirobot_map_merge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.924744] (go2_nav) StdoutLine: {'line': b"writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[1.925052] (go2_nav) StdoutLine: {'line': b'running build\n'}
+[1.925416] (go2_nav) StdoutLine: {'line': b'running build_py\n'}
+[1.925843] (go2_nav) StdoutLine: {'line': b'creating /workspace/build/go2_nav/build\n'}
+[1.926089] (go2_vision) StdoutLine: {'line': b"writing manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'\n"}
+[1.926376] (go2_nav) StdoutLine: {'line': b'creating /workspace/build/go2_nav/build/lib\n'}
+[1.926626] (go2_nav) StdoutLine: {'line': b'creating /workspace/build/go2_nav/build/lib/go2_nav\n'}
+[1.926737] (go2_vision) StdoutLine: {'line': b'running build\n'}
+[1.926886] (go2_vision) StdoutLine: {'line': b'running build_py\n'}
+[1.927049] (go2_nav) StdoutLine: {'line': b'copying go2_nav/moveapicall.py -> /workspace/build/go2_nav/build/lib/go2_nav\n'}
+[1.927151] (go2_nav) StdoutLine: {'line': b'copying go2_nav/moveapinode.py -> /workspace/build/go2_nav/build/lib/go2_nav\n'}
+[1.927244] (go2_vision) StdoutLine: {'line': b'creating /workspace/build/go2_vision/build\n'}
+[1.927360] (go2_vision) StdoutLine: {'line': b'creating /workspace/build/go2_vision/build/lib\n'}
+[1.927508] (go2_nav) StdoutLine: {'line': b'copying go2_nav/odomBroadcast.py -> /workspace/build/go2_nav/build/lib/go2_nav\n'}
+[1.927681] (go2_vision) StdoutLine: {'line': b'creating /workspace/build/go2_vision/build/lib/go2_vision\n'}
+[1.927806] (go2_vision) StdoutLine: {'line': b'copying go2_vision/__init__.py -> /workspace/build/go2_vision/build/lib/go2_vision\n'}
+[1.928006] (go2_nav) StdoutLine: {'line': b'copying go2_nav/__init__.py -> /workspace/build/go2_nav/build/lib/go2_nav\n'}
+[1.928107] (unitree_sdk2py) StdoutLine: {'line': b'running egg_info\n'}
+[1.928307] (go2_vision) StdoutLine: {'line': b'copying go2_vision/cameraaccess.py -> /workspace/build/go2_vision/build/lib/go2_vision\n'}
+[1.928409] (go2_nav) StdoutLine: {'line': b'copying go2_nav/restamp_node.py -> /workspace/build/go2_nav/build/lib/go2_nav\n'}
+[1.928596] (go2_nav) StdoutLine: {'line': b'running install\n'}
+[1.928726] (go2_vision) StdoutLine: {'line': b'running install\n'}
+[1.928964] (unitree_sdk2py) StdoutLine: {'line': b'creating ../../build/unitree_sdk2py/unitree_sdk2py.egg-info\n'}
+[1.929284] (go2_nav) StdoutLine: {'line': b'running install_lib\n'}
+[1.929475] (unitree_sdk2py) StdoutLine: {'line': b'writing ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/PKG-INFO\n'}
+[1.929620] (go2_vision) StdoutLine: {'line': b'running install_lib\n'}
+[1.929835] (unitree_sdk2py) StdoutLine: {'line': b'writing dependency_links to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/dependency_links.txt\n'}
+[1.929942] (unitree_sdk2py) StdoutLine: {'line': b'writing requirements to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/requires.txt\n'}
+[1.930039] (unitree_sdk2py) StdoutLine: {'line': b'writing top-level names to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/top_level.txt\n'}
+[1.930131] (go2_nav) StdoutLine: {'line': b'creating /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[1.930227] (unitree_sdk2py) StdoutLine: {'line': b"writing manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[1.930317] (go2_nav) StdoutLine: {'line': b'copying /workspace/build/go2_nav/build/lib/go2_nav/moveapicall.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[1.930410] (go2_vision) StdoutLine: {'line': b'creating /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision\n'}
+[1.930500] (go2_nav) StdoutLine: {'line': b'copying /workspace/build/go2_nav/build/lib/go2_nav/moveapinode.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[1.930592] (go2_vision) StdoutLine: {'line': b'copying /workspace/build/go2_vision/build/lib/go2_vision/__init__.py -> /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision\n'}
+[1.930807] (go2_nav) StdoutLine: {'line': b'copying /workspace/build/go2_nav/build/lib/go2_nav/odomBroadcast.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[1.930914] (go2_vision) StdoutLine: {'line': b'copying /workspace/build/go2_vision/build/lib/go2_vision/cameraaccess.py -> /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision\n'}
+[1.931012] (go2_nav) StdoutLine: {'line': b'copying /workspace/build/go2_nav/build/lib/go2_nav/__init__.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[1.931109] (go2_nav) StdoutLine: {'line': b'copying /workspace/build/go2_nav/build/lib/go2_nav/restamp_node.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav\n'}
+[1.931287] (go2_vision) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision/__init__.py to __init__.cpython-310.pyc\n'}
+[1.931384] (go2_nav) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapicall.py to moveapicall.cpython-310.pyc\n'}
+[1.931476] (go2_vision) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision/cameraaccess.py to cameraaccess.cpython-310.pyc\n'}
+[1.931772] (go2_nav) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapinode.py to moveapinode.cpython-310.pyc\n'}
+[1.932629] (go2_vision) StdoutLine: {'line': b'running install_data\n'}
+[1.932866] (go2_vision) StdoutLine: {'line': b'creating /workspace/install/go2_vision/share/ament_index\n'}
+[1.933147] (go2_vision) StdoutLine: {'line': b'creating /workspace/install/go2_vision/share/ament_index/resource_index\n'}
+[1.933261] (go2_vision) StdoutLine: {'line': b'creating /workspace/install/go2_vision/share/ament_index/resource_index/packages\n'}
+[1.933495] (go2_nav) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/odomBroadcast.py to odomBroadcast.cpython-310.pyc\n'}
+[1.933609] (go2_vision) StdoutLine: {'line': b'copying resource/go2_vision -> /workspace/install/go2_vision/share/ament_index/resource_index/packages\n'}
+[1.933706] (go2_vision) StdoutLine: {'line': b'copying package.xml -> /workspace/install/go2_vision/share/go2_vision\n'}
+[1.933799] (go2_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.936379] (go2_nav) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/__init__.py to __init__.cpython-310.pyc\n'}
+[1.936680] (go2_nav) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/restamp_node.py to restamp_node.cpython-310.pyc\n'}
+[1.937452] (go2_nav) StdoutLine: {'line': b'running install_data\n'}
+[1.937883] (go2_nav) StdoutLine: {'line': b'creating /workspace/install/go2_nav/share/ament_index\n'}
+[1.938052] (go2_nav) StdoutLine: {'line': b'creating /workspace/install/go2_nav/share/ament_index/resource_index\n'}
+[1.938226] (go2_nav) StdoutLine: {'line': b'creating /workspace/install/go2_nav/share/ament_index/resource_index/packages\n'}
+[1.938432] (go2_nav) StdoutLine: {'line': b'copying resource/go2_nav -> /workspace/install/go2_nav/share/ament_index/resource_index/packages\n'}
+[1.938565] (go2_nav) StdoutLine: {'line': b'copying package.xml -> /workspace/install/go2_nav/share/go2_nav\n'}
+[1.938723] (go2_nav) StdoutLine: {'line': b'creating /workspace/install/go2_nav/share/go2_nav/launch\n'}
+[1.938869] (go2_nav) StdoutLine: {'line': b'copying launch/slam_explore.launch.py -> /workspace/install/go2_nav/share/go2_nav/launch\n'}
+[1.939101] (go2_nav) StdoutLine: {'line': b'copying launch/navigatio.launch.py -> /workspace/install/go2_nav/share/go2_nav/launch\n'}
+[1.939252] (go2_nav) StdoutLine: {'line': b'copying launch/explore_slam.launch.py -> /workspace/install/go2_nav/share/go2_nav/launch\n'}
+[1.939370] (go2_nav) StdoutLine: {'line': b'creating /workspace/install/go2_nav/share/go2_nav/config\n'}
+[1.939703] (go2_nav) StdoutLine: {'line': b'copying config/nav2_params.yaml -> /workspace/install/go2_nav/share/go2_nav/config\n'}
+[1.939830] (go2_nav) StdoutLine: {'line': b'copying config/nav2_slam_params.yaml -> /workspace/install/go2_nav/share/go2_nav/config\n'}
+[1.939991] (unitree_sdk2py) StdoutLine: {'line': b"reading manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[1.940122] (go2_vision) StdoutLine: {'line': b'Copying ../../build/go2_vision/go2_vision.egg-info to /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision-0.0.0-py3.10.egg-info\n'}
+[1.940248] (go2_nav) StdoutLine: {'line': b'copying config/explore_lite_params.yaml -> /workspace/install/go2_nav/share/go2_nav/config\n'}
+[1.940347] (go2_nav) StdoutLine: {'line': b'creating /workspace/install/go2_nav/share/go2_nav/maps\n'}
+[1.940439] (go2_nav) StdoutLine: {'line': b'copying maps/rtabmap.pgm -> /workspace/install/go2_nav/share/go2_nav/maps\n'}
+[1.940531] (unitree_sdk2py) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.940628] (go2_nav) StdoutLine: {'line': b'copying maps/rtabmap.db -> /workspace/install/go2_nav/share/go2_nav/maps\n'}
+[1.941499] (go2_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[1.942741] (unitree_sdk2py) StdoutLine: {'line': b"writing manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[1.943323] (unitree_sdk2py) StdoutLine: {'line': b'running build\n'}
+[1.943545] (unitree_sdk2py) StdoutLine: {'line': b'running build_py\n'}
+[1.943905] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build\n'}
+[1.944111] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib\n'}
+[1.944299] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py\n'}
+[1.944561] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py\n'}
+[1.945109] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2\n'}
+[1.945324] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/a2/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2\n'}
+[1.945878] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.946083] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/joystick.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.946420] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/future.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.946739] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/crc.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.947055] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/timerfd.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.947344] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/thread.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.947619] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/bqueue.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.947896] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/hz_sample.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.948172] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.948434] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/singleton.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.948723] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/utils/clib_lookup.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils\n'}
+[1.949191] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1\n'}
+[1.949407] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h1/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1\n'}
+[1.949805] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2\n'}
+[1.950013] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h2/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2\n'}
+[1.950446] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core\n'}
+[1.950635] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/core/channel_name.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core\n'}
+[1.950889] (explore_lite_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.951298] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/core/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core\n'}
+[1.951495] (explore_lite_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.951633] (explore_lite_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.951787] (explore_lite_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[1.951895] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/core/channel_config.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core\n'}
+[1.951997] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/core/channel.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core\n'}
+[1.952132] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2\n'}
+[1.952281] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2\n'}
+[1.952375] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm\n'}
+[1.952490] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/comm/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm\n'}
+[1.952607] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1\n'}
+[1.952699] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1\n'}
+[1.952807] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2\n'}
+[1.952923] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2\n'}
+[1.953349] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.953582] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/client_base.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.953725] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/client_stub.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.953880] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/request_future.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.954020] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/server.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.954201] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/lease_server.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.954372] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/internal.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.954528] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.954676] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/server_stub.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.954838] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/server_base.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.955004] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/lease_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.955168] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/rpc/client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc\n'}
+[1.955499] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl\n'}
+[1.955642] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/default.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl\n'}
+[1.955854] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl\n'}
+[1.956116] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/as2\n'}
+[1.956267] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/as2/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/as2\n'}
+[1.956559] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/audio\n'}
+[1.956698] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/a2/audio/audio_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/audio\n'}
+[1.956854] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/a2/audio/audio_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/audio\n'}
+[1.957053] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/a2/audio/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/audio\n'}
+[1.957346] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/sport\n'}
+[1.957480] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/a2/sport/sport_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/sport\n'}
+[1.957659] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/a2/sport/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/sport\n'}
+[1.957803] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/a2/sport/sport_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/sport\n'}
+[1.958129] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/loco\n'}
+[1.958271] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h1/loco/h1_loco_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/loco\n'}
+[1.958432] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h1/loco/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/loco\n'}
+[1.958586] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h1/loco/h1_loco_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/loco\n'}
+[1.958887] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/loco\n'}
+[1.959021] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h2/loco/h2_loco_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/loco\n'}
+[1.959230] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h2/loco/h2_loco_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/loco\n'}
+[1.959404] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/h2/loco/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/loco\n'}
+[1.959708] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/obstacles_avoid\n'}
+[1.959848] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/obstacles_avoid\n'}
+[1.960021] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/obstacles_avoid\n'}
+[1.960192] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/obstacles_avoid/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/obstacles_avoid\n'}
+[1.960478] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/robot_state\n'}
+[1.960613] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/robot_state/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/robot_state\n'}
+[1.960786] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/robot_state/robot_state_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/robot_state\n'}
+[1.960951] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/robot_state/robot_state_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/robot_state\n'}
+[1.961284] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/vui\n'}
+[1.961448] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/vui/vui_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/vui\n'}
+[1.961580] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/vui/vui_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/vui\n'}
+[1.961762] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/vui/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/vui\n'}
+[1.962035] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/video\n'}
+[1.962174] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/video/video_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/video\n'}
+[1.962347] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/video/video_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/video\n'}
+[1.962509] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/video/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/video\n'}
+[1.962791] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/sport\n'}
+[1.962919] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/sport/sport_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/sport\n'}
+[1.963124] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/sport/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/sport\n'}
+[1.963269] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/go2/sport/sport_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/sport\n'}
+[1.963585] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/motion_switcher\n'}
+[1.963740] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/comm/motion_switcher/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/motion_switcher\n'}
+[1.963875] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/comm/motion_switcher/motion_switcher_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/motion_switcher\n'}
+[1.964055] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/comm/motion_switcher/motion_switcher_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/motion_switcher\n'}
+[1.964346] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/audio\n'}
+[1.964469] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/audio/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/audio\n'}
+[1.964645] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/audio/g1_audio_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/audio\n'}
+[1.964808] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/audio/g1_audio_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/audio\n'}
+[1.965124] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/arm\n'}
+[1.965256] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/arm/g1_arm_action_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/arm\n'}
+[1.965433] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/arm/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/arm\n'}
+[1.965591] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/arm/g1_arm_action_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/arm\n'}
+[1.965877] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/loco\n'}
+[1.966020] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/loco/g1_loco_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/loco\n'}
+[1.966173] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/loco/g1_loco_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/loco\n'}
+[1.966333] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/g1/loco/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/loco\n'}
+[1.966615] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/robot_state\n'}
+[1.966748] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/robot_state/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/robot_state\n'}
+[1.966908] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/robot_state/robot_state_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/robot_state\n'}
+[1.967073] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/robot_state/robot_state_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/robot_state\n'}
+[1.967371] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/back_video\n'}
+[1.967504] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/back_video/back_video_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/back_video\n'}
+[1.967677] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/back_video/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/back_video\n'}
+[1.967828] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/back_video/back_video_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/back_video\n'}
+[1.968122] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/vui\n'}
+[1.968256] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/vui/vui_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/vui\n'}
+[1.968422] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/vui/vui_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/vui\n'}
+[1.968616] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/vui/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/vui\n'}
+[1.968883] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/sport\n'}
+[1.969035] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/sport/sport_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/sport\n'}
+[1.969225] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/sport/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/sport\n'}
+[1.969376] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/sport/sport_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/sport\n'}
+[1.969697] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/front_video\n'}
+[1.969833] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/front_video/front_video_client.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/front_video\n'}
+[1.970011] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/front_video/front_video_api.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/front_video\n'}
+[1.970180] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/b2/front_video/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/front_video\n'}
+[1.970457] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces\n'}
+[1.970610] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/builtin_interfaces/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces\n'}
+[1.970864] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs\n'}
+[1.971027] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/nav_msgs/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs\n'}
+[1.971264] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go\n'}
+[1.971415] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go\n'}
+[1.971654] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs\n'}
+[1.971814] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/sensor_msgs/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs\n'}
+[1.972023] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs\n'}
+[1.972164] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/std_msgs/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs\n'}
+[1.972437] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api\n'}
+[1.972577] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api\n'}
+[1.972904] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg\n'}
+[1.973098] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg\n'}
+[1.973349] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs\n'}
+[1.973498] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs\n'}
+[1.973759] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg\n'}
+[1.973905] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/builtin_interfaces/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg\n'}
+[1.974170] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg/dds_\n'}
+[1.974303] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/builtin_interfaces/msg/dds_/_Time_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg/dds_\n'}
+[1.974475] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/builtin_interfaces/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg/dds_\n'}
+[1.974771] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg\n'}
+[1.974933] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/nav_msgs/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg\n'}
+[1.975194] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[1.975315] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/nav_msgs/msg/dds_/_MapMetaData_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[1.975494] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/nav_msgs/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[1.975693] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/nav_msgs/msg/dds_/_OccupancyGrid_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[1.975870] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/nav_msgs/msg/dds_/_Odometry_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[1.976167] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg\n'}
+[1.976293] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg\n'}
+[1.976763] (explore_lite_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.976899] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.977050] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsCmd_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.977202] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmds_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.977386] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_WirelessController_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.977562] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_InterfaceConfig_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.977743] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_Error_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.977924] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_Go2FrontVideoData_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.978066] (go2_vision) StdoutLine: {'line': b'Installing cameraimg script to /workspace/install/go2_vision/lib/go2_vision\n'}
+[1.978212] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_TimeSpec_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.978331] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_LowState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.978448] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_AudioData_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.978641] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.978779] (go2_vision) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/go2_vision/install.log'\n"}
+[1.978906] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_LowCmd_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.979028] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_SportModeState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.979153] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_LidarState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.979336] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.979512] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmd_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.979688] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbSwitch_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.979861] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.980050] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.980227] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_Req_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.980400] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_HeightMap_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.980576] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_Res_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.980745] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_IMUState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.980917] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_PathPoint_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.981202] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorStates_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[1.981497] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg\n'}
+[1.981658] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/sensor_msgs/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg\n'}
+[1.981980] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[1.982105] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointCloud2_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[1.982277] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/sensor_msgs/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[1.982451] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointField_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[1.982795] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants\n'}
+[1.982986] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants\n'}
+[1.983128] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/_PointField_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants\n'}
+[1.983383] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg\n'}
+[1.983524] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/std_msgs/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg\n'}
+[1.983828] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[1.984010] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/std_msgs/msg/dds_/_String_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[1.984134] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/std_msgs/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[1.984301] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/std_msgs/msg/dds_/_Header_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[1.984600] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg\n'}
+[1.984729] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg\n'}
+[1.985210] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.985346] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseStatus_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.985515] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestPolicy_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.985698] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_Request_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.985876] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestIdentity_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.986004] (go2_nav) StdoutLine: {'line': b'copying maps/rtabmap.yaml -> /workspace/install/go2_nav/share/go2_nav/maps\n'}
+[1.986165] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestLease_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.986283] (go2_nav) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.986381] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestHeader_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.986492] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.986610] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_Response_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.986756] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseHeader_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[1.987078] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg\n'}
+[1.987202] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg\n'}
+[1.987629] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.987794] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsCmd_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.987919] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandCmd_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.988093] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.988273] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_PressSensorState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.988444] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.988616] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_MainBoardState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.988785] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowCmd_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.988953] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.989157] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.989340] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorCmd_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.989511] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.989680] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/unitree_hg/msg/dds_/_IMUState_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[1.989813] (go2_nav) StdoutLine: {'line': b'Copying ../../build/go2_nav/go2_nav.egg-info to /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info\n'}
+[1.989989] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg\n'}
+[1.990109] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg\n'}
+[1.990565] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.990695] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistStamped_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.990856] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose2D_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.991035] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Vector3_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.991760] (go2_nav) StdoutLine: {'line': b'running install_scripts\n'}
+[1.991893] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovarianceStamped_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.992017] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.992138] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PointStamped_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.992269] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovariance_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.992443] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseStamped_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.992623] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.992805] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_QuaternionStamped_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.993146] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/__init__.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.993272] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovariance_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.993395] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovarianceStamped_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.993571] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point32_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.993753] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Twist_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[1.993928] (unitree_sdk2py) StdoutLine: {'line': b'copying unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Quaternion_.py -> /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.000738] (unitree_sdk2py) StdoutLine: {'line': b'running install\n'}
+[2.001593] (unitree_sdk2py) StdoutLine: {'line': b'running install_lib\n'}
+[2.003128] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py\n'}
+[2.003436] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2\n'}
+[2.003625] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/audio\n'}
+[2.003775] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/audio/audio_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/audio\n'}
+[2.003917] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/audio/audio_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/audio\n'}
+[2.004060] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/audio/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/audio\n'}
+[2.004256] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/sport\n'}
+[2.004390] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/sport/sport_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/sport\n'}
+[2.004572] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/sport/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/sport\n'}
+[2.004718] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/sport/sport_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/sport\n'}
+[2.004881] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/a2/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2\n'}
+[2.005130] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.005284] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/joystick.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.005423] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/future.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.005592] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/crc.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.005755] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/timerfd.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.005908] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/thread.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.009108] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/bqueue.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.025558] (-) TimerEvent: {}
+[2.025950] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/hz_sample.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.026162] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.026280] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/singleton.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.026597] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/utils/clib_lookup.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils\n'}
+[2.026771] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1\n'}
+[2.026953] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1\n'}
+[2.027063] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/loco\n'}
+[2.027211] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/loco/h1_loco_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/loco\n'}
+[2.027367] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/loco/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/loco\n'}
+[2.027467] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h1/loco/h1_loco_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/loco\n'}
+[2.027562] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2\n'}
+[2.027653] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2\n'}
+[2.027756] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/loco\n'}
+[2.027846] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/loco/h2_loco_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/loco\n'}
+[2.027949] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/loco/h2_loco_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/loco\n'}
+[2.028168] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/h2/loco/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/loco\n'}
+[2.028263] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core\n'}
+[2.028351] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core/channel_name.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core\n'}
+[2.028439] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core\n'}
+[2.028526] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core/channel_config.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core\n'}
+[2.028610] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/core/channel.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core\n'}
+[2.028693] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2\n'}
+[2.028778] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/obstacles_avoid\n'}
+[2.028863] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/obstacles_avoid\n'}
+[2.028953] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/obstacles_avoid\n'}
+[2.029073] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/obstacles_avoid/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/obstacles_avoid\n'}
+[2.029165] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/robot_state\n'}
+[2.029251] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/robot_state/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/robot_state\n'}
+[2.029337] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/robot_state/robot_state_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/robot_state\n'}
+[2.029422] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/robot_state/robot_state_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/robot_state\n'}
+[2.029508] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/vui\n'}
+[2.029606] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/vui/vui_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/vui\n'}
+[2.029693] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/vui/vui_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/vui\n'}
+[2.029779] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/vui/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/vui\n'}
+[2.029884] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/video\n'}
+[2.029969] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/video/video_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/video\n'}
+[2.030054] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/video/video_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/video\n'}
+[2.030139] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/video/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/video\n'}
+[2.030232] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/sport\n'}
+[2.030316] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/sport/sport_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/sport\n'}
+[2.030399] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/sport/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/sport\n'}
+[2.030482] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/sport/sport_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/sport\n'}
+[2.030565] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/go2/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2\n'}
+[2.030650] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm\n'}
+[2.030737] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm\n'}
+[2.030823] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/motion_switcher\n'}
+[2.030906] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/motion_switcher/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/motion_switcher\n'}
+[2.030993] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/motion_switcher/motion_switcher_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/motion_switcher\n'}
+[2.031078] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/comm/motion_switcher/motion_switcher_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/motion_switcher\n'}
+[2.031165] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1\n'}
+[2.031265] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/audio\n'}
+[2.031350] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/audio/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/audio\n'}
+[2.031437] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/audio/g1_audio_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/audio\n'}
+[2.031524] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/audio/g1_audio_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/audio\n'}
+[2.031610] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/arm\n'}
+[2.031693] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/arm/g1_arm_action_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/arm\n'}
+[2.031777] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/arm/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/arm\n'}
+[2.031861] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/arm/g1_arm_action_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/arm\n'}
+[2.031949] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1\n'}
+[2.032055] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/loco\n'}
+[2.032140] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/loco/g1_loco_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/loco\n'}
+[2.032226] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/loco/g1_loco_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/loco\n'}
+[2.032312] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/g1/loco/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/loco\n'}
+[2.032407] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py\n'}
+[2.032495] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2\n'}
+[2.032579] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/robot_state\n'}
+[2.032663] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/robot_state/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/robot_state\n'}
+[2.032747] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/robot_state/robot_state_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/robot_state\n'}
+[2.032833] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/robot_state/robot_state_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/robot_state\n'}
+[2.032930] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/back_video\n'}
+[2.033313] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/back_video/back_video_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/back_video\n'}
+[2.033419] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/back_video/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/back_video\n'}
+[2.033511] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/back_video/back_video_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/back_video\n'}
+[2.033599] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/vui\n'}
+[2.033685] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/vui/vui_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/vui\n'}
+[2.033773] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/vui/vui_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/vui\n'}
+[2.033860] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/vui/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/vui\n'}
+[2.033946] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/sport\n'}
+[2.034030] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/sport/sport_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/sport\n'}
+[2.034118] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/sport/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/sport\n'}
+[2.034205] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/sport/sport_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/sport\n'}
+[2.034290] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2\n'}
+[2.034376] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/front_video\n'}
+[2.034460] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/front_video/front_video_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/front_video\n'}
+[2.034547] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/front_video/front_video_api.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/front_video\n'}
+[2.034661] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/b2/front_video/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/front_video\n'}
+[2.034751] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.034851] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/client_base.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.034941] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/client_stub.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035037] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/request_future.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035123] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/server.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035207] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/lease_server.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035290] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/internal.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035375] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035461] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/server_stub.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035546] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/server_base.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035629] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/lease_client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035713] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/rpc/client.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc\n'}
+[2.035797] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl\n'}
+[2.035882] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces\n'}
+[2.035967] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces\n'}
+[2.036056] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg\n'}
+[2.036748] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg/dds_\n'}
+[2.037067] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg/dds_/_Time_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg/dds_\n'}
+[2.037231] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg/dds_\n'}
+[2.037381] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/builtin_interfaces/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg\n'}
+[2.037519] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs\n'}
+[2.037662] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs\n'}
+[2.037757] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg\n'}
+[2.037894] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[2.038030] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_/_MapMetaData_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[2.038156] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[2.038292] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_/_OccupancyGrid_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[2.038424] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/dds_/_Odometry_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_\n'}
+[2.038558] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/nav_msgs/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg\n'}
+[2.038685] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/default.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl\n'}
+[2.038780] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go\n'}
+[2.038912] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go\n'}
+[2.039046] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg\n'}
+[2.039167] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.039262] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsCmd_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.039385] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmds_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.039511] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_WirelessController_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.039600] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_InterfaceConfig_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.039728] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_Error_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.039860] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_Go2FrontVideoData_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.039981] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_TimeSpec_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.040074] (go2_nav) StdoutLine: {'line': b'Installing go2_sport_bridge script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[2.040269] (go2_nav) StdoutLine: {'line': b'Installing odom_broadcast script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[2.040368] (go2_nav) StdoutLine: {'line': b'Installing restamp_node script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[2.040498] (go2_nav) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/go2_nav/install.log'\n"}
+[2.040630] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_LowState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.040760] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_AudioData_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.040854] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041021] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_LowCmd_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041128] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_SportModeState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041278] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_LidarState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041389] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041518] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmd_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041642] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbSwitch_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041734] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041821] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.041907] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_Req_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.042004] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_HeightMap_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.042089] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_Res_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.042172] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_IMUState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.042257] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_PathPoint_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.042340] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorStates_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_\n'}
+[2.042427] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_go/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg\n'}
+[2.042513] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs\n'}
+[2.042597] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs\n'}
+[2.042681] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg\n'}
+[2.042805] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[2.042898] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointCloud2_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[2.042984] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[2.043068] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants\n'}
+[2.043154] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants\n'}
+[2.043261] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/_PointField_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants\n'}
+[2.043369] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointField_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_\n'}
+[2.043456] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/sensor_msgs/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg\n'}
+[2.043555] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl\n'}
+[2.043641] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs\n'}
+[2.043726] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs\n'}
+[2.043809] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg\n'}
+[2.043893] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[2.043977] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/dds_/_String_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[2.044061] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[2.044147] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/dds_/_Header_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/dds_\n'}
+[2.044283] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/std_msgs/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg\n'}
+[2.044371] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api\n'}
+[2.044456] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api\n'}
+[2.044540] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg\n'}
+[2.044631] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.044758] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseStatus_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.044848] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestPolicy_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.044988] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_Request_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.045088] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestIdentity_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.045176] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestLease_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.045288] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestHeader_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.045376] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.045463] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_Response_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.045566] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseHeader_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_\n'}
+[2.045653] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_api/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg\n'}
+[2.045740] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg\n'}
+[2.045827] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg\n'}
+[2.045913] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg\n'}
+[2.045998] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046084] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsCmd_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046170] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandCmd_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046256] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046340] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_PressSensorState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046422] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046507] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MainBoardState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046592] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowCmd_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046677] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046775] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046860] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorCmd_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.046945] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.047031] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/dds_/_IMUState_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_\n'}
+[2.047124] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/unitree_hg/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg\n'}
+[2.047319] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs\n'}
+[2.047408] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs\n'}
+[2.047495] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg\n'}
+[2.047646] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.047738] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistStamped_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.047828] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose2D_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.047915] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Vector3_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048048] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovarianceStamped_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048137] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048224] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PointStamped_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048354] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovariance_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048457] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseStamped_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048548] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048635] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_QuaternionStamped_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048721] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048806] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovariance_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.048892] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovarianceStamped_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.049003] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point32_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.049117] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Twist_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.049205] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Quaternion_.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_\n'}
+[2.049292] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/idl/geometry_msgs/msg/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg\n'}
+[2.049379] (unitree_sdk2py) StdoutLine: {'line': b'creating /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/as2\n'}
+[2.049465] (unitree_sdk2py) StdoutLine: {'line': b'copying /workspace/build/unitree_sdk2py/build/lib/unitree_sdk2py/as2/__init__.py -> /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/as2\n'}
+[2.049567] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/audio/audio_client.py to audio_client.cpython-310.pyc\n'}
+[2.049655] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/audio/audio_api.py to audio_api.cpython-310.pyc\n'}
+[2.049741] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/audio/__init__.py to __init__.cpython-310.pyc\n'}
+[2.049826] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/sport/sport_client.py to sport_client.cpython-310.pyc\n'}
+[2.049910] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/sport/__init__.py to __init__.cpython-310.pyc\n'}
+[2.050003] (multirobot_map_merge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.050118] (multirobot_map_merge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.050204] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/sport/sport_api.py to sport_api.cpython-310.pyc\n'}
+[2.050287] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/a2/__init__.py to __init__.cpython-310.pyc\n'}
+[2.050371] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/joystick.py to joystick.cpython-310.pyc\n'}
+[2.051230] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/future.py to future.cpython-310.pyc\n'}
+[2.052719] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/crc.py to crc.cpython-310.pyc\n'}
+[2.055385] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/timerfd.py to timerfd.cpython-310.pyc\n'}
+[2.056159] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/thread.py to thread.cpython-310.pyc\n'}
+[2.057514] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/bqueue.py to bqueue.cpython-310.pyc\n'}
+[2.058926] (go2_vision) CommandEnded: {'returncode': 0}
+[2.059670] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/hz_sample.py to hz_sample.cpython-310.pyc\n'}
+[2.059949] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/__init__.py to __init__.cpython-310.pyc\n'}
+[2.060267] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/singleton.py to singleton.cpython-310.pyc\n'}
+[2.063443] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/clib_lookup.py to clib_lookup.cpython-310.pyc\n'}
+[2.065943] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/__init__.py to __init__.cpython-310.pyc\n'}
+[2.066255] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/loco/h1_loco_client.py to h1_loco_client.cpython-310.pyc\n'}
+[2.066480] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/loco/__init__.py to __init__.cpython-310.pyc\n'}
+[2.066669] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h1/loco/h1_loco_api.py to h1_loco_api.cpython-310.pyc\n'}
+[2.066840] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/__init__.py to __init__.cpython-310.pyc\n'}
+[2.067094] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/loco/h2_loco_api.py to h2_loco_api.cpython-310.pyc\n'}
+[2.069794] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/loco/h2_loco_client.py to h2_loco_client.cpython-310.pyc\n'}
+[2.070205] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/h2/loco/__init__.py to __init__.cpython-310.pyc\n'}
+[2.071076] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core/channel_name.py to channel_name.cpython-310.pyc\n'}
+[2.071932] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core/__init__.py to __init__.cpython-310.pyc\n'}
+[2.072428] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core/channel_config.py to channel_config.cpython-310.pyc\n'}
+[2.073229] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/core/channel.py to channel.cpython-310.pyc\n'}
+[2.073493] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_api.py to obstacles_avoid_api.cpython-310.pyc\n'}
+[2.074012] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_client.py to obstacles_avoid_client.cpython-310.pyc\n'}
+[2.074535] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/obstacles_avoid/__init__.py to __init__.cpython-310.pyc\n'}
+[2.074787] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/robot_state/__init__.py to __init__.cpython-310.pyc\n'}
+[2.075194] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/robot_state/robot_state_client.py to robot_state_client.cpython-310.pyc\n'}
+[2.075599] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/robot_state/robot_state_api.py to robot_state_api.cpython-310.pyc\n'}
+[2.076302] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/vui/vui_client.py to vui_client.cpython-310.pyc\n'}
+[2.077470] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/vui/vui_api.py to vui_api.cpython-310.pyc\n'}
+[2.078641] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/vui/__init__.py to __init__.cpython-310.pyc\n'}
+[2.078803] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/video/video_api.py to video_api.cpython-310.pyc\n'}
+[2.079056] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/video/video_client.py to video_client.cpython-310.pyc\n'}
+[2.081053] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/video/__init__.py to __init__.cpython-310.pyc\n'}
+[2.081372] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/sport/sport_client.py to sport_client.cpython-310.pyc\n'}
+[2.082082] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/sport/__init__.py to __init__.cpython-310.pyc\n'}
+[2.082279] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/sport/sport_api.py to sport_api.cpython-310.pyc\n'}
+[2.082492] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/go2/__init__.py to __init__.cpython-310.pyc\n'}
+[2.083503] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/__init__.py to __init__.cpython-310.pyc\n'}
+[2.083736] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/motion_switcher/__init__.py to __init__.cpython-310.pyc\n'}
+[2.084244] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/motion_switcher/motion_switcher_api.py to motion_switcher_api.cpython-310.pyc\n'}
+[2.085365] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/comm/motion_switcher/motion_switcher_client.py to motion_switcher_client.cpython-310.pyc\n'}
+[2.085672] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/audio/__init__.py to __init__.cpython-310.pyc\n'}
+[2.085903] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/audio/g1_audio_client.py to g1_audio_client.cpython-310.pyc\n'}
+[2.086089] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/audio/g1_audio_api.py to g1_audio_api.cpython-310.pyc\n'}
+[2.086608] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/arm/g1_arm_action_client.py to g1_arm_action_client.cpython-310.pyc\n'}
+[2.086769] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/arm/__init__.py to __init__.cpython-310.pyc\n'}
+[2.087903] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/arm/g1_arm_action_api.py to g1_arm_action_api.cpython-310.pyc\n'}
+[2.088130] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/__init__.py to __init__.cpython-310.pyc\n'}
+[2.088585] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/loco/g1_loco_client.py to g1_loco_client.cpython-310.pyc\n'}
+[2.088830] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/loco/g1_loco_api.py to g1_loco_api.cpython-310.pyc\n'}
+[2.089103] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/g1/loco/__init__.py to __init__.cpython-310.pyc\n'}
+[2.089969] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/__init__.py to __init__.cpython-310.pyc\n'}
+[2.090134] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/robot_state/__init__.py to __init__.cpython-310.pyc\n'}
+[2.090345] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/robot_state/robot_state_client.py to robot_state_client.cpython-310.pyc\n'}
+[2.091066] (go2_vision) JobEnded: {'identifier': 'go2_vision', 'rc': 0}
+[2.091872] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/robot_state/robot_state_api.py to robot_state_api.cpython-310.pyc\n'}
+[2.092381] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/back_video/back_video_api.py to back_video_api.cpython-310.pyc\n'}
+[2.092628] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/back_video/__init__.py to __init__.cpython-310.pyc\n'}
+[2.092935] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/back_video/back_video_client.py to back_video_client.cpython-310.pyc\n'}
+[2.093513] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/vui/vui_client.py to vui_client.cpython-310.pyc\n'}
+[2.094584] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/vui/vui_api.py to vui_api.cpython-310.pyc\n'}
+[2.094998] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/vui/__init__.py to __init__.cpython-310.pyc\n'}
+[2.095299] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/sport/sport_client.py to sport_client.cpython-310.pyc\n'}
+[2.097503] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/sport/__init__.py to __init__.cpython-310.pyc\n'}
+[2.097823] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/sport/sport_api.py to sport_api.cpython-310.pyc\n'}
+[2.098326] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/__init__.py to __init__.cpython-310.pyc\n'}
+[2.098688] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/front_video/front_video_client.py to front_video_client.cpython-310.pyc\n'}
+[2.099243] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/front_video/front_video_api.py to front_video_api.cpython-310.pyc\n'}
+[2.099636] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/b2/front_video/__init__.py to __init__.cpython-310.pyc\n'}
+[2.099883] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/client_base.py to client_base.cpython-310.pyc\n'}
+[2.101606] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/client_stub.py to client_stub.cpython-310.pyc\n'}
+[2.102500] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/request_future.py to request_future.cpython-310.pyc\n'}
+[2.103242] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/server.py to server.cpython-310.pyc\n'}
+[2.104649] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/lease_server.py to lease_server.cpython-310.pyc\n'}
+[2.106236] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/internal.py to internal.cpython-310.pyc\n'}
+[2.106713] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/__init__.py to __init__.cpython-310.pyc\n'}
+[2.107370] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/server_stub.py to server_stub.cpython-310.pyc\n'}
+[2.109002] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/server_base.py to server_base.cpython-310.pyc\n'}
+[2.109540] (go2_nav) CommandEnded: {'returncode': 0}
+[2.110051] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/lease_client.py to lease_client.cpython-310.pyc\n'}
+[2.110330] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/rpc/client.py to client.cpython-310.pyc\n'}
+[2.111213] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/__init__.py to __init__.cpython-310.pyc\n'}
+[2.111610] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg/dds_/_Time_.py to _Time_.cpython-310.pyc\n'}
+[2.112284] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.112689] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/builtin_interfaces/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.112933] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/__init__.py to __init__.cpython-310.pyc\n'}
+[2.113254] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_/_MapMetaData_.py to _MapMetaData_.cpython-310.pyc\n'}
+[2.114159] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.115160] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_/_OccupancyGrid_.py to _OccupancyGrid_.cpython-310.pyc\n'}
+[2.115384] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/dds_/_Odometry_.py to _Odometry_.cpython-310.pyc\n'}
+[2.115939] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/nav_msgs/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.116094] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/default.py to default.cpython-310.pyc\n'}
+[2.121079] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/__init__.py to __init__.cpython-310.pyc\n'}
+[2.121678] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsCmd_.py to _BmsCmd_.cpython-310.pyc\n'}
+[2.122275] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmds_.py to _MotorCmds_.cpython-310.pyc\n'}
+[2.122535] (explore_lite_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.123019] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_WirelessController_.py to _WirelessController_.cpython-310.pyc\n'}
+[2.123199] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_InterfaceConfig_.py to _InterfaceConfig_.cpython-310.pyc\n'}
+[2.123631] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_Error_.py to _Error_.cpython-310.pyc\n'}
+[2.123843] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_Go2FrontVideoData_.py to _Go2FrontVideoData_.cpython-310.pyc\n'}
+[2.124219] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_TimeSpec_.py to _TimeSpec_.cpython-310.pyc\n'}
+[2.124621] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_LowState_.py to _LowState_.cpython-310.pyc\n'}
+[2.125266] (go2_nav) JobEnded: {'identifier': 'go2_nav', 'rc': 0}
+[2.125816] (-) TimerEvent: {}
+[2.126213] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_AudioData_.py to _AudioData_.cpython-310.pyc\n'}
+[2.126352] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsState_.py to _BmsState_.cpython-310.pyc\n'}
+[2.126452] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_LowCmd_.py to _LowCmd_.cpython-310.pyc\n'}
+[2.126617] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_SportModeState_.py to _SportModeState_.cpython-310.pyc\n'}
+[2.127076] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_LidarState_.py to _LidarState_.cpython-310.pyc\n'}
+[2.127526] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorState_.py to _MotorState_.cpython-310.pyc\n'}
+[2.127948] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmd_.py to _MotorCmd_.cpython-310.pyc\n'}
+[2.128357] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbSwitch_.py to _UwbSwitch_.cpython-310.pyc\n'}
+[2.128725] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.129343] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbState_.py to _UwbState_.cpython-310.pyc\n'}
+[2.129797] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_Req_.py to _Req_.cpython-310.pyc\n'}
+[2.130185] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_HeightMap_.py to _HeightMap_.cpython-310.pyc\n'}
+[2.130617] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_Res_.py to _Res_.cpython-310.pyc\n'}
+[2.131004] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_IMUState_.py to _IMUState_.cpython-310.pyc\n'}
+[2.131426] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_PathPoint_.py to _PathPoint_.cpython-310.pyc\n'}
+[2.131824] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorStates_.py to _MotorStates_.cpython-310.pyc\n'}
+[2.132251] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_go/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.132592] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/__init__.py to __init__.cpython-310.pyc\n'}
+[2.132952] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointCloud2_.py to _PointCloud2_.cpython-310.pyc\n'}
+[2.133445] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.133762] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/__init__.py to __init__.cpython-310.pyc\n'}
+[2.134138] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/_PointField_.py to _PointField_.cpython-310.pyc\n'}
+[2.134512] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointField_.py to _PointField_.cpython-310.pyc\n'}
+[2.134910] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/sensor_msgs/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.135245] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/__init__.py to __init__.cpython-310.pyc\n'}
+[2.135579] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/__init__.py to __init__.cpython-310.pyc\n'}
+[2.135925] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/dds_/_String_.py to _String_.cpython-310.pyc\n'}
+[2.136360] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.136667] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/dds_/_Header_.py to _Header_.cpython-310.pyc\n'}
+[2.137118] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/std_msgs/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.137450] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/__init__.py to __init__.cpython-310.pyc\n'}
+[2.137778] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseStatus_.py to _ResponseStatus_.cpython-310.pyc\n'}
+[2.138196] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestPolicy_.py to _RequestPolicy_.cpython-310.pyc\n'}
+[2.138600] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_Request_.py to _Request_.cpython-310.pyc\n'}
+[2.138981] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestIdentity_.py to _RequestIdentity_.cpython-310.pyc\n'}
+[2.139354] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestLease_.py to _RequestLease_.cpython-310.pyc\n'}
+[2.139725] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestHeader_.py to _RequestHeader_.cpython-310.pyc\n'}
+[2.140099] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.140471] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_Response_.py to _Response_.cpython-310.pyc\n'}
+[2.140866] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseHeader_.py to _ResponseHeader_.cpython-310.pyc\n'}
+[2.141279] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_api/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.141614] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.141955] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsCmd_.py to _BmsCmd_.cpython-310.pyc\n'}
+[2.142387] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandCmd_.py to _HandCmd_.cpython-310.pyc\n'}
+[2.142786] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowState_.py to _LowState_.cpython-310.pyc\n'}
+[2.143242] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_PressSensorState_.py to _PressSensorState_.cpython-310.pyc\n'}
+[2.143643] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsState_.py to _BmsState_.cpython-310.pyc\n'}
+[2.144117] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MainBoardState_.py to _MainBoardState_.cpython-310.pyc\n'}
+[2.144519] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowCmd_.py to _LowCmd_.cpython-310.pyc\n'}
+[2.144927] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandState_.py to _HandState_.cpython-310.pyc\n'}
+[2.145391] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorState_.py to _MotorState_.cpython-310.pyc\n'}
+[2.145834] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorCmd_.py to _MotorCmd_.cpython-310.pyc\n'}
+[2.146236] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.146624] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/dds_/_IMUState_.py to _IMUState_.cpython-310.pyc\n'}
+[2.147057] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/unitree_hg/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.147437] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/__init__.py to __init__.cpython-310.pyc\n'}
+[2.148271] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistStamped_.py to _TwistStamped_.cpython-310.pyc\n'}
+[2.148685] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose2D_.py to _Pose2D_.cpython-310.pyc\n'}
+[2.149193] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Vector3_.py to _Vector3_.cpython-310.pyc\n'}
+[2.150029] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovarianceStamped_.py to _PoseWithCovarianceStamped_.cpython-310.pyc\n'}
+[2.150193] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose_.py to _Pose_.cpython-310.pyc\n'}
+[2.150676] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PointStamped_.py to _PointStamped_.cpython-310.pyc\n'}
+[2.151115] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovariance_.py to _PoseWithCovariance_.cpython-310.pyc\n'}
+[2.151549] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseStamped_.py to _PoseStamped_.cpython-310.pyc\n'}
+[2.152010] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point_.py to _Point_.cpython-310.pyc\n'}
+[2.152185] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_QuaternionStamped_.py to _QuaternionStamped_.cpython-310.pyc\n'}
+[2.152675] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/__init__.py to __init__.cpython-310.pyc\n'}
+[2.153191] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovariance_.py to _TwistWithCovariance_.cpython-310.pyc\n'}
+[2.153333] (multirobot_map_merge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.153567] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovarianceStamped_.py to _TwistWithCovarianceStamped_.cpython-310.pyc\n'}
+[2.153785] (multirobot_map_merge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.153915] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point32_.py to _Point32_.cpython-310.pyc\n'}
+[2.154142] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Twist_.py to _Twist_.cpython-310.pyc\n'}
+[2.154542] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Quaternion_.py to _Quaternion_.cpython-310.pyc\n'}
+[2.154962] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/idl/geometry_msgs/msg/__init__.py to __init__.cpython-310.pyc\n'}
+[2.155303] (unitree_sdk2py) StdoutLine: {'line': b'byte-compiling /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/as2/__init__.py to __init__.cpython-310.pyc\n'}
+[2.155602] (unitree_sdk2py) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.159238] (unitree_sdk2py) StdoutLine: {'line': b'Copying ../../build/unitree_sdk2py/unitree_sdk2py.egg-info to /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py-1.0.1-py3.10.egg-info\n'}
+[2.160503] (unitree_sdk2py) StdoutLine: {'line': b'running install_scripts\n'}
+[2.170951] (explore_lite_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.187597] (explore_lite_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/explore_lite_msgs\n'}
+[2.203897] (unitree_sdk2py) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/unitree_sdk2py/install.log'\n"}
+[2.205276] (explore_lite_msgs) CommandEnded: {'returncode': 0}
+[2.206351] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'build'}
+[2.208085] (explore_lite_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/explore_lite_msgs', '--', '-j8', '-l8'], 'cwd': '/workspace/build/explore_lite_msgs', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.226004] (-) TimerEvent: {}
+[2.235869] (multirobot_map_merge) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.258133] (multirobot_map_merge) StdoutLine: {'line': b'-- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)\n'}
+[2.265088] (explore_lite_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.272604] (unitree_sdk2py) CommandEnded: {'returncode': 0}
+[2.278646] (explore_lite_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.279211] (explore_lite_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[2.288628] (unitree_sdk2py) JobEnded: {'identifier': 'unitree_sdk2py', 'rc': 0}
+[2.292385] (explore_lite_msgs) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_explore_lite_msgs\n'}
+[2.306685] (multirobot_map_merge) StdoutLine: {'line': b'-- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)\n'}
+[2.326133] (-) TimerEvent: {}
+[2.368260] (multirobot_map_merge) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.390404] (multirobot_map_merge) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.392562] (multirobot_map_merge) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.392786] (multirobot_map_merge) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.426224] (-) TimerEvent: {}
+[2.527538] (-) TimerEvent: {}
+[2.609207] (explore_lite_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.610409] (explore_lite_msgs) StdoutLine: {'line': b'creating explore_lite_msgs.egg-info\n'}
+[2.610689] (explore_lite_msgs) StdoutLine: {'line': b'writing explore_lite_msgs.egg-info/PKG-INFO\n'}
+[2.611048] (explore_lite_msgs) StdoutLine: {'line': b'writing dependency_links to explore_lite_msgs.egg-info/dependency_links.txt\n'}
+[2.611363] (explore_lite_msgs) StdoutLine: {'line': b'writing top-level names to explore_lite_msgs.egg-info/top_level.txt\n'}
+[2.611621] (explore_lite_msgs) StdoutLine: {'line': b"writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'\n"}
+[2.614556] (explore_lite_msgs) StdoutLine: {'line': b"reading manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'\n"}
+[2.615419] (explore_lite_msgs) StdoutLine: {'line': b"writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'\n"}
+[2.627641] (-) TimerEvent: {}
+[2.636958] (multirobot_map_merge) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):\n'}
+[2.637540] (multirobot_map_merge) StderrLine: {'line': b'  Could NOT find Boost (missing: Boost_INCLUDE_DIR thread)\n'}
+[2.637686] (multirobot_map_merge) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.637789] (multirobot_map_merge) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)\n'}
+[2.637886] (multirobot_map_merge) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindBoost.cmake:2360 (find_package_handle_standard_args)\n'}
+[2.637982] (multirobot_map_merge) StderrLine: {'line': b'  CMakeLists.txt:29 (find_package)\n'}
+[2.638071] (multirobot_map_merge) StderrLine: {'line': b'\n'}
+[2.638159] (multirobot_map_merge) StderrLine: {'line': b'\x1b[0m\n'}
+[2.638247] (multirobot_map_merge) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.638356] (multirobot_map_merge) StdoutLine: {'line': b'See also "/workspace/build/multirobot_map_merge/CMakeFiles/CMakeOutput.log".\n'}
+[2.664812] (multirobot_map_merge) CommandEnded: {'returncode': 1}
+[2.684820] (explore_lite_msgs) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_explore_lite_msgs_egg\n'}
+[2.694967] (multirobot_map_merge) JobEnded: {'identifier': 'multirobot_map_merge', 'rc': 1}
+[2.722891] (explore_lite_msgs) StdoutLine: {'line': b'[  9%] Built target explore_lite_msgs__rs\n'}
+[2.727849] (-) TimerEvent: {}
+[2.735371] (explore_lite_msgs) StdoutLine: {'line': b'[  9%] Built target explore_lite_msgs__cpp\n'}
+[2.748294] (explore_lite_msgs) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.748718] (explore_lite_msgs) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.749182] (explore_lite_msgs) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.762508] (explore_lite_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_c.dir/rosidl_generator_c/explore_lite_msgs/msg/detail/explore_status__functions.c.o\x1b[0m\n'}
+[2.827960] (-) TimerEvent: {}
+[2.839658] (explore_lite_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libexplore_lite_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.888206] (explore_lite_msgs) StdoutLine: {'line': b'[ 25%] Built target explore_lite_msgs__rosidl_generator_c\n'}
+[2.902241] (explore_lite_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.902675] (explore_lite_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.902803] (explore_lite_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.928144] (-) TimerEvent: {}
+[3.029649] (-) TimerEvent: {}
+[3.131038] (-) TimerEvent: {}
+[3.170407] (explore_lite_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/explore_lite_msgs/msg/explore_status__type_support.cpp.o\x1b[0m\n'}
+[3.194619] (explore_lite_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/explore_lite_msgs/msg/detail/explore_status__type_support.cpp.o\x1b[0m\n'}
+[3.209385] (explore_lite_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/explore_lite_msgs/msg/detail/dds_fastrtps/explore_status__type_support.cpp.o\x1b[0m\n'}
+[3.231188] (-) TimerEvent: {}
+[3.328429] (explore_lite_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/explore_lite_msgs/msg/explore_status__type_support.cpp.o\x1b[0m\n'}
+[3.331365] (-) TimerEvent: {}
+[3.367734] (explore_lite_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/explore_lite_msgs/msg/detail/explore_status__type_support.c.o\x1b[0m\n'}
+[3.368186] (explore_lite_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/explore_lite_msgs/msg/detail/explore_status__type_support_c.cpp.o\x1b[0m\n'}
+[3.376785] (explore_lite_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.423657] (explore_lite_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libexplore_lite_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.431522] (-) TimerEvent: {}
+[3.434751] (explore_lite_msgs) StdoutLine: {'line': b'[ 59%] Built target explore_lite_msgs__rosidl_typesupport_c\n'}
+[3.465905] (explore_lite_msgs) StdoutLine: {'line': b'[ 59%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c\n'}
+[3.531682] (-) TimerEvent: {}
+[3.632319] (-) TimerEvent: {}
+[3.645211] (explore_lite_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.701969] (explore_lite_msgs) StdoutLine: {'line': b'[ 62%] Built target explore_lite_msgs__rosidl_typesupport_cpp\n'}
+[3.732452] (-) TimerEvent: {}
+[3.833099] (-) TimerEvent: {}
+[3.850786] (explore_lite_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.891375] (explore_lite_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.933266] (-) TimerEvent: {}
+[3.949653] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.950154] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.021992] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.033392] (-) TimerEvent: {}
+[4.065600] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.096191] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs\n'}
+[4.124096] (explore_lite_msgs) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.133472] (-) TimerEvent: {}
+[4.233910] (-) TimerEvent: {}
+[4.334412] (-) TimerEvent: {}
+[4.434907] (-) TimerEvent: {}
+[4.535361] (-) TimerEvent: {}
+[4.635835] (-) TimerEvent: {}
+[4.669413] (explore_lite_msgs) StdoutLine: {'line': b'[ 75%] Built target explore_lite_msgs__py\n'}
+[4.698572] (explore_lite_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_py.dir/rosidl_generator_py/explore_lite_msgs/msg/_explore_status_s.c.o\x1b[0m\n'}
+[4.735952] (-) TimerEvent: {}
+[4.836545] (-) TimerEvent: {}
+[4.856475] (explore_lite_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/libexplore_lite_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.913619] (explore_lite_msgs) StdoutLine: {'line': b'[ 81%] Built target explore_lite_msgs__rosidl_generator_py\n'}
+[4.936707] (-) TimerEvent: {}
+[4.941508] (explore_lite_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.941895] (explore_lite_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.942028] (explore_lite_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.036857] (-) TimerEvent: {}
+[5.084954] (explore_lite_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[5.085481] (explore_lite_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[5.093807] (explore_lite_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[5.130583] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target explore_lite_msgs__rosidl_typesupport_c__pyext\n'}
+[5.130999] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.136930] (-) TimerEvent: {}
+[5.141274] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.159749] (explore_lite_msgs) JobEnded: {'identifier': 'explore_lite_msgs', 'rc': 'SIGINT'}
+[5.171306] (explore_lite) JobSkipped: {'identifier': 'explore_lite'}
+[5.171631] (-) EventReactorShutdown: {}

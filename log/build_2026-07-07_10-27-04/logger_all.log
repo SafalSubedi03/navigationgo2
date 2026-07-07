@@ -1,0 +1,525 @@
+[0.261s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.261s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff9ca365f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9ca36140>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9ca36140>>, mixin_verb=('build',))
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.486s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.487s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.488s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.489s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.489s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extensions ['ignore', 'ignore_ament_install']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extension 'ignore'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extension 'ignore_ament_install'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extensions ['colcon_pkg']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extension 'colcon_pkg'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extensions ['colcon_meta']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extension 'colcon_meta'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extensions ['ros']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(cyclonedds) by extension 'ros'
+[0.517s] DEBUG:colcon.colcon_core.package_identification:Package 'cyclonedds' with type 'ros.cmake' and name 'cyclonedds'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'ignore'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'ignore_ament_install'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extensions ['colcon_pkg']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'colcon_pkg'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extensions ['colcon_meta']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'colcon_meta'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extensions ['ros']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'ros'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extensions ['cmake', 'python']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'cmake'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'python'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extensions ['python_setup_py']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk) by extension 'python_setup_py'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extensions ['ignore', 'ignore_ament_install']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'ignore'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'ignore_ament_install'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extensions ['colcon_pkg']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'colcon_pkg'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extensions ['colcon_meta']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'colcon_meta'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extensions ['ros']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'ros'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extensions ['cmake', 'python']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'cmake'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'python'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extensions ['python_setup_py']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(sdk/unitree_sdk2_python) by extension 'python_setup_py'
+[0.873s] DEBUG:colcon.colcon_core.package_identification:Package 'sdk/unitree_sdk2_python' with type 'python' and name 'unitree_sdk2py'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.875s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'ignore'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'ignore_ament_install'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['colcon_pkg']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'colcon_pkg'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['colcon_meta']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'colcon_meta'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extensions ['ros']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_nav) by extension 'ros'
+[0.878s] DEBUG:colcon.colcon_core.package_identification:Package 'src/go2_nav' with type 'ros.ament_python' and name 'go2_nav'
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extension 'ignore'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extension 'ignore_ament_install'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extensions ['colcon_pkg']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extension 'colcon_pkg'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extensions ['colcon_meta']
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extension 'colcon_meta'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extensions ['ros']
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_vision) by extension 'ros'
+[0.881s] DEBUG:colcon.colcon_core.package_identification:Package 'src/go2_vision' with type 'ros.ament_python' and name 'go2_vision'
+[0.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore_ament_install'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_pkg']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_pkg'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_meta']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_meta'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ros']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ros'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['cmake', 'python']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'cmake'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['python_setup_py']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python_setup_py'
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ignore', 'ignore_ament_install']
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore'
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore_ament_install'
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_pkg']
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_pkg'
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_meta']
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_meta'
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ros']
+[0.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ros'
+[0.885s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/explore' with type 'ros.ament_cmake' and name 'explore_lite'
+[0.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ignore'
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ignore_ament_install'
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['colcon_pkg']
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'colcon_pkg'
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['colcon_meta']
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'colcon_meta'
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['ros']
+[0.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ros'
+[0.887s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/explore_lite_msgs' with type 'ros.ament_cmake' and name 'explore_lite_msgs'
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['ignore', 'ignore_ament_install']
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ignore'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ignore_ament_install'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['colcon_pkg']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'colcon_pkg'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['colcon_meta']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'colcon_meta'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['ros']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ros'
+[0.891s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/map_merge' with type 'ros.ament_cmake' and name 'multirobot_map_merge'
+[0.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.928s] INFO:colcon.colcon_metadata.metadata.colcon_pkg:Updating descriptor of package 'cyclonedds' from colcon.pkg: {'cmake-args': ['-DBUILD_IDLC=AUTO']}
+[0.929s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:unitree_sdk2py depends on cyclonedds which has version 0.10.2 which satisfies to be equal to 0.10.2
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'cmake_args' from command line to 'None'
+[0.931s] Level 5:colcon.colcon_core.verb:overwrite package 'cyclonedds' build argument 'cmake_args' from package metadata with '['-DBUILD_IDLC=AUTO']' (before: 'None')
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'cmake_target' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'cmake_clean_cache' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'cmake_clean_first' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'cmake_force_configure' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'ament_cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'catkin_cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'cyclonedds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.932s] DEBUG:colcon.colcon_core.verb:Building package 'cyclonedds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/cyclonedds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_IDLC=AUTO'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/cyclonedds', 'merge_install': False, 'path': '/workspace/cyclonedds', 'symlink_install': False, 'test_result_base': None}
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.933s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/explore_lite_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/explore_lite_msgs', 'merge_install': False, 'path': '/workspace/src/m-explore-ros2/explore_lite_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_target' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.934s] DEBUG:colcon.colcon_core.verb:Building package 'go2_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/go2_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/go2_nav', 'merge_install': False, 'path': '/workspace/src/go2_nav', 'symlink_install': False, 'test_result_base': None}
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'cmake_target' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'go2_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.935s] DEBUG:colcon.colcon_core.verb:Building package 'go2_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/go2_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/go2_vision', 'merge_install': False, 'path': '/workspace/src/go2_vision', 'symlink_install': False, 'test_result_base': None}
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_args' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_first' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_force_configure' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'ament_cmake_args' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.935s] DEBUG:colcon.colcon_core.verb:Building package 'multirobot_map_merge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/multirobot_map_merge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/multirobot_map_merge', 'merge_install': False, 'path': '/workspace/src/m-explore-ros2/map_merge', 'symlink_install': False, 'test_result_base': None}
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_cache' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_first' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_force_configure' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'ament_cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.936s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/explore_lite', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/explore_lite', 'merge_install': False, 'path': '/workspace/src/m-explore-ros2/explore', 'symlink_install': False, 'test_result_base': None}
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'cmake_target' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'cmake_clean_first' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'cmake_force_configure' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'ament_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'unitree_sdk2py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.937s] DEBUG:colcon.colcon_core.verb:Building package 'unitree_sdk2py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/unitree_sdk2py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/unitree_sdk2py', 'merge_install': False, 'path': '/workspace/sdk/unitree_sdk2_python', 'symlink_install': False, 'test_result_base': None}
+[0.937s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.939s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.940s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/workspace/cyclonedds' with build type 'cmake'
+[0.940s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/cyclonedds'
+[0.946s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.947s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.947s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.955s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/src/m-explore-ros2/explore_lite_msgs' with build type 'ament_cmake'
+[0.956s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/src/m-explore-ros2/explore_lite_msgs'
+[0.956s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.956s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.961s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/src/go2_nav' with build type 'ament_python'
+[0.961s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_nav', 'ament_prefix_path')
+[0.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_nav/share/go2_nav/hook/ament_prefix_path.ps1'
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/go2_nav/share/go2_nav/hook/ament_prefix_path.dsv'
+[0.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_nav/share/go2_nav/hook/ament_prefix_path.sh'
+[0.966s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.966s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.971s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/src/go2_vision' with build type 'ament_python'
+[0.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_vision', 'ament_prefix_path')
+[0.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_vision/share/go2_vision/hook/ament_prefix_path.ps1'
+[0.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/go2_vision/share/go2_vision/hook/ament_prefix_path.dsv'
+[0.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_vision/share/go2_vision/hook/ament_prefix_path.sh'
+[0.974s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.974s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.979s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/src/m-explore-ros2/map_merge' with build type 'ament_cmake'
+[0.979s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/src/m-explore-ros2/map_merge'
+[0.979s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.979s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/cyclonedds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/cyclonedds -- -j8 -l8
+[0.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/explore_lite_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/explore_lite_msgs -- -j8 -l8
+[1.381s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/src/go2_nav'
+[1.381s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.381s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.731s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/src/go2_vision'
+[1.732s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.732s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/cyclonedds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/cyclonedds -- -j8 -l8
+[1.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/cyclonedds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/cyclonedds
+[1.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/multirobot_map_merge -- -j8 -l8
+[1.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/explore_lite_msgs -- -j8 -l8
+[1.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/explore_lite_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/explore_lite_msgs
+[1.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('cyclonedds', 'pkg_config_path')
+[1.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/pkg_config_path.ps1'
+[1.814s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/cyclonedds/share/cyclonedds/hook/pkg_config_path.dsv'
+[1.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/pkg_config_path.sh'
+[1.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('cyclonedds', 'pkg_config_path_multiarch')
+[1.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/pkg_config_path_multiarch.ps1'
+[1.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/cyclonedds/share/cyclonedds/hook/pkg_config_path_multiarch.dsv'
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/pkg_config_path_multiarch.sh'
+[1.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cyclonedds)
+[1.839s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/cyclonedds' for CMake module files
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/cyclonedds' for CMake config files
+[1.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('cyclonedds', 'cmake_prefix_path')
+[1.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/cmake_prefix_path.ps1'
+[1.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/cyclonedds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/cyclonedds
+[1.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/cyclonedds/share/cyclonedds/hook/cmake_prefix_path.dsv'
+[1.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/cmake_prefix_path.sh'
+[1.852s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/cyclonedds/lib'
+[1.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('cyclonedds', 'ld_library_path_lib')
+[1.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/ld_library_path_lib.ps1'
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/cyclonedds/share/cyclonedds/hook/ld_library_path_lib.dsv'
+[1.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/ld_library_path_lib.sh'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/cyclonedds/bin'
+[1.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('cyclonedds', 'path')
+[1.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/path.ps1'
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/cyclonedds/share/cyclonedds/hook/path.dsv'
+[1.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/path.sh'
+[1.859s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/cyclonedds/lib/pkgconfig/cyclonedds.pc'
+[1.860s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/cyclonedds/lib/python3.10/site-packages'
+[1.861s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/cyclonedds/bin'
+[1.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('cyclonedds', 'pythonscriptspath')
+[1.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/pythonscriptspath.ps1'
+[1.869s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/cyclonedds/share/cyclonedds/hook/pythonscriptspath.dsv'
+[1.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/cyclonedds/share/cyclonedds/hook/pythonscriptspath.sh'
+[1.878s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/cyclonedds/share/cyclonedds/package.ps1'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/cyclonedds/share/cyclonedds/package.dsv'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/cyclonedds/share/cyclonedds/package.sh'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/cyclonedds/share/cyclonedds/package.bash'
+[1.926s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/cyclonedds/share/cyclonedds/package.zsh'
+[1.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/cyclonedds/share/colcon-core/packages/cyclonedds)
+[1.931s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/sdk/unitree_sdk2_python'
+[1.931s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.931s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.938s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[1.939s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs' for CMake module files
+[1.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/explore_lite_msgs
+[1.940s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs' for CMake config files
+[1.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[1.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[1.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[1.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[1.945s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/lib'
+[1.945s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[1.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[1.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[1.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[1.948s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/bin'
+[1.948s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[1.948s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/lib/python3.10/site-packages'
+[1.949s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/bin'
+[1.949s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[1.950s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[1.951s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[1.952s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[1.953s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[1.953s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[1.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[1.955s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs' for CMake module files
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs' for CMake config files
+[1.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[1.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[1.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[1.960s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/lib'
+[1.961s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[1.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[1.962s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[1.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/bin'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/lib/python3.10/site-packages'
+[1.964s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite_msgs/bin'
+[1.964s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[1.965s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[1.966s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[1.967s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[1.968s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[1.968s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[1.970s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/src/m-explore-ros2/explore' with build type 'ament_cmake'
+[1.970s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/src/m-explore-ros2/explore'
+[1.971s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.971s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.351s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_wheel, register, symlink_data, install_scripts, build_scripts, upload_docs, build_py, install_data, easy_install, install, egg_info, dist_info, bdist_dumb, bdist_rpm, clean, sdist, alias, build_clib, bdist, install_lib, develop, install_headers, setopt, build, check, install_egg_info, upload, test, bdist_egg, rotate, build_ext, saveopts
+[2.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/explore_lite': AMENT_PREFIX_PATH=/workspace/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/build/explore_lite -- -j8 -l8
+[2.354s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_wheel, register, symlink_data, install_scripts, build_scripts, upload_docs, build_py, install_data, easy_install, install, egg_info, dist_info, bdist_dumb, bdist_rpm, clean, sdist, alias, build_clib, bdist, install_lib, develop, install_headers, setopt, build, check, install_egg_info, upload, test, bdist_egg, rotate, build_ext, saveopts
+[2.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/src/go2_nav': PYTHONPATH=/workspace/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /workspace/build/go2_nav/build install --record /workspace/build/go2_nav/install.log --install-scripts $base/lib/go2_nav --single-version-externally-managed install_data
+[2.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/src/go2_vision': PYTHONPATH=/workspace/build/go2_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_vision build --build-base /workspace/build/go2_vision/build install --record /workspace/build/go2_vision/install.log --install-scripts $base/lib/go2_vision --single-version-externally-managed install_data
+[2.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/multirobot_map_merge -- -j8 -l8
+[2.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/multirobot_map_merge
+[2.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[2.385s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge' for CMake module files
+[2.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/multirobot_map_merge
+[2.387s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge' for CMake config files
+[2.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[2.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[2.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[2.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/lib'
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/bin'
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/lib/python3.10/site-packages'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/bin'
+[2.393s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[2.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[2.394s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[2.395s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[2.396s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[2.397s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[2.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[2.398s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge' for CMake module files
+[2.399s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge' for CMake config files
+[2.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[2.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[2.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[2.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[2.403s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/lib'
+[2.404s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/bin'
+[2.404s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[2.404s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/lib/python3.10/site-packages'
+[2.405s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/multirobot_map_merge/bin'
+[2.405s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[2.406s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[2.407s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[2.408s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[2.409s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[2.410s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[2.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/workspace/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/build/explore_lite -- -j8 -l8
+[2.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/explore_lite': AMENT_PREFIX_PATH=/workspace/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/build/explore_lite
+[2.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[2.542s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite' for CMake module files
+[2.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/workspace/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/explore_lite_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/build/explore_lite
+[2.543s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite' for CMake config files
+[2.544s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[2.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[2.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[2.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[2.548s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/lib'
+[2.548s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/bin'
+[2.548s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[2.548s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/lib/python3.10/site-packages'
+[2.549s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/bin'
+[2.549s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.ps1'
+[2.550s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/explore_lite/share/explore_lite/package.dsv'
+[2.551s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.sh'
+[2.552s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.bash'
+[2.552s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.zsh'
+[2.553s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/explore_lite/share/colcon-core/packages/explore_lite)
+[2.554s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[2.554s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite' for CMake module files
+[2.555s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite' for CMake config files
+[2.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[2.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[2.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[2.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[2.558s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/lib'
+[2.558s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/bin'
+[2.558s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/lib/python3.10/site-packages'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/explore_lite/bin'
+[2.560s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.ps1'
+[2.561s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/explore_lite/share/explore_lite/package.dsv'
+[2.562s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.sh'
+[2.562s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.bash'
+[2.563s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/explore_lite/share/explore_lite/package.zsh'
+[2.564s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/explore_lite/share/colcon-core/packages/explore_lite)
+[2.818s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_vision' for CMake module files
+[2.820s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/src/go2_vision' returned '0': PYTHONPATH=/workspace/build/go2_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_vision build --build-base /workspace/build/go2_vision/build install --record /workspace/build/go2_vision/install.log --install-scripts $base/lib/go2_vision --single-version-externally-managed install_data
+[2.821s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_vision' for CMake config files
+[2.823s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_vision/lib'
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_vision/bin'
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_vision/lib/pkgconfig/go2_vision.pc'
+[2.825s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_vision/lib/python3.10/site-packages'
+[2.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_vision', 'pythonpath')
+[2.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_vision/share/go2_vision/hook/pythonpath.ps1'
+[2.827s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/go2_vision/share/go2_vision/hook/pythonpath.dsv'
+[2.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_vision/share/go2_vision/hook/pythonpath.sh'
+[2.831s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_vision/bin'
+[2.832s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(go2_vision)
+[2.833s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_vision/share/go2_vision/package.ps1'
+[2.835s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/go2_vision/share/go2_vision/package.dsv'
+[2.837s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_vision/share/go2_vision/package.sh'
+[2.838s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_vision/share/go2_vision/package.bash'
+[2.839s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_vision/share/go2_vision/package.zsh'
+[2.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/go2_vision/share/colcon-core/packages/go2_vision)
+[2.842s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_nav' for CMake module files
+[2.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/src/go2_nav' returned '0': PYTHONPATH=/workspace/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_nav build --build-base /workspace/build/go2_nav/build install --record /workspace/build/go2_nav/install.log --install-scripts $base/lib/go2_nav --single-version-externally-managed install_data
+[2.846s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_nav' for CMake config files
+[2.849s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_nav/lib'
+[2.849s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_nav/bin'
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_nav/lib/pkgconfig/go2_nav.pc'
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_nav/lib/python3.10/site-packages'
+[2.850s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_nav', 'pythonpath')
+[2.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_nav/share/go2_nav/hook/pythonpath.ps1'
+[2.852s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/go2_nav/share/go2_nav/hook/pythonpath.dsv'
+[2.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/go2_nav/share/go2_nav/hook/pythonpath.sh'
+[2.853s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/go2_nav/bin'
+[2.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(go2_nav)
+[2.854s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_nav/share/go2_nav/package.ps1'
+[2.855s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/go2_nav/share/go2_nav/package.dsv'
+[2.856s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_nav/share/go2_nav/package.sh'
+[2.857s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_nav/share/go2_nav/package.bash'
+[2.858s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/go2_nav/share/go2_nav/package.zsh'
+[2.859s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/go2_nav/share/colcon-core/packages/go2_nav)
+[2.862s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_wheel, register, symlink_data, install_scripts, build_scripts, upload_docs, build_py, install_data, easy_install, install, egg_info, dist_info, bdist_dumb, bdist_rpm, clean, sdist, alias, build_clib, bdist, install_lib, develop, install_headers, setopt, build, check, install_egg_info, upload, test, bdist_egg, rotate, build_ext, saveopts
+[2.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/sdk/unitree_sdk2_python': CMAKE_PREFIX_PATH=/workspace/install/cyclonedds LD_LIBRARY_PATH=/workspace/install/cyclonedds/lib:${LD_LIBRARY_PATH} PATH=/workspace/install/cyclonedds/bin:${PATH} PKG_CONFIG_PATH=/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig PYTHONPATH=/workspace/build/unitree_sdk2py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/unitree_sdk2py build --build-base /workspace/build/unitree_sdk2py/build install --record /workspace/build/unitree_sdk2py/install.log --single-version-externally-managed
+[3.344s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/unitree_sdk2py' for CMake module files
+[3.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/sdk/unitree_sdk2_python' returned '0': CMAKE_PREFIX_PATH=/workspace/install/cyclonedds LD_LIBRARY_PATH=/workspace/install/cyclonedds/lib:${LD_LIBRARY_PATH} PATH=/workspace/install/cyclonedds/bin:${PATH} PKG_CONFIG_PATH=/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig PYTHONPATH=/workspace/build/unitree_sdk2py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/unitree_sdk2py build --build-base /workspace/build/unitree_sdk2py/build install --record /workspace/build/unitree_sdk2py/install.log --single-version-externally-managed
+[3.347s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/unitree_sdk2py' for CMake config files
+[3.359s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/unitree_sdk2py/lib'
+[3.359s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/unitree_sdk2py/bin'
+[3.359s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/unitree_sdk2py/lib/pkgconfig/unitree_sdk2py.pc'
+[3.360s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages'
+[3.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_sdk2py', 'pythonpath')
+[3.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/hook/pythonpath.ps1'
+[3.362s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/hook/pythonpath.dsv'
+[3.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/hook/pythonpath.sh'
+[3.366s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/unitree_sdk2py/bin'
+[3.366s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_sdk2py)
+[3.367s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/package.ps1'
+[3.369s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/package.dsv'
+[3.371s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/package.sh'
+[3.372s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/package.bash'
+[3.373s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/unitree_sdk2py/share/unitree_sdk2py/package.zsh'
+[3.374s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/unitree_sdk2py/share/colcon-core/packages/unitree_sdk2py)
+[3.375s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.376s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.376s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.377s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.398s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.398s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.398s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.398s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.398s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[3.399s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.399s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/local_setup.ps1'
+[3.403s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/install/_local_setup_util_ps1.py'
+[3.408s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/setup.ps1'
+[3.410s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/local_setup.sh'
+[3.412s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/install/_local_setup_util_sh.py'
+[3.413s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/setup.sh'
+[3.414s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/local_setup.bash'
+[3.416s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/setup.bash'
+[3.419s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/local_setup.zsh'
+[3.420s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/setup.zsh'

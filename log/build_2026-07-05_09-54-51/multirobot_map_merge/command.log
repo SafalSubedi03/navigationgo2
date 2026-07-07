@@ -1,0 +1,2 @@
+Invoking command in '/workspace/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/src/m-explore-ros2/map_merge -DCMAKE_INSTALL_PREFIX=/workspace/install/multirobot_map_merge
+Invoked command in '/workspace/build/multirobot_map_merge' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/src/m-explore-ros2/map_merge -DCMAKE_INSTALL_PREFIX=/workspace/install/multirobot_map_merge

@@ -1,5 +1,6 @@
 import os
 import sys
+os.environ["RMW_IMPLEMENTATION"] = "rmw_fastrtps_cpp"
 import time
 import rclpy
 from rclpy.node import Node

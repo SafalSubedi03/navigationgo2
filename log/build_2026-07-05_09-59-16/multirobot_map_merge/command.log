@@ -1,0 +1,6 @@
+Invoking command in '/workspace/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/src/m-explore-ros2/map_merge -DCMAKE_INSTALL_PREFIX=/workspace/install/multirobot_map_merge
+Invoked command in '/workspace/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/src/m-explore-ros2/map_merge -DCMAKE_INSTALL_PREFIX=/workspace/install/multirobot_map_merge
+Invoking command in '/workspace/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/multirobot_map_merge -- -j8 -l8
+Invoked command in '/workspace/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/build/multirobot_map_merge -- -j8 -l8
+Invoking command in '/workspace/build/multirobot_map_merge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/multirobot_map_merge
+Invoked command in '/workspace/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/build/multirobot_map_merge

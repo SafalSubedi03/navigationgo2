@@ -14,8 +14,8 @@
 set -e  # stop immediately if any step fails, instead of plowing ahead
 
 echo "=================================================="
-echo "1/5: Installing apt packages (Boost, OpenCV, cv_bridge,"
-echo "     tf2_ros, build tools, Nav2, RTAB-Map)..."
+echo "1/6: Installing apt packages (Boost, OpenCV, cv_bridge,"
+echo "     tf2_ros, build tools, Nav2, RTAB-Map, CycloneDDS RMW)..."
 echo "=================================================="
 apt update
 apt install -y \
@@ -28,10 +28,23 @@ apt install -y \
   python3-pip \
   ros-humble-navigation2 \
   ros-humble-nav2-bringup \
-  ros-humble-rtabmap-ros
+  ros-humble-rtabmap-ros \
+  ros-humble-rmw-cyclonedds-cpp
 
 echo "=================================================="
-echo "2/5: Setting up CycloneDDS..."
+echo "1b/6: Setting RMW_IMPLEMENTATION to match the robot's"
+echo "      host-side LiDAR/odometry service (rmw_cyclonedds_cpp)."
+echo "      Without this, topics like /utlidar/robot_odom will"
+echo "      show up in 'ros2 topic list' but publish NO data when"
+echo "      checked from inside this container."
+echo "=================================================="
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+if ! grep -q "RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" ~/.bashrc; then
+  echo 'export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp' >> ~/.bashrc
+fi
+
+echo "=================================================="
+echo "2/6: Setting up CycloneDDS (Python bindings for the SDK)..."
 echo "=================================================="
 export CYCLONEDDS_HOME=/workspace/cyclonedds/install
 
@@ -58,7 +71,7 @@ echo "Installing/reinstalling cyclonedds Python bindings (version must match: 0.
 pip3 install cyclonedds==0.10.2
 
 echo "=================================================="
-echo "3/5: Checking/fixing NumPy version (cv_bridge needs <2.0)..."
+echo "3/6: Checking/fixing NumPy version (cv_bridge needs <2.0)..."
 echo "=================================================="
 NUMPY_VERSION=$(python3 -c "import numpy; print(numpy.__version__)")
 echo "Current numpy version: $NUMPY_VERSION"
@@ -70,24 +83,26 @@ else
 fi
 
 echo "=================================================="
-echo "4/5: Persisting CYCLONEDDS_HOME for this and future shells in this container..."
+echo "4/6: Persisting CYCLONEDDS_HOME for this and future shells in this container..."
 echo "=================================================="
-echo 'export CYCLONEDDS_HOME=/workspace/cyclonedds/install' >> ~/.bashrc
+if ! grep -q "CYCLONEDDS_HOME=" ~/.bashrc; then
+  echo 'export CYCLONEDDS_HOME=/workspace/cyclonedds/install' >> ~/.bashrc
+fi
 
 echo "=================================================="
-echo "5/5: Building the workspace..."
+echo "5/6: Building the workspace..."
 echo "=================================================="
 cd /workspace
 source /opt/ros/humble/setup.bash
 colcon build
 
 echo "=================================================="
-echo "Setup complete. To use the workspace in THIS shell, run:"
+echo "6/6: Setup complete. To use the workspace in THIS shell, run:"
 echo "  source /opt/ros/humble/setup.bash"
 echo "  source /workspace/install/setup.bash"
-echo "  export CYCLONEDDS_HOME=/workspace/cyclonedds/install"
 echo ""
 echo "New shells (e.g. via 'docker exec') opened from now on will have"
-echo "CYCLONEDDS_HOME set automatically via ~/.bashrc, but you still need"
-echo "to source the ROS/workspace setup files each time."
+echo "CYCLONEDDS_HOME and RMW_IMPLEMENTATION set automatically via"
+echo "~/.bashrc, but you still need to source the ROS/workspace setup"
+echo "files each time."
 echo "=================================================="

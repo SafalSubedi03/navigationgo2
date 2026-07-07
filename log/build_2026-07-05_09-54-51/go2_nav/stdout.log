@@ -1,0 +1,58 @@
+running egg_info
+creating ../../build/go2_nav/go2_nav.egg-info
+writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt
+writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt
+writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt
+writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/build/go2_nav/build
+creating /workspace/build/go2_nav/build/lib
+creating /workspace/build/go2_nav/build/lib/go2_nav
+copying go2_nav/moveapicall.py -> /workspace/build/go2_nav/build/lib/go2_nav
+copying go2_nav/moveapinode.py -> /workspace/build/go2_nav/build/lib/go2_nav
+copying go2_nav/odomBroadcast.py -> /workspace/build/go2_nav/build/lib/go2_nav
+copying go2_nav/__init__.py -> /workspace/build/go2_nav/build/lib/go2_nav
+copying go2_nav/restamp_node.py -> /workspace/build/go2_nav/build/lib/go2_nav
+running install
+running install_lib
+creating /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav
+copying /workspace/build/go2_nav/build/lib/go2_nav/moveapicall.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav
+copying /workspace/build/go2_nav/build/lib/go2_nav/moveapinode.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav
+copying /workspace/build/go2_nav/build/lib/go2_nav/odomBroadcast.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav
+copying /workspace/build/go2_nav/build/lib/go2_nav/__init__.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav
+copying /workspace/build/go2_nav/build/lib/go2_nav/restamp_node.py -> /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav
+byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapicall.py to moveapicall.cpython-310.pyc
+byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/moveapinode.py to moveapinode.cpython-310.pyc
+byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/odomBroadcast.py to odomBroadcast.cpython-310.pyc
+byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav/restamp_node.py to restamp_node.cpython-310.pyc
+running install_data
+creating /workspace/install/go2_nav/share/ament_index
+creating /workspace/install/go2_nav/share/ament_index/resource_index
+creating /workspace/install/go2_nav/share/ament_index/resource_index/packages
+copying resource/go2_nav -> /workspace/install/go2_nav/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/install/go2_nav/share/go2_nav
+creating /workspace/install/go2_nav/share/go2_nav/launch
+copying launch/slam_explore.launch.py -> /workspace/install/go2_nav/share/go2_nav/launch
+copying launch/navigatio.launch.py -> /workspace/install/go2_nav/share/go2_nav/launch
+copying launch/explore_slam.launch.py -> /workspace/install/go2_nav/share/go2_nav/launch
+creating /workspace/install/go2_nav/share/go2_nav/config
+copying config/nav2_params.yaml -> /workspace/install/go2_nav/share/go2_nav/config
+copying config/nav2_slam_params.yaml -> /workspace/install/go2_nav/share/go2_nav/config
+copying config/explore_lite_params.yaml -> /workspace/install/go2_nav/share/go2_nav/config
+creating /workspace/install/go2_nav/share/go2_nav/maps
+copying maps/rtabmap.pgm -> /workspace/install/go2_nav/share/go2_nav/maps
+copying maps/rtabmap.db -> /workspace/install/go2_nav/share/go2_nav/maps
+copying maps/rtabmap.yaml -> /workspace/install/go2_nav/share/go2_nav/maps
+running install_egg_info
+Copying ../../build/go2_nav/go2_nav.egg-info to /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing go2_sport_bridge script to /workspace/install/go2_nav/lib/go2_nav
+Installing odom_broadcast script to /workspace/install/go2_nav/lib/go2_nav
+Installing restamp_node script to /workspace/install/go2_nav/lib/go2_nav
+writing list of installed files to '/workspace/build/go2_nav/install.log'

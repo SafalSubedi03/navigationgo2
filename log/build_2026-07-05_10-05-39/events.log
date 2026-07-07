@@ -1,0 +1,705 @@
+[0.000000] (-) TimerEvent: {}
+[0.000931] (explore_lite_msgs) JobQueued: {'identifier': 'explore_lite_msgs', 'dependencies': OrderedDict()}
+[0.000996] (go2_nav) JobQueued: {'identifier': 'go2_nav', 'dependencies': OrderedDict()}
+[0.001036] (go2_vision) JobQueued: {'identifier': 'go2_vision', 'dependencies': OrderedDict()}
+[0.001068] (multirobot_map_merge) JobQueued: {'identifier': 'multirobot_map_merge', 'dependencies': OrderedDict()}
+[0.001098] (unitree_sdk2py) JobQueued: {'identifier': 'unitree_sdk2py', 'dependencies': OrderedDict()}
+[0.001134] (explore_lite) JobQueued: {'identifier': 'explore_lite', 'dependencies': OrderedDict([('explore_lite_msgs', '/workspace/install/explore_lite_msgs')])}
+[0.001172] (explore_lite_msgs) JobStarted: {'identifier': 'explore_lite_msgs'}
+[0.011114] (go2_nav) JobStarted: {'identifier': 'go2_nav'}
+[0.018245] (go2_vision) JobStarted: {'identifier': 'go2_vision'}
+[0.024702] (multirobot_map_merge) JobStarted: {'identifier': 'multirobot_map_merge'}
+[0.028439] (unitree_sdk2py) JobStarted: {'identifier': 'unitree_sdk2py'}
+[0.034750] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'cmake'}
+[0.035668] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'build'}
+[0.036691] (explore_lite_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/explore_lite_msgs', '--', '-j8', '-l8'], 'cwd': '/workspace/build/explore_lite_msgs', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099260] (-) TimerEvent: {}
+[0.199850] (-) TimerEvent: {}
+[0.300420] (-) TimerEvent: {}
+[0.400961] (-) TimerEvent: {}
+[0.501497] (-) TimerEvent: {}
+[0.602025] (-) TimerEvent: {}
+[0.702588] (-) TimerEvent: {}
+[0.717590] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'cmake'}
+[0.718805] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'build'}
+[0.719471] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/multirobot_map_merge', '--', '-j8', '-l8'], 'cwd': '/workspace/build/multirobot_map_merge', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/multirobot_map_merge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.802742] (-) TimerEvent: {}
+[0.903290] (-) TimerEvent: {}
+[1.003819] (-) TimerEvent: {}
+[1.066312] (explore_lite_msgs) StdoutLine: {'line': b'[ 12%] Built target explore_lite_msgs__cpp\n'}
+[1.067065] (explore_lite_msgs) StdoutLine: {'line': b'[ 15%] Built target explore_lite_msgs__rs\n'}
+[1.067399] (explore_lite_msgs) StdoutLine: {'line': b'[ 15%] Built target explore_lite_msgs__rosidl_generator_c\n'}
+[1.067687] (explore_lite_msgs) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_explore_lite_msgs\n'}
+[1.068127] (explore_lite_msgs) StdoutLine: {'line': b'[ 25%] Built target explore_lite_msgs__rosidl_typesupport_c\n'}
+[1.068525] (explore_lite_msgs) StdoutLine: {'line': b'[ 34%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c\n'}
+[1.069031] (explore_lite_msgs) StdoutLine: {'line': b'[ 56%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.069547] (explore_lite_msgs) StdoutLine: {'line': b'[ 56%] Built target explore_lite_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.070328] (explore_lite_msgs) StdoutLine: {'line': b'[ 62%] Built target explore_lite_msgs__rosidl_typesupport_cpp\n'}
+[1.070469] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.070650] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs\n'}
+[1.070914] (explore_lite_msgs) StdoutLine: {'line': b'[ 75%] Built target explore_lite_msgs__py\n'}
+[1.071066] (explore_lite_msgs) StdoutLine: {'line': b'[ 81%] Built target explore_lite_msgs__rosidl_generator_py\n'}
+[1.071368] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.072002] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.072166] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target explore_lite_msgs__rosidl_typesupport_c__pyext\n'}
+[1.072280] (explore_lite_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.072384] (explore_lite_msgs) StdoutLine: {'line': b'writing explore_lite_msgs.egg-info/PKG-INFO\n'}
+[1.072482] (explore_lite_msgs) StdoutLine: {'line': b'writing dependency_links to explore_lite_msgs.egg-info/dependency_links.txt\n'}
+[1.072577] (explore_lite_msgs) StdoutLine: {'line': b'writing top-level names to explore_lite_msgs.egg-info/top_level.txt\n'}
+[1.072668] (explore_lite_msgs) StdoutLine: {'line': b"reading manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'\n"}
+[1.072759] (explore_lite_msgs) StdoutLine: {'line': b"writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'\n"}
+[1.072848] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_explore_lite_msgs_egg\n'}
+[1.072940] (multirobot_map_merge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_main\x1b[0m\n'}
+[1.073085] (multirobot_map_merge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest\x1b[0m\n'}
+[1.073179] (multirobot_map_merge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target combine_grids\x1b[0m\n'}
+[1.073269] (multirobot_map_merge) StdoutLine: {'line': b'[ 33%] Built target gtest\n'}
+[1.073361] (multirobot_map_merge) StdoutLine: {'line': b'[ 33%] Built target gtest_main\n'}
+[1.073453] (multirobot_map_merge) StdoutLine: {'line': b'[ 66%] Built target combine_grids\n'}
+[1.073543] (multirobot_map_merge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_merging_pipeline\x1b[0m\n'}
+[1.073632] (multirobot_map_merge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target map_merge\x1b[0m\n'}
+[1.073718] (multirobot_map_merge) StdoutLine: {'line': b'[ 83%] Built target test_merging_pipeline\n'}
+[1.073806] (multirobot_map_merge) StdoutLine: {'line': b'[100%] Built target map_merge\n'}
+[1.073896] (explore_lite_msgs) CommandEnded: {'returncode': 0}
+[1.074298] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'install'}
+[1.083613] (explore_lite_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/explore_lite_msgs'], 'cwd': '/workspace/build/explore_lite_msgs', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.085976] (multirobot_map_merge) CommandEnded: {'returncode': 0}
+[1.086760] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'install'}
+[1.087239] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/multirobot_map_merge'], 'cwd': '/workspace/build/multirobot_map_merge', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/multirobot_map_merge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.096784] (explore_lite_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.097229] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/rosidl_interfaces/explore_lite_msgs\n'}
+[1.097403] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[1.097580] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[1.097813] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.h\n'}
+[1.097958] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.098119] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[1.098346] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.h\n'}
+[1.098512] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.c\n'}
+[1.098643] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.h\n'}
+[1.098757] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.h\n'}
+[1.098859] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.sh\n'}
+[1.098960] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.dsv\n'}
+[1.099286] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_c.so\n'}
+[1.099965] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[1.100147] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[1.100279] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.100426] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[1.100535] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_c.h\n'}
+[1.100637] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.100736] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[1.100829] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[1.100923] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.101015] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[1.101140] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_c.h\n'}
+[1.101236] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.c\n'}
+[1.101330] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.101435] (multirobot_map_merge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.101546] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/include/map_merge/\n'}
+[1.101644] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/include/map_merge//ros1_names.hpp\n'}
+[1.101741] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/include/map_merge//map_merge.h\n'}
+[1.101835] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch\n'}
+[1.101926] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.rviz\n'}
+[1.102019] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation\n'}
+[1.102107] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/slam_toolbox.py\n'}
+[1.102195] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/bringup_launch.py\n'}
+[1.102284] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_c.so\n'}
+[1.102381] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[1.102476] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[1.102569] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.hpp\n'}
+[1.102663] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[1.102755] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__traits.hpp\n'}
+[1.102849] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__builder.hpp\n'}
+[1.102940] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/multi_tb3_simulation_launch.py\n'}
+[1.103032] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/tb3_simulation_launch.py\n'}
+[1.103124] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds\n'}
+[1.103216] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds/world_only.model\n'}
+[1.103306] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config\n'}
+[1.103395] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.hpp\n'}
+[1.103485] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.hpp\n'}
+[1.103577] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[1.104123] (-) TimerEvent: {}
+[1.104664] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[1.105354] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[1.106834] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.107151] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_1.yaml\n'}
+[1.107550] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_2.yaml\n'}
+[1.107758] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.launch.py\n'}
+[1.107879] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/from_map_server.launch.py\n'}
+[1.108231] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/config\n'}
+[1.108409] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/config/params.yaml\n'}
+[1.108733] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/lib/libcombine_grids.a\n'}
+[1.108930] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/lib/multirobot_map_merge/map_merge\n'}
+[1.109223] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.sh\n'}
+[1.109373] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.dsv\n'}
+[1.109665] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/ament_index/resource_index/package_run_dependencies/multirobot_map_merge\n'}
+[1.110178] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/ament_index/resource_index/parent_prefix_path/multirobot_map_merge\n'}
+[1.110487] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.sh\n'}
+[1.110681] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.dsv\n'}
+[1.110956] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.sh\n'}
+[1.111096] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.dsv\n'}
+[1.111334] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.bash\n'}
+[1.111541] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.sh\n'}
+[1.112111] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.zsh\n'}
+[1.112286] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.dsv\n'}
+[1.112697] (multirobot_map_merge) StdoutLine: {'line': b'-- Installing: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv\n'}
+[1.112957] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/ament_index/resource_index/packages/multirobot_map_merge\n'}
+[1.113123] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.113566] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.113750] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig.cmake\n'}
+[1.114147] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig-version.cmake\n'}
+[1.114417] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.xml\n'}
+[1.114700] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[1.115037] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.115213] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/dds_fastrtps\n'}
+[1.115490] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.115686] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[1.115968] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[1.116113] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[1.116366] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.117245] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.cpp\n'}
+[1.117820] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.118005] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_cpp.so\n'}
+[1.118229] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.sh\n'}
+[1.118365] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.dsv\n'}
+[1.118599] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info\n'}
+[1.118815] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.119047] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[1.119398] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[1.119538] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.119890] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs\n'}
+[1.120320] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/libexplore_lite_msgs__rosidl_generator_py.so\n'}
+[1.120544] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.120741] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.120935] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.121098] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/__init__.py\n'}
+[1.121268] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.121462] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[1.121615] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg\n'}
+[1.121800] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/_explore_status.py\n'}
+[1.121965] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/__init__.py\n'}
+[1.122146] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/_explore_status_s.c\n'}
+[1.122312] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.122501] (multirobot_map_merge) CommandEnded: {'returncode': 0}
+[1.150008] (multirobot_map_merge) JobEnded: {'identifier': 'multirobot_map_merge', 'rc': 0}
+[1.153844] (explore_lite_msgs) StdoutLine: {'line': b"Listing '/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs'...\n"}
+[1.154201] (explore_lite_msgs) StdoutLine: {'line': b"Listing '/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg'...\n"}
+[1.164903] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.165249] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.165611] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.165940] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_py.so\n'}
+[1.166148] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/rust_packages/explore_lite_msgs\n'}
+[1.166295] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust\n'}
+[1.166523] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/build.rs\n'}
+[1.166690] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src\n'}
+[1.166835] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg.rs\n'}
+[1.166978] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/lib.rs\n'}
+[1.167114] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg\n'}
+[1.167251] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg/rmw.rs\n'}
+[1.167383] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/Cargo.toml\n'}
+[1.167499] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.idl\n'}
+[1.167595] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.msg\n'}
+[1.167687] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/package_run_dependencies/explore_lite_msgs\n'}
+[1.167836] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/parent_prefix_path/explore_lite_msgs\n'}
+[1.167962] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.sh\n'}
+[1.168106] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.dsv\n'}
+[1.168219] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.sh\n'}
+[1.168351] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.dsv\n'}
+[1.168466] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.bash\n'}
+[1.168582] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.sh\n'}
+[1.168713] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.zsh\n'}
+[1.168808] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.dsv\n'}
+[1.168922] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv\n'}
+[1.169059] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/packages/explore_lite_msgs\n'}
+[1.169156] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport.cmake\n'}
+[1.169300] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.169420] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.169535] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.169669] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.169804] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.169936] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.170064] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.170207] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.170329] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.170439] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.170534] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.170623] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.170711] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.170801] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.170890] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.170977] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.171064] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.171152] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.171240] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.171326] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.171412] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.171535] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.171627] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.171744] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig.cmake\n'}
+[1.171848] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig-version.cmake\n'}
+[1.171937] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.xml\n'}
+[1.174358] (explore_lite_msgs) CommandEnded: {'returncode': 0}
+[1.203560] (explore_lite_msgs) JobEnded: {'identifier': 'explore_lite_msgs', 'rc': 0}
+[1.206138] (-) TimerEvent: {}
+[1.206405] (explore_lite) JobStarted: {'identifier': 'explore_lite'}
+[1.215565] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'cmake'}
+[1.216373] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/m-explore-ros2/explore', '-DCMAKE_INSTALL_PREFIX=/workspace/install/explore_lite'], 'cwd': '/workspace/build/explore_lite', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/explore_lite_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/opt/ros/humble')]), 'shell': False}
+[1.292490] (explore_lite) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.306227] (-) TimerEvent: {}
+[1.369523] (explore_lite) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.379685] (explore_lite) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.406347] (-) TimerEvent: {}
+[1.477148] (explore_lite) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.486631] (explore_lite) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.487015] (explore_lite) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.487593] (explore_lite) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.492513] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.506484] (-) TimerEvent: {}
+[1.561876] (unitree_sdk2py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/unitree_sdk2py', 'build', '--build-base', '/workspace/build/unitree_sdk2py/build', 'install', '--record', '/workspace/build/unitree_sdk2py/install.log', '--single-version-externally-managed'], 'cwd': '/workspace/sdk/unitree_sdk2_python', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/unitree_sdk2py', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/unitree_sdk2py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.593032] (go2_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_nav', 'build', '--build-base', '/workspace/build/go2_nav/build', 'install', '--record', '/workspace/build/go2_nav/install.log', '--install-scripts', '$base/lib/go2_nav', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/go2_nav', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/go2_nav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_nav/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.598860] (go2_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_vision', 'build', '--build-base', '/workspace/build/go2_vision/build', 'install', '--record', '/workspace/build/go2_vision/install.log', '--install-scripts', '$base/lib/go2_vision', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/go2_vision', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/go2_vision', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/go2_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_vision/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.606566] (-) TimerEvent: {}
+[1.610459] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.620439] (explore_lite) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.620818] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.621490] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.622633] (explore_lite) StdoutLine: {'line': b'-- BuilD for ROS2: humble\n'}
+[1.625966] (explore_lite) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.706695] (-) TimerEvent: {}
+[1.807245] (-) TimerEvent: {}
+[1.821463] (explore_lite) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.873923] (unitree_sdk2py) StdoutLine: {'line': b'running egg_info\n'}
+[1.874971] (unitree_sdk2py) StdoutLine: {'line': b'writing ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/PKG-INFO\n'}
+[1.875476] (unitree_sdk2py) StdoutLine: {'line': b'writing dependency_links to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/dependency_links.txt\n'}
+[1.875827] (unitree_sdk2py) StdoutLine: {'line': b'writing requirements to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/requires.txt\n'}
+[1.876050] (unitree_sdk2py) StdoutLine: {'line': b'writing top-level names to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/top_level.txt\n'}
+[1.886261] (unitree_sdk2py) StdoutLine: {'line': b"reading manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[1.887428] (unitree_sdk2py) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.891041] (unitree_sdk2py) StdoutLine: {'line': b"writing manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[1.891362] (unitree_sdk2py) StdoutLine: {'line': b'running build\n'}
+[1.891507] (unitree_sdk2py) StdoutLine: {'line': b'running build_py\n'}
+[1.905368] (go2_nav) StdoutLine: {'line': b'running egg_info\n'}
+[1.905697] (go2_vision) StdoutLine: {'line': b'running egg_info\n'}
+[1.906708] (go2_vision) StdoutLine: {'line': b'writing ../../build/go2_vision/go2_vision.egg-info/PKG-INFO\n'}
+[1.906883] (go2_nav) StdoutLine: {'line': b'writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO\n'}
+[1.907233] (go2_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_vision/go2_vision.egg-info/dependency_links.txt\n'}
+[1.907368] (-) TimerEvent: {}
+[1.907664] (go2_nav) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt\n'}
+[1.907829] (go2_vision) StdoutLine: {'line': b'writing entry points to ../../build/go2_vision/go2_vision.egg-info/entry_points.txt\n'}
+[1.908156] (go2_vision) StdoutLine: {'line': b'writing requirements to ../../build/go2_vision/go2_vision.egg-info/requires.txt\n'}
+[1.908275] (go2_vision) StdoutLine: {'line': b'writing top-level names to ../../build/go2_vision/go2_vision.egg-info/top_level.txt\n'}
+[1.908390] (go2_nav) StdoutLine: {'line': b'writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt\n'}
+[1.908489] (go2_nav) StdoutLine: {'line': b'writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt\n'}
+[1.908581] (go2_nav) StdoutLine: {'line': b'writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt\n'}
+[1.910855] (go2_vision) StdoutLine: {'line': b"reading manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'\n"}
+[1.911418] (go2_nav) StdoutLine: {'line': b"reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[1.912241] (go2_vision) StdoutLine: {'line': b"writing manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'\n"}
+[1.912534] (go2_vision) StdoutLine: {'line': b'running build\n'}
+[1.912654] (go2_vision) StdoutLine: {'line': b'running build_py\n'}
+[1.912802] (go2_nav) StdoutLine: {'line': b"writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[1.912910] (go2_nav) StdoutLine: {'line': b'running build\n'}
+[1.913007] (go2_nav) StdoutLine: {'line': b'running build_py\n'}
+[1.913650] (go2_vision) StdoutLine: {'line': b'running install\n'}
+[1.913939] (go2_nav) StdoutLine: {'line': b'running install\n'}
+[1.914057] (go2_vision) StdoutLine: {'line': b'running install_lib\n'}
+[1.914190] (unitree_sdk2py) StdoutLine: {'line': b'running install\n'}
+[1.914310] (go2_nav) StdoutLine: {'line': b'running install_lib\n'}
+[1.914525] (unitree_sdk2py) StdoutLine: {'line': b'running install_lib\n'}
+[1.916143] (go2_vision) StdoutLine: {'line': b'running install_data\n'}
+[1.916393] (go2_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.916551] (go2_nav) StdoutLine: {'line': b'running install_data\n'}
+[1.917095] (go2_nav) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.919143] (go2_vision) StdoutLine: {'line': b"removing '/workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.919743] (go2_vision) StdoutLine: {'line': b'Copying ../../build/go2_vision/go2_vision.egg-info to /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision-0.0.0-py3.10.egg-info\n'}
+[1.921269] (go2_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[1.922834] (go2_nav) StdoutLine: {'line': b"removing '/workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.923433] (go2_nav) StdoutLine: {'line': b'Copying ../../build/go2_nav/go2_nav.egg-info to /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info\n'}
+[1.925021] (go2_nav) StdoutLine: {'line': b'running install_scripts\n'}
+[1.931034] (unitree_sdk2py) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.934584] (unitree_sdk2py) StdoutLine: {'line': b"removing '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py-1.0.1-py3.10.egg-info' (and everything under it)\n"}
+[1.935061] (unitree_sdk2py) StdoutLine: {'line': b'Copying ../../build/unitree_sdk2py/unitree_sdk2py.egg-info to /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py-1.0.1-py3.10.egg-info\n'}
+[1.936307] (unitree_sdk2py) StdoutLine: {'line': b'running install_scripts\n'}
+[1.957015] (go2_vision) StdoutLine: {'line': b'Installing cameraimg script to /workspace/install/go2_vision/lib/go2_vision\n'}
+[1.957827] (go2_vision) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/go2_vision/install.log'\n"}
+[1.958358] (go2_nav) StdoutLine: {'line': b'Installing go2_sport_bridge script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[1.958703] (go2_nav) StdoutLine: {'line': b'Installing odom_broadcast script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[1.958909] (go2_nav) StdoutLine: {'line': b'Installing restamp_node script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[1.959562] (go2_nav) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/go2_nav/install.log'\n"}
+[1.968735] (explore_lite) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.981171] (unitree_sdk2py) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/unitree_sdk2py/install.log'\n"}
+[2.007563] (-) TimerEvent: {}
+[2.029992] (go2_nav) CommandEnded: {'returncode': 0}
+[2.031171] (explore_lite) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.038244] (explore_lite) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.042818] (go2_nav) JobEnded: {'identifier': 'go2_nav', 'rc': 0}
+[2.045207] (go2_vision) CommandEnded: {'returncode': 0}
+[2.051002] (explore_lite) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.055959] (go2_vision) JobEnded: {'identifier': 'go2_vision', 'rc': 0}
+[2.058222] (unitree_sdk2py) CommandEnded: {'returncode': 0}
+[2.067700] (explore_lite) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.071414] (unitree_sdk2py) JobEnded: {'identifier': 'unitree_sdk2py', 'rc': 0}
+[2.090764] (explore_lite) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.107616] (-) TimerEvent: {}
+[2.151536] (explore_lite) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.155056] (explore_lite) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.207742] (-) TimerEvent: {}
+[2.290407] (explore_lite) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.307858] (-) TimerEvent: {}
+[2.326758] (explore_lite) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.388868] (explore_lite) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.400103] (explore_lite) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.407956] (-) TimerEvent: {}
+[2.501736] (explore_lite) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.502464] (explore_lite) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.508057] (-) TimerEvent: {}
+[2.607032] (explore_lite) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.608171] (-) TimerEvent: {}
+[2.609837] (explore_lite) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.698404] (explore_lite) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.708284] (-) TimerEvent: {}
+[2.742597] (explore_lite) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.808432] (-) TimerEvent: {}
+[2.884085] (explore_lite) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.902881] (explore_lite) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.904931] (explore_lite) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.905260] (explore_lite) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.908518] (-) TimerEvent: {}
+[2.908907] (explore_lite) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[2.968135] (explore_lite) StdoutLine: {'line': b'-- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)\n'}
+[2.993529] (explore_lite) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[3.008621] (-) TimerEvent: {}
+[3.022065] (explore_lite) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 1.1.20 (/opt/ros/humble/share/nav2_costmap_2d/cmake)\n'}
+[3.108769] (-) TimerEvent: {}
+[3.188241] (explore_lite) StdoutLine: {'line': b'-- Found explore_lite_msgs: 1.0.0 (/workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake)\n'}
+[3.202515] (explore_lite) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.208883] (-) TimerEvent: {}
+[3.309397] (-) TimerEvent: {}
+[3.322785] (explore_lite) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[3.325750] (explore_lite) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.340246] (explore_lite) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.340606] (explore_lite) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /workspace/src/m-explore-ros2/explore/include;$<BUILD_INTERFACE:/workspace/src/m-explore-ros2/explore/include>\n'}
+[3.340872] (explore_lite) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.341397] (explore_lite) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.342306] (explore_lite) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.343040] (explore_lite) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.345097] (explore_lite) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.345405] (explore_lite) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.345851] (explore_lite) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.349072] (explore_lite) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.409459] (-) TimerEvent: {}
+[3.414979] (explore_lite) StdoutLine: {'line': b'-- Generating done\n'}
+[3.427370] (explore_lite) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/explore_lite\n'}
+[3.453191] (explore_lite) CommandEnded: {'returncode': 0}
+[3.454338] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'build'}
+[3.455017] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/explore_lite', '--', '-j8', '-l8'], 'cwd': '/workspace/build/explore_lite', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/explore_lite_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/opt/ros/humble')]), 'shell': False}
+[3.509676] (-) TimerEvent: {}
+[3.532852] (explore_lite) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[3.533268] (explore_lite) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[3.533402] (explore_lite) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o\x1b[0m\n'}
+[3.533511] (explore_lite) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o\x1b[0m\n'}
+[3.533613] (explore_lite) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o\x1b[0m\n'}
+[3.609852] (-) TimerEvent: {}
+[3.711345] (-) TimerEvent: {}
+[3.812557] (-) TimerEvent: {}
+[3.913430] (-) TimerEvent: {}
+[4.014055] (-) TimerEvent: {}
+[4.114691] (-) TimerEvent: {}
+[4.215337] (-) TimerEvent: {}
+[4.316317] (-) TimerEvent: {}
+[4.416991] (-) TimerEvent: {}
+[4.517722] (-) TimerEvent: {}
+[4.618362] (-) TimerEvent: {}
+[4.649383] (explore_lite) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[4.695241] (explore_lite) StdoutLine: {'line': b'[ 60%] Built target gtest_main\n'}
+[4.718522] (-) TimerEvent: {}
+[4.819156] (-) TimerEvent: {}
+[4.919857] (-) TimerEvent: {}
+[5.020503] (-) TimerEvent: {}
+[5.121152] (-) TimerEvent: {}
+[5.221833] (-) TimerEvent: {}
+[5.322709] (-) TimerEvent: {}
+[5.423616] (-) TimerEvent: {}
+[5.524534] (-) TimerEvent: {}
+[5.625224] (-) TimerEvent: {}
+[5.725909] (-) TimerEvent: {}
+[5.826844] (-) TimerEvent: {}
+[5.927548] (-) TimerEvent: {}
+[6.028251] (-) TimerEvent: {}
+[6.128904] (-) TimerEvent: {}
+[6.229798] (-) TimerEvent: {}
+[6.330675] (-) TimerEvent: {}
+[6.431328] (-) TimerEvent: {}
+[6.532005] (-) TimerEvent: {}
+[6.632692] (-) TimerEvent: {}
+[6.733381] (-) TimerEvent: {}
+[6.834033] (-) TimerEvent: {}
+[6.934922] (-) TimerEvent: {}
+[7.035868] (-) TimerEvent: {}
+[7.136528] (-) TimerEvent: {}
+[7.237414] (-) TimerEvent: {}
+[7.338303] (-) TimerEvent: {}
+[7.438969] (-) TimerEvent: {}
+[7.539631] (-) TimerEvent: {}
+[7.640324] (-) TimerEvent: {}
+[7.741193] (-) TimerEvent: {}
+[7.842061] (-) TimerEvent: {}
+[7.942949] (-) TimerEvent: {}
+[8.043846] (-) TimerEvent: {}
+[8.144504] (-) TimerEvent: {}
+[8.245157] (-) TimerEvent: {}
+[8.345815] (-) TimerEvent: {}
+[8.446459] (-) TimerEvent: {}
+[8.547360] (-) TimerEvent: {}
+[8.648068] (-) TimerEvent: {}
+[8.728396] (explore_lite) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[8.748228] (-) TimerEvent: {}
+[8.815798] (explore_lite) StdoutLine: {'line': b'[ 70%] Built target gtest\n'}
+[8.845128] (explore_lite) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o\x1b[0m\n'}
+[8.848354] (-) TimerEvent: {}
+[8.948937] (-) TimerEvent: {}
+[9.049598] (-) TimerEvent: {}
+[9.150281] (-) TimerEvent: {}
+[9.250965] (-) TimerEvent: {}
+[9.351657] (-) TimerEvent: {}
+[9.452367] (-) TimerEvent: {}
+[9.553043] (-) TimerEvent: {}
+[9.653731] (-) TimerEvent: {}
+[9.754376] (-) TimerEvent: {}
+[9.855031] (-) TimerEvent: {}
+[9.955704] (-) TimerEvent: {}
+[10.056400] (-) TimerEvent: {}
+[10.157201] (-) TimerEvent: {}
+[10.167246] (explore_lite) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable test_explore\x1b[0m\n'}
+[10.257375] (-) TimerEvent: {}
+[10.358036] (-) TimerEvent: {}
+[10.421706] (explore_lite) StdoutLine: {'line': b'[ 90%] Built target test_explore\n'}
+[10.458207] (-) TimerEvent: {}
+[10.559060] (-) TimerEvent: {}
+[10.659752] (-) TimerEvent: {}
+[10.760399] (-) TimerEvent: {}
+[10.861286] (-) TimerEvent: {}
+[10.962205] (-) TimerEvent: {}
+[11.063099] (-) TimerEvent: {}
+[11.163834] (-) TimerEvent: {}
+[11.264696] (-) TimerEvent: {}
+[11.365383] (-) TimerEvent: {}
+[11.466073] (-) TimerEvent: {}
+[11.566756] (-) TimerEvent: {}
+[11.667638] (-) TimerEvent: {}
+[11.768565] (-) TimerEvent: {}
+[11.869462] (-) TimerEvent: {}
+[11.970347] (-) TimerEvent: {}
+[12.071029] (-) TimerEvent: {}
+[12.171750] (-) TimerEvent: {}
+[12.272423] (-) TimerEvent: {}
+[12.373093] (-) TimerEvent: {}
+[12.473759] (-) TimerEvent: {}
+[12.574668] (-) TimerEvent: {}
+[12.675356] (-) TimerEvent: {}
+[12.776257] (-) TimerEvent: {}
+[12.876938] (-) TimerEvent: {}
+[12.977609] (-) TimerEvent: {}
+[13.078283] (-) TimerEvent: {}
+[13.178954] (-) TimerEvent: {}
+[13.279808] (-) TimerEvent: {}
+[13.380672] (-) TimerEvent: {}
+[13.481564] (-) TimerEvent: {}
+[13.582217] (-) TimerEvent: {}
+[13.682877] (-) TimerEvent: {}
+[13.783534] (-) TimerEvent: {}
+[13.884245] (-) TimerEvent: {}
+[13.984922] (-) TimerEvent: {}
+[14.085830] (-) TimerEvent: {}
+[14.186511] (-) TimerEvent: {}
+[14.287380] (-) TimerEvent: {}
+[14.388081] (-) TimerEvent: {}
+[14.488766] (-) TimerEvent: {}
+[14.589443] (-) TimerEvent: {}
+[14.690129] (-) TimerEvent: {}
+[14.790800] (-) TimerEvent: {}
+[14.891689] (-) TimerEvent: {}
+[14.992413] (-) TimerEvent: {}
+[15.093322] (-) TimerEvent: {}
+[15.193997] (-) TimerEvent: {}
+[15.294937] (-) TimerEvent: {}
+[15.395624] (-) TimerEvent: {}
+[15.496350] (-) TimerEvent: {}
+[15.597047] (-) TimerEvent: {}
+[15.697914] (-) TimerEvent: {}
+[15.798830] (-) TimerEvent: {}
+[15.899702] (-) TimerEvent: {}
+[16.000633] (-) TimerEvent: {}
+[16.101513] (-) TimerEvent: {}
+[16.202187] (-) TimerEvent: {}
+[16.302861] (-) TimerEvent: {}
+[16.403533] (-) TimerEvent: {}
+[16.504437] (-) TimerEvent: {}
+[16.605343] (-) TimerEvent: {}
+[16.706249] (-) TimerEvent: {}
+[16.807173] (-) TimerEvent: {}
+[16.908070] (-) TimerEvent: {}
+[17.008751] (-) TimerEvent: {}
+[17.109420] (-) TimerEvent: {}
+[17.210078] (-) TimerEvent: {}
+[17.310973] (-) TimerEvent: {}
+[17.411899] (-) TimerEvent: {}
+[17.512587] (-) TimerEvent: {}
+[17.613499] (-) TimerEvent: {}
+[17.714183] (-) TimerEvent: {}
+[17.814854] (-) TimerEvent: {}
+[17.915515] (-) TimerEvent: {}
+[18.016404] (-) TimerEvent: {}
+[18.117279] (-) TimerEvent: {}
+[18.218166] (-) TimerEvent: {}
+[18.318837] (-) TimerEvent: {}
+[18.419475] (-) TimerEvent: {}
+[18.520150] (-) TimerEvent: {}
+[18.620815] (-) TimerEvent: {}
+[18.721532] (-) TimerEvent: {}
+[18.822425] (-) TimerEvent: {}
+[18.923115] (-) TimerEvent: {}
+[19.024030] (-) TimerEvent: {}
+[19.124950] (-) TimerEvent: {}
+[19.225634] (-) TimerEvent: {}
+[19.326311] (-) TimerEvent: {}
+[19.426962] (-) TimerEvent: {}
+[19.527570] (-) TimerEvent: {}
+[19.628406] (-) TimerEvent: {}
+[19.729276] (-) TimerEvent: {}
+[19.830107] (-) TimerEvent: {}
+[19.930746] (-) TimerEvent: {}
+[20.031636] (-) TimerEvent: {}
+[20.132314] (-) TimerEvent: {}
+[20.232944] (-) TimerEvent: {}
+[20.333579] (-) TimerEvent: {}
+[20.434204] (-) TimerEvent: {}
+[20.534835] (-) TimerEvent: {}
+[20.635673] (-) TimerEvent: {}
+[20.736584] (-) TimerEvent: {}
+[20.837464] (-) TimerEvent: {}
+[20.938104] (-) TimerEvent: {}
+[21.038729] (-) TimerEvent: {}
+[21.139350] (-) TimerEvent: {}
+[21.240240] (-) TimerEvent: {}
+[21.341103] (-) TimerEvent: {}
+[21.441956] (-) TimerEvent: {}
+[21.542812] (-) TimerEvent: {}
+[21.643458] (-) TimerEvent: {}
+[21.744134] (-) TimerEvent: {}
+[21.844769] (-) TimerEvent: {}
+[21.945425] (-) TimerEvent: {}
+[22.046293] (-) TimerEvent: {}
+[22.146934] (-) TimerEvent: {}
+[22.247564] (-) TimerEvent: {}
+[22.348211] (-) TimerEvent: {}
+[22.449082] (-) TimerEvent: {}
+[22.549681] (-) TimerEvent: {}
+[22.650282] (-) TimerEvent: {}
+[22.750920] (-) TimerEvent: {}
+[22.851825] (-) TimerEvent: {}
+[22.952688] (-) TimerEvent: {}
+[23.053523] (-) TimerEvent: {}
+[23.154119] (-) TimerEvent: {}
+[23.254720] (-) TimerEvent: {}
+[23.355385] (-) TimerEvent: {}
+[23.456064] (-) TimerEvent: {}
+[23.556701] (-) TimerEvent: {}
+[23.657537] (-) TimerEvent: {}
+[23.758416] (-) TimerEvent: {}
+[23.859293] (-) TimerEvent: {}
+[23.960125] (-) TimerEvent: {}
+[24.060772] (-) TimerEvent: {}
+[24.161411] (-) TimerEvent: {}
+[24.262053] (-) TimerEvent: {}
+[24.362711] (-) TimerEvent: {}
+[24.463536] (-) TimerEvent: {}
+[24.564161] (-) TimerEvent: {}
+[24.665018] (-) TimerEvent: {}
+[24.765893] (-) TimerEvent: {}
+[24.866538] (-) TimerEvent: {}
+[24.967173] (-) TimerEvent: {}
+[25.067841] (-) TimerEvent: {}
+[25.168473] (-) TimerEvent: {}
+[25.269150] (-) TimerEvent: {}
+[25.370108] (-) TimerEvent: {}
+[25.470941] (-) TimerEvent: {}
+[25.571553] (-) TimerEvent: {}
+[25.672196] (-) TimerEvent: {}
+[25.772843] (-) TimerEvent: {}
+[25.873497] (-) TimerEvent: {}
+[25.974375] (-) TimerEvent: {}
+[26.075048] (-) TimerEvent: {}
+[26.175674] (-) TimerEvent: {}
+[26.276557] (-) TimerEvent: {}
+[26.377212] (-) TimerEvent: {}
+[26.477833] (-) TimerEvent: {}
+[26.578461] (-) TimerEvent: {}
+[26.679146] (-) TimerEvent: {}
+[26.779907] (-) TimerEvent: {}
+[26.880615] (-) TimerEvent: {}
+[26.981320] (-) TimerEvent: {}
+[27.082022] (-) TimerEvent: {}
+[27.108375] (explore_lite) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable explore\x1b[0m\n'}
+[27.182424] (-) TimerEvent: {}
+[27.283056] (-) TimerEvent: {}
+[27.383741] (-) TimerEvent: {}
+[27.484453] (-) TimerEvent: {}
+[27.585126] (-) TimerEvent: {}
+[27.685856] (-) TimerEvent: {}
+[27.786612] (-) TimerEvent: {}
+[27.887126] (-) TimerEvent: {}
+[27.987642] (-) TimerEvent: {}
+[28.088194] (-) TimerEvent: {}
+[28.188690] (-) TimerEvent: {}
+[28.289194] (-) TimerEvent: {}
+[28.389923] (-) TimerEvent: {}
+[28.490610] (-) TimerEvent: {}
+[28.591269] (-) TimerEvent: {}
+[28.691920] (-) TimerEvent: {}
+[28.792567] (-) TimerEvent: {}
+[28.893219] (-) TimerEvent: {}
+[28.993855] (-) TimerEvent: {}
+[29.094482] (-) TimerEvent: {}
+[29.195114] (-) TimerEvent: {}
+[29.295779] (-) TimerEvent: {}
+[29.396216] (-) TimerEvent: {}
+[29.496699] (-) TimerEvent: {}
+[29.597266] (-) TimerEvent: {}
+[29.697809] (-) TimerEvent: {}
+[29.798352] (-) TimerEvent: {}
+[29.881958] (explore_lite) StdoutLine: {'line': b'[100%] Built target explore\n'}
+[29.898476] (-) TimerEvent: {}
+[29.904244] (explore_lite) CommandEnded: {'returncode': 0}
+[29.905940] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'install'}
+[29.906865] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/explore_lite'], 'cwd': '/workspace/build/explore_lite', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/explore_lite_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/opt/ros/humble')]), 'shell': False}
+[29.918641] (explore_lite) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.918899] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/include/explore/\n'}
+[29.919062] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/include/explore//costmap_client.h\n'}
+[29.919206] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/include/explore//explore.h\n'}
+[29.919363] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/include/explore//costmap_tools.h\n'}
+[29.919517] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/include/explore//frontier_search.h\n'}
+[29.919669] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/config\n'}
+[29.919846] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/config/params.yaml\n'}
+[29.920001] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/config/params_costmap.yaml\n'}
+[29.920176] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/launch\n'}
+[29.920325] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/launch/explore.launch.py\n'}
+[29.920553] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/lib/explore_lite/explore\n'}
+[29.932823] (explore_lite) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/explore_lite/lib/explore_lite/explore" to ""\n'}
+[29.933028] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite\n'}
+[29.933369] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite\n'}
+[29.933766] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh\n'}
+[29.933914] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv\n'}
+[29.934163] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/environment/path.sh\n'}
+[29.934310] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/environment/path.dsv\n'}
+[29.934559] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/local_setup.bash\n'}
+[29.934703] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/local_setup.sh\n'}
+[29.934955] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/local_setup.zsh\n'}
+[29.935139] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/local_setup.dsv\n'}
+[29.935315] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/package.dsv\n'}
+[29.935470] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/ament_index/resource_index/packages/explore_lite\n'}
+[29.935647] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[29.935846] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[29.936051] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake\n'}
+[29.936230] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake\n'}
+[29.936376] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/package.xml\n'}
+[29.939371] (explore_lite) CommandEnded: {'returncode': 0}
+[29.973925] (explore_lite) JobEnded: {'identifier': 'explore_lite', 'rc': 0}
+[29.975843] (-) EventReactorShutdown: {}

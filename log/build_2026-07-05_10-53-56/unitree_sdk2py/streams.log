@@ -1,0 +1,19 @@
+[0.837s] Invoking command in '/workspace/sdk/unitree_sdk2_python': CMAKE_PREFIX_PATH=/workspace/install/cyclonedds LD_LIBRARY_PATH=/workspace/install/cyclonedds/lib:${LD_LIBRARY_PATH} PATH=/workspace/install/cyclonedds/bin:${PATH} PKG_CONFIG_PATH=/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig PYTHONPATH=/workspace/build/unitree_sdk2py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/unitree_sdk2py build --build-base /workspace/build/unitree_sdk2py/build install --record /workspace/build/unitree_sdk2py/install.log --single-version-externally-managed
+[1.142s] running egg_info
+[1.143s] writing ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/PKG-INFO
+[1.143s] writing dependency_links to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/dependency_links.txt
+[1.144s] writing requirements to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/requires.txt
+[1.144s] writing top-level names to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/top_level.txt
+[1.154s] reading manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'
+[1.155s] adding license file 'LICENSE'
+[1.158s] writing manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'
+[1.158s] running build
+[1.158s] running build_py
+[1.180s] running install
+[1.180s] running install_lib
+[1.196s] running install_egg_info
+[1.198s] removing '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py-1.0.1-py3.10.egg-info' (and everything under it)
+[1.199s] Copying ../../build/unitree_sdk2py/unitree_sdk2py.egg-info to /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py-1.0.1-py3.10.egg-info
+[1.200s] running install_scripts
+[1.241s] writing list of installed files to '/workspace/build/unitree_sdk2py/install.log'
+[1.299s] Invoked command in '/workspace/sdk/unitree_sdk2_python' returned '0': CMAKE_PREFIX_PATH=/workspace/install/cyclonedds LD_LIBRARY_PATH=/workspace/install/cyclonedds/lib:${LD_LIBRARY_PATH} PATH=/workspace/install/cyclonedds/bin:${PATH} PKG_CONFIG_PATH=/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig PYTHONPATH=/workspace/build/unitree_sdk2py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/unitree_sdk2py build --build-base /workspace/build/unitree_sdk2py/build install --record /workspace/build/unitree_sdk2py/install.log --single-version-externally-managed
