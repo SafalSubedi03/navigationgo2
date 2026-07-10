@@ -1,0 +1,643 @@
+[0.000000] (-) TimerEvent: {}
+[0.000733] (cyclonedds) JobQueued: {'identifier': 'cyclonedds', 'dependencies': OrderedDict()}
+[0.001375] (explore_lite_msgs) JobQueued: {'identifier': 'explore_lite_msgs', 'dependencies': OrderedDict()}
+[0.001614] (go2_nav) JobQueued: {'identifier': 'go2_nav', 'dependencies': OrderedDict()}
+[0.001832] (go2_vision) JobQueued: {'identifier': 'go2_vision', 'dependencies': OrderedDict()}
+[0.001918] (multirobot_map_merge) JobQueued: {'identifier': 'multirobot_map_merge', 'dependencies': OrderedDict()}
+[0.001989] (explore_lite) JobQueued: {'identifier': 'explore_lite', 'dependencies': OrderedDict([('explore_lite_msgs', '/workspace/install/explore_lite_msgs')])}
+[0.002059] (unitree_sdk2py) JobQueued: {'identifier': 'unitree_sdk2py', 'dependencies': OrderedDict([('cyclonedds', '/workspace/install/cyclonedds')])}
+[0.002128] (cyclonedds) JobStarted: {'identifier': 'cyclonedds'}
+[0.014258] (explore_lite_msgs) JobStarted: {'identifier': 'explore_lite_msgs'}
+[0.021400] (go2_nav) JobStarted: {'identifier': 'go2_nav'}
+[0.032403] (go2_vision) JobStarted: {'identifier': 'go2_vision'}
+[0.041728] (multirobot_map_merge) JobStarted: {'identifier': 'multirobot_map_merge'}
+[0.051406] (cyclonedds) JobProgress: {'identifier': 'cyclonedds', 'progress': 'cmake'}
+[0.053011] (cyclonedds) JobProgress: {'identifier': 'cyclonedds', 'progress': 'build'}
+[0.054295] (cyclonedds) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/cyclonedds', '--', '-j8', '-l8'], 'cwd': '/workspace/build/cyclonedds', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/cyclonedds'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[0.058412] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'cmake'}
+[0.059282] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'build'}
+[0.059634] (explore_lite_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/explore_lite_msgs', '--', '-j8', '-l8'], 'cwd': '/workspace/build/explore_lite_msgs', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[0.099354] (-) TimerEvent: {}
+[0.199960] (-) TimerEvent: {}
+[0.300594] (-) TimerEvent: {}
+[0.401178] (-) TimerEvent: {}
+[0.502001] (-) TimerEvent: {}
+[0.602616] (-) TimerEvent: {}
+[0.703253] (-) TimerEvent: {}
+[0.803902] (-) TimerEvent: {}
+[0.852036] (cyclonedds) StdoutLine: {'line': b'[  4%] Built target idlpp\n'}
+[0.853117] (cyclonedds) StdoutLine: {'line': b'[  4%] Built target _confgen\n'}
+[0.853567] (cyclonedds) StdoutLine: {'line': b'[ 12%] Built target idl\n'}
+[0.854236] (cyclonedds) StdoutLine: {'line': b'[ 27%] Built target ddsrt-internal\n'}
+[0.854546] (cyclonedds) StdoutLine: {'line': b'[ 87%] Built target ddsc\n'}
+[0.854828] (cyclonedds) StdoutLine: {'line': b'[ 90%] Built target idlc\n'}
+[0.855132] (cyclonedds) StdoutLine: {'line': b'[ 91%] Built target dds_security_auth\n'}
+[0.855326] (cyclonedds) StdoutLine: {'line': b'[ 94%] Built target dds_security_ac\n'}
+[0.855984] (cyclonedds) StdoutLine: {'line': b'[ 97%] Built target dds_security_crypto\n'}
+[0.856230] (cyclonedds) StdoutLine: {'line': b'[ 97%] Built target ddsperf_types_generate\n'}
+[0.856395] (cyclonedds) StdoutLine: {'line': b'[100%] Built target ddsperf\n'}
+[0.856589] (explore_lite_msgs) StdoutLine: {'line': b'[  3%] Built target explore_lite_msgs__cpp\n'}
+[0.856967] (explore_lite_msgs) StdoutLine: {'line': b'[  6%] Built target explore_lite_msgs__rs\n'}
+[0.857495] (explore_lite_msgs) StdoutLine: {'line': b'[ 15%] Built target explore_lite_msgs__rosidl_generator_c\n'}
+[0.858613] (explore_lite_msgs) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_explore_lite_msgs\n'}
+[0.859051] (explore_lite_msgs) StdoutLine: {'line': b'[ 25%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.859238] (explore_lite_msgs) StdoutLine: {'line': b'[ 34%] Built target explore_lite_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.859711] (explore_lite_msgs) StdoutLine: {'line': b'[ 43%] Built target explore_lite_msgs__rosidl_typesupport_cpp\n'}
+[0.860335] (explore_lite_msgs) StdoutLine: {'line': b'[ 53%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c\n'}
+[0.861782] (explore_lite_msgs) StdoutLine: {'line': b'[ 62%] Built target explore_lite_msgs__rosidl_typesupport_c\n'}
+[0.862071] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.862390] (explore_lite_msgs) StdoutLine: {'line': b'[ 71%] Built target explore_lite_msgs\n'}
+[0.863210] (explore_lite_msgs) StdoutLine: {'line': b'[ 75%] Built target explore_lite_msgs__py\n'}
+[0.863433] (explore_lite_msgs) StdoutLine: {'line': b'[ 81%] Built target explore_lite_msgs__rosidl_generator_py\n'}
+[0.863566] (explore_lite_msgs) StdoutLine: {'line': b'[ 93%] Built target explore_lite_msgs__rosidl_typesupport_c__pyext\n'}
+[0.863687] (explore_lite_msgs) StdoutLine: {'line': b'[ 93%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.863803] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.863920] (explore_lite_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.864035] (explore_lite_msgs) StdoutLine: {'line': b'writing explore_lite_msgs.egg-info/PKG-INFO\n'}
+[0.864145] (explore_lite_msgs) StdoutLine: {'line': b'writing dependency_links to explore_lite_msgs.egg-info/dependency_links.txt\n'}
+[0.864254] (explore_lite_msgs) StdoutLine: {'line': b'writing top-level names to explore_lite_msgs.egg-info/top_level.txt\n'}
+[0.864363] (explore_lite_msgs) StdoutLine: {'line': b"reading manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'\n"}
+[0.864469] (explore_lite_msgs) StdoutLine: {'line': b"writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'\n"}
+[0.864612] (explore_lite_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_explore_lite_msgs_egg\n'}
+[0.864729] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'cmake'}
+[0.864767] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'build'}
+[0.864806] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/multirobot_map_merge', '--', '-j8', '-l8'], 'cwd': '/workspace/build/multirobot_map_merge', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/multirobot_map_merge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[0.865850] (cyclonedds) CommandEnded: {'returncode': 0}
+[0.866151] (cyclonedds) JobProgress: {'identifier': 'cyclonedds', 'progress': 'install'}
+[0.876316] (cyclonedds) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/cyclonedds'], 'cwd': '/workspace/build/cyclonedds', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/cyclonedds'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[0.878836] (explore_lite_msgs) CommandEnded: {'returncode': 0}
+[0.879747] (explore_lite_msgs) JobProgress: {'identifier': 'explore_lite_msgs', 'progress': 'install'}
+[0.880065] (explore_lite_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/explore_lite_msgs'], 'cwd': '/workspace/build/explore_lite_msgs', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[0.888949] (cyclonedds) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[0.889698] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/cmake/CycloneDDS/CycloneDDSConfig.cmake\n'}
+[0.890286] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/cmake/CycloneDDS/CycloneDDSConfigVersion.cmake\n'}
+[0.890630] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/cmake/CycloneDDS/CycloneDDSTargets.cmake\n'}
+[0.890823] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/cmake/CycloneDDS/CycloneDDSTargets-relwithdebinfo.cmake\n'}
+[0.890956] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/pkgconfig/CycloneDDS.pc\n'}
+[0.891074] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idlc\n'}
+[0.891186] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idlc/generator.h\n'}
+[0.891322] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idlc/options.h\n'}
+[0.891470] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/bin/idlc\n'}
+[0.892103] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/cmake/CycloneDDS/idlc/Generate.cmake\n'}
+[0.892840] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/bin/ddsperf\n'}
+[0.893442] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include\n'}
+[0.894269] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds\n'}
+[0.894990] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt\n'}
+[0.895245] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/threads\n'}
+[0.895480] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/threads/windows.h\n'}
+[0.895610] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/threads/posix.h\n'}
+[0.895731] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/threads/freertos.h\n'}
+[0.895846] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/iovec.h\n'}
+[0.895962] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/xmlparser.h\n'}
+[0.896139] (explore_lite_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.896283] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/rosidl_interfaces/explore_lite_msgs\n'}
+[0.896579] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/io.h\n'}
+[0.896931] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sockets.h\n'}
+[0.897247] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[0.897625] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[0.898344] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/expand_vars.h\n'}
+[0.898559] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/arch.h\n'}
+[0.898816] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/log.h\n'}
+[0.899018] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/misc.h\n'}
+[0.899137] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sched.h\n'}
+[0.899272] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/process.h\n'}
+[0.899470] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sockets\n'}
+[0.899656] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sockets/windows.h\n'}
+[0.899871] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sockets/posix.h\n'}
+[0.899986] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/attributes.h\n'}
+[0.900156] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/time.h\n'}
+[0.900556] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/cdtors.h\n'}
+[0.900858] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/countargs.h\n'}
+[0.901052] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sync.h\n'}
+[0.902087] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/netstat.h\n'}
+[0.905536] (-) TimerEvent: {}
+[0.907012] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/mh3.h\n'}
+[0.907279] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/time\n'}
+[0.907446] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/time/freertos.h\n'}
+[0.907572] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.h\n'}
+[0.907708] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.907823] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[0.907936] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.h\n'}
+[0.908047] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/filesystem\n'}
+[0.908158] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/filesystem/windows.h\n'}
+[0.908265] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/filesystem/posix.h\n'}
+[0.908369] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/strtod.h\n'}
+[0.908473] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.c\n'}
+[0.908580] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/fibheap.h\n'}
+[0.908682] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.h\n'}
+[0.908787] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.h\n'}
+[0.908892] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.sh\n'}
+[0.908999] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/md5.h\n'}
+[0.909103] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/avl.h\n'}
+[0.909203] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.dsv\n'}
+[0.909302] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/atomics.h\n'}
+[0.909401] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/environ.h\n'}
+[0.909514] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/retcode.h\n'}
+[0.909995] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/filesystem.h\n'}
+[0.910353] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sync\n'}
+[0.911019] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sync/windows.h\n'}
+[0.911449] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sync/posix.h\n'}
+[0.911818] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/sync/freertos.h\n'}
+[0.912154] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/circlist.h\n'}
+[0.912391] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/types.h\n'}
+[0.912625] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_c.so\n'}
+[0.912879] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[0.913184] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[0.913438] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.913682] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[0.917334] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_c.h\n'}
+[0.917681] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.917922] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/random.h\n'}
+[0.918186] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/hopscotch.h\n'}
+[0.918375] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/endian.h\n'}
+[0.918566] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/atomics\n'}
+[0.918763] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/atomics/gcc.h\n'}
+[0.918978] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/atomics/sun.h\n'}
+[0.919181] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/atomics/arm.h\n'}
+[0.919390] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/atomics/msvc.h\n'}
+[0.921145] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/threads.h\n'}
+[0.922621] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/types\n'}
+[0.922902] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/types/windows.h\n'}
+[0.923126] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/types/posix.h\n'}
+[0.923359] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/types/vxworks.h\n'}
+[0.924774] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/string.h\n'}
+[0.925015] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/strtol.h\n'}
+[0.925251] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/heap.h\n'}
+[0.925461] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/rusage.h\n'}
+[0.925676] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/ifaddrs.h\n'}
+[0.925908] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/bswap.h\n'}
+[0.926124] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/static_assert.h\n'}
+[0.926364] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/align.h\n'}
+[0.928861] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsrt/dynlib.h\n'}
+[0.929200] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include\n'}
+[0.929427] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds\n'}
+[0.929637] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/config.h\n'}
+[0.929825] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/features.h\n'}
+[0.930041] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/version.h\n'}
+[0.931768] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[0.932046] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[0.932236] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.932424] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[0.932647] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_c.h\n'}
+[0.932876] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.c\n'}
+[0.933207] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.933415] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl\n'}
+[0.933664] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/file.h\n'}
+[0.935321] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_c.so\n'}
+[0.935681] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[0.935907] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[0.936119] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.hpp\n'}
+[0.936355] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[0.939579] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__traits.hpp\n'}
+[0.940026] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__builder.hpp\n'}
+[0.940456] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/visit.h\n'}
+[0.940794] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/stream.h\n'}
+[0.942282] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/retcode.h\n'}
+[0.942625] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/processor.h\n'}
+[0.942865] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/scope.h\n'}
+[0.943084] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/string.h\n'}
+[0.943334] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/tree.h\n'}
+[0.946267] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/symbol.h\n'}
+[0.946611] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/expression.h\n'}
+[0.946833] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/print.h\n'}
+[0.947075] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl\n'}
+[0.947275] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/misc.h\n'}
+[0.947608] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/attributes.h\n'}
+[0.947856] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/md5.h\n'}
+[0.948187] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/version.h\n'}
+[0.948572] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/endian.h\n'}
+[0.948897] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/idl/export.h\n'}
+[0.949229] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libcycloneddsidl.so.0.10.2\n'}
+[0.949620] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libcycloneddsidl.so.0\n'}
+[0.950088] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libcycloneddsidl.so\n'}
+[0.951880] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.hpp\n'}
+[0.952730] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.hpp\n'}
+[0.953489] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.954187] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[0.955079] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[0.956586] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.957787] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[0.958654] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.959548] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/dds_fastrtps\n'}
+[0.960322] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include\n'}
+[0.960852] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds\n'}
+[0.961942] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security\n'}
+[0.962789] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/dds_security_api_types.h\n'}
+[0.964228] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/dds_security_api_err.h\n'}
+[0.965260] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/dds_security_api_access_control.h\n'}
+[0.965743] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.966431] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/dds_security_api_defs.h\n'}
+[0.966996] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/dds_security_api.h\n'}
+[0.967775] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/dds_security_api_authentication.h\n'}
+[0.968085] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs\n'}
+[0.968619] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/dds_security_api_cryptography.h\n'}
+[0.968931] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg\n'}
+[0.969195] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail\n'}
+[0.969412] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.970125] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.cpp\n'}
+[0.970419] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.971416] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core/\n'}
+[0.971701] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core//dds_security_fsm.h\n'}
+[0.972015] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core//dds_security_types.h\n'}
+[0.972238] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core//dds_security_serialize.h\n'}
+[0.972854] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core//dds_security_timed_cb.h\n'}
+[0.976153] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core//shared_secret.h\n'}
+[0.976921] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core//dds_security_utils.h\n'}
+[0.977202] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/security/core//dds_security_plugins.h\n'}
+[0.978927] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_cpp.so\n'}
+[0.979569] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.sh\n'}
+[0.979977] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.dsv\n'}
+[0.980650] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info\n'}
+[0.981423] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libdds_security_ac.so\n'}
+[0.981636] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.981847] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.982015] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.982147] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libdds_security_auth.so\n'}
+[0.982274] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.982433] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs\n'}
+[0.982553] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/libexplore_lite_msgs__rosidl_generator_py.so\n'}
+[0.982667] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.982786] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.982895] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.983001] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/__init__.py\n'}
+[0.983106] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libdds_security_crypto.so\n'}
+[0.983214] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.983321] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.985108] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg\n'}
+[1.026104] (-) TimerEvent: {}
+[1.026812] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/_explore_status.py\n'}
+[1.027503] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/__init__.py\n'}
+[1.028662] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/_explore_status_s.c\n'}
+[1.028864] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.029068] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include\n'}
+[1.029499] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds\n'}
+[1.030735] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi\n'}
+[1.030969] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_guid.h\n'}
+[1.031181] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_misc.h\n'}
+[1.031633] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_proxy_participant.h\n'}
+[1.032623] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_entity.h\n'}
+[1.032808] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xt_impl.h\n'}
+[1.033106] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_xevent.h\n'}
+[1.033374] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_ownip.h\n'}
+[1.034168] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_vnet.h\n'}
+[1.034347] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_debmon.h\n'}
+[1.034798] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_entity_match.h\n'}
+[1.035003] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_security_msg.h\n'}
+[1.035359] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_typelib.h\n'}
+[1.036470] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_tcp.h\n'}
+[1.036915] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_statistics.h\n'}
+[1.037090] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_endpoint.h\n'}
+[1.037284] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_vendor.h\n'}
+[1.037439] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_inverse_uint32_set.h\n'}
+[1.037622] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_qosmatch.h\n'}
+[1.037809] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_proxy_endpoint.h\n'}
+[1.037962] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_plist_generic.h\n'}
+[1.038127] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_log.h\n'}
+[1.038299] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_list_tmpl.h\n'}
+[1.038447] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_locator.h\n'}
+[1.038595] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xt_typeinfo.h\n'}
+[1.038751] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_typebuilder.h\n'}
+[1.039172] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_radmin.h\n'}
+[1.039400] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_lifespan.h\n'}
+[1.039576] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_freelist.h\n'}
+[1.039822] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_sertype.h\n'}
+[1.040054] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_rtps.h\n'}
+[1.040246] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xt_typelookup.h\n'}
+[1.040480] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_protocol.h\n'}
+[1.040677] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_builtin_topic_if.h\n'}
+[1.040854] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_pmd.h\n'}
+[1.041033] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_domaingv.h\n'}
+[1.041401] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_config_impl.h\n'}
+[1.041513] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_serdata.h\n'}
+[1.041621] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_lat_estim.h\n'}
+[1.041729] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_security_exchange.h\n'}
+[1.041876] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_participant.h\n'}
+[1.042011] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xt_typelookup.idl\n'}
+[1.042152] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_portmapping.h\n'}
+[1.042667] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_config.h\n'}
+[1.042831] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_cdrstream.h\n'}
+[1.043004] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_addrset.h\n'}
+[1.043140] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_threadmon.h\n'}
+[1.043273] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_sertopic.h\n'}
+[1.043480] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_hbcontrol.h\n'}
+[1.043627] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_ssl.h\n'}
+[1.043751] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_cfgelems.h\n'}
+[1.043872] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_deliver_locally.h\n'}
+[1.043990] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_tkmap.h\n'}
+[1.044136] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_xmsg.h\n'}
+[1.044282] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_feature_check.h\n'}
+[1.044421] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_iid.h\n'}
+[1.044546] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_raweth.h\n'}
+[1.044666] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xt_typemap.h\n'}
+[1.044783] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_bswap.h\n'}
+[1.044900] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_mcgroup.h\n'}
+[1.045018] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_rhc.h\n'}
+[1.045134] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xt_typemap.idl\n'}
+[1.045251] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_init.h\n'}
+[1.045371] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_whc.h\n'}
+[1.045489] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/sysdeps.h\n'}
+[1.045611] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_udp.h\n'}
+[1.045751] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_acknack.h\n'}
+[1.045875] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_keyhash.h\n'}
+[1.046034] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_ipaddr.h\n'}
+[1.046159] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_bitset.h\n'}
+[1.046329] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_plist.h\n'}
+[1.046499] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_handshake.h\n'}
+[1.046636] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_transmit.h\n'}
+[1.046795] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_list_genptr.h\n'}
+[1.046948] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_wraddrset.h\n'}
+[1.047079] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_pcap.h\n'}
+[1.047233] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_sockwaitset.h\n'}
+[1.047447] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_entity_index.h\n'}
+[1.047663] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_receive.h\n'}
+[1.047878] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_serdata_pserop.h\n'}
+[1.048035] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_typewrap.h\n'}
+[1.048202] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_typelookup.h\n'}
+[1.048348] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xt_typeinfo.idl\n'}
+[1.048853] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_thread.h\n'}
+[1.049038] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_deadline.h\n'}
+[1.049799] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_lease.h\n'}
+[1.049936] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_ddsi_discovery.h\n'}
+[1.050098] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_time.h\n'}
+[1.050220] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_gc.h\n'}
+[1.050581] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_serdata_plist.h\n'}
+[1.051255] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_tran.h\n'}
+[1.051635] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_cfgunits.h\n'}
+[1.051973] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_security_util.h\n'}
+[1.052585] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_topic.h\n'}
+[1.053035] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_serdata_default.h\n'}
+[1.054364] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_security_omg.h\n'}
+[1.054531] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/q_unused.h\n'}
+[1.054691] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_shm_transport.h\n'}
+[1.054845] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsi/ddsi_xqos.h\n'}
+[1.055041] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include\n'}
+[1.055236] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/ddsc\n'}
+[1.055468] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/ddsc/dds.h\n'}
+[1.055656] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds\n'}
+[1.055824] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc\n'}
+[1.055999] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_public_qos.h\n'}
+[1.056175] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_internal_api.h\n'}
+[1.056338] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_opcodes.h\n'}
+[1.056510] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_public_alloc.h\n'}
+[1.056691] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_data_allocator.h\n'}
+[1.056867] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_loan_api.h\n'}
+[1.057299] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_public_listener.h\n'}
+[1.057476] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_rhc.h\n'}
+[1.057665] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_statistics.h\n'}
+[1.057819] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_public_impl.h\n'}
+[1.057963] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_public_qosdefs.h\n'}
+[1.058108] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_basic_types.h\n'}
+[1.058252] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_public_error.h\n'}
+[1.058382] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/ddsc/dds_public_status.h\n'}
+[1.058519] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/dds.h\n'}
+[1.058657] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include\n'}
+[1.058807] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds\n'}
+[1.058950] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/include/dds/export.h\n'}
+[1.059077] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libddsc.so.0.10.2\n'}
+[1.059221] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libddsc.so.0\n'}
+[1.059367] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/lib/libddsc.so\n'}
+[1.059520] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/share/doc/CycloneDDS/CONTRIBUTING.md\n'}
+[1.059671] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/share/doc/CycloneDDS/CYCLONEDDS_QUALITY_DECLARATION.md\n'}
+[1.059819] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/share/doc/CycloneDDS/LICENSE\n'}
+[1.059964] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/share/doc/CycloneDDS/NOTICE.md\n'}
+[1.060113] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/share/doc/CycloneDDS/README.md\n'}
+[1.060939] (cyclonedds) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cyclonedds/share/doc/CycloneDDS/CHANGELOG.rst\n'}
+[1.061077] (cyclonedds) CommandEnded: {'returncode': 0}
+[1.061894] (multirobot_map_merge) StdoutLine: {'line': b'[ 16%] Built target gtest_main\n'}
+[1.062131] (explore_lite_msgs) StdoutLine: {'line': b"Listing '/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs'...\n"}
+[1.062341] (explore_lite_msgs) StdoutLine: {'line': b"Listing '/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg'...\n"}
+[1.062685] (multirobot_map_merge) StdoutLine: {'line': b'[ 33%] Built target gtest\n'}
+[1.063052] (multirobot_map_merge) StdoutLine: {'line': b'[ 66%] Built target combine_grids\n'}
+[1.063213] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.063388] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.063759] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.064215] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_py.so\n'}
+[1.064354] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/rust_packages/explore_lite_msgs\n'}
+[1.064510] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust\n'}
+[1.064928] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/build.rs\n'}
+[1.065225] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src\n'}
+[1.065803] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg.rs\n'}
+[1.066068] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/lib.rs\n'}
+[1.066503] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg\n'}
+[1.066640] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg/rmw.rs\n'}
+[1.066796] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/rust/Cargo.toml\n'}
+[1.067140] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.idl\n'}
+[1.067520] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.msg\n'}
+[1.067688] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/package_run_dependencies/explore_lite_msgs\n'}
+[1.067854] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/parent_prefix_path/explore_lite_msgs\n'}
+[1.068224] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.sh\n'}
+[1.068663] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.dsv\n'}
+[1.068833] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.sh\n'}
+[1.069213] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.dsv\n'}
+[1.070299] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.bash\n'}
+[1.071156] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.sh\n'}
+[1.072083] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.zsh\n'}
+[1.072249] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.dsv\n'}
+[1.072415] (explore_lite_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv\n'}
+[1.072538] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/ament_index/resource_index/packages/explore_lite_msgs\n'}
+[1.072898] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport.cmake\n'}
+[1.073426] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.073593] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.073756] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.074115] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.074590] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.074753] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.074921] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.075308] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.075742] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.075889] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.076062] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.076444] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.076810] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.076952] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.077266] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.077478] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.077631] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.077879] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.078062] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.078319] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.079328] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.079761] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.079926] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.080102] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig.cmake\n'}
+[1.080291] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig-version.cmake\n'}
+[1.080483] (explore_lite_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite_msgs/share/explore_lite_msgs/package.xml\n'}
+[1.080670] (multirobot_map_merge) StdoutLine: {'line': b'[ 83%] Built target test_merging_pipeline\n'}
+[1.080857] (multirobot_map_merge) StdoutLine: {'line': b'[100%] Built target map_merge\n'}
+[1.081015] (cyclonedds) JobEnded: {'identifier': 'cyclonedds', 'rc': 0}
+[1.082197] (unitree_sdk2py) JobStarted: {'identifier': 'unitree_sdk2py'}
+[1.082313] (explore_lite_msgs) CommandEnded: {'returncode': 0}
+[1.096060] (explore_lite_msgs) JobEnded: {'identifier': 'explore_lite_msgs', 'rc': 0}
+[1.098238] (explore_lite) JobStarted: {'identifier': 'explore_lite'}
+[1.104253] (multirobot_map_merge) CommandEnded: {'returncode': 0}
+[1.105114] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'install'}
+[1.105600] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/multirobot_map_merge'], 'cwd': '/workspace/build/multirobot_map_merge', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/multirobot_map_merge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[1.118379] (multirobot_map_merge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.118815] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/include/map_merge/\n'}
+[1.119013] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/include/map_merge//ros1_names.hpp\n'}
+[1.119180] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/include/map_merge//map_merge.h\n'}
+[1.119372] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch\n'}
+[1.119505] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.rviz\n'}
+[1.119622] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation\n'}
+[1.119756] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/slam_toolbox.py\n'}
+[1.119868] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/bringup_launch.py\n'}
+[1.119978] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/multi_tb3_simulation_launch.py\n'}
+[1.120130] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/tb3_simulation_launch.py\n'}
+[1.120271] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds\n'}
+[1.120396] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds/world_only.model\n'}
+[1.120564] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config\n'}
+[1.120707] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_1.yaml\n'}
+[1.120855] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_2.yaml\n'}
+[1.120983] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.launch.py\n'}
+[1.121090] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/launch/from_map_server.launch.py\n'}
+[1.121195] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/config\n'}
+[1.121322] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/config/params.yaml\n'}
+[1.121448] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/lib/libcombine_grids.a\n'}
+[1.121581] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/lib/multirobot_map_merge/map_merge\n'}
+[1.121702] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.sh\n'}
+[1.121806] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.dsv\n'}
+[1.121914] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/ament_index/resource_index/package_run_dependencies/multirobot_map_merge\n'}
+[1.122018] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/ament_index/resource_index/parent_prefix_path/multirobot_map_merge\n'}
+[1.122121] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.sh\n'}
+[1.122246] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.dsv\n'}
+[1.122356] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.sh\n'}
+[1.122459] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.dsv\n'}
+[1.122560] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.bash\n'}
+[1.122659] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.sh\n'}
+[1.122759] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.zsh\n'}
+[1.122861] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.dsv\n'}
+[1.122959] (multirobot_map_merge) StdoutLine: {'line': b'-- Installing: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv\n'}
+[1.123057] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/ament_index/resource_index/packages/multirobot_map_merge\n'}
+[1.123159] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.123321] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.123454] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig.cmake\n'}
+[1.123568] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig-version.cmake\n'}
+[1.123675] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/multirobot_map_merge/share/multirobot_map_merge/package.xml\n'}
+[1.126174] (-) TimerEvent: {}
+[1.226585] (-) TimerEvent: {}
+[1.327179] (-) TimerEvent: {}
+[1.427846] (-) TimerEvent: {}
+[1.498526] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'cmake'}
+[1.499718] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'build'}
+[1.500177] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/explore_lite', '--', '-j8', '-l8'], 'cwd': '/workspace/build/explore_lite', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/explore_lite_msgs/lib:/workspace/install/multirobot_map_merge/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[1.503442] (go2_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_nav', 'build', '--build-base', '/workspace/build/go2_nav/build', 'install', '--record', '/workspace/build/go2_nav/install.log', '--install-scripts', '$base/lib/go2_nav', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/go2_nav', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/workspace/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'CYCLONEDDS_HOME': '/workspace/cyclonedds/install', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble', 'PWD': '/workspace/build/go2_nav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/go2_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds'}, 'shell': False}
+[1.506688] (go2_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_vision', 'build', '--build-base', '/workspace/build/go2_vision/build', 'install', '--record', '/workspace/build/go2_vision/install.log', '--install-scripts', '$base/lib/go2_vision', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/go2_vision', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/workspace/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'CYCLONEDDS_HOME': '/workspace/cyclonedds/install', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble', 'PWD': '/workspace/build/go2_vision', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/go2_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/workspace/install/cyclonedds'}, 'shell': False}
+[1.510719] (multirobot_map_merge) CommandEnded: {'returncode': 0}
+[1.528133] (-) TimerEvent: {}
+[1.536560] (multirobot_map_merge) JobEnded: {'identifier': 'multirobot_map_merge', 'rc': 0}
+[1.594097] (explore_lite) StdoutLine: {'line': b'[ 40%] Built target gtest\n'}
+[1.594616] (explore_lite) StdoutLine: {'line': b'[ 40%] Built target gtest_main\n'}
+[1.610162] (explore_lite) StdoutLine: {'line': b'[ 80%] Built target explore\n'}
+[1.628246] (-) TimerEvent: {}
+[1.628903] (explore_lite) StdoutLine: {'line': b'[100%] Built target test_explore\n'}
+[1.650965] (explore_lite) CommandEnded: {'returncode': 0}
+[1.654330] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'install'}
+[1.654479] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/explore_lite'], 'cwd': '/workspace/build/explore_lite', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/explore_lite_msgs/lib:/workspace/install/multirobot_map_merge/lib:/workspace/install/cyclonedds/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('CYCLONEDDS_HOME', '/workspace/cyclonedds/install'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble'), ('PWD', '/workspace/build/explore_lite'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/explore_lite_msgs:/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/cyclonedds:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble')]), 'shell': False}
+[1.666826] (explore_lite) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.667334] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/include/explore/\n'}
+[1.667570] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/include/explore//costmap_client.h\n'}
+[1.667802] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/include/explore//explore.h\n'}
+[1.667960] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/include/explore//costmap_tools.h\n'}
+[1.668077] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/include/explore//frontier_search.h\n'}
+[1.668228] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/config\n'}
+[1.668341] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/config/params.yaml\n'}
+[1.668506] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/config/params_costmap.yaml\n'}
+[1.668681] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/launch\n'}
+[1.668848] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/launch/explore.launch.py\n'}
+[1.669034] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/lib/explore_lite/explore\n'}
+[1.669185] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite\n'}
+[1.669290] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite\n'}
+[1.669394] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh\n'}
+[1.669539] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv\n'}
+[1.669740] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/environment/path.sh\n'}
+[1.669887] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/environment/path.dsv\n'}
+[1.669993] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/local_setup.bash\n'}
+[1.670096] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/local_setup.sh\n'}
+[1.670200] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/local_setup.zsh\n'}
+[1.670303] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/local_setup.dsv\n'}
+[1.670405] (explore_lite) StdoutLine: {'line': b'-- Installing: /workspace/install/explore_lite/share/explore_lite/package.dsv\n'}
+[1.670506] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/ament_index/resource_index/packages/explore_lite\n'}
+[1.670629] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.670734] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.670837] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake\n'}
+[1.670938] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake\n'}
+[1.671062] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/explore_lite/share/explore_lite/package.xml\n'}
+[1.675175] (explore_lite) CommandEnded: {'returncode': 0}
+[1.697885] (explore_lite) JobEnded: {'identifier': 'explore_lite', 'rc': 0}
+[1.728462] (-) TimerEvent: {}
+[1.829312] (-) TimerEvent: {}
+[1.849675] (go2_vision) StdoutLine: {'line': b'running egg_info\n'}
+[1.850890] (go2_vision) StdoutLine: {'line': b'writing ../../build/go2_vision/go2_vision.egg-info/PKG-INFO\n'}
+[1.851439] (go2_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_vision/go2_vision.egg-info/dependency_links.txt\n'}
+[1.851919] (go2_vision) StdoutLine: {'line': b'writing entry points to ../../build/go2_vision/go2_vision.egg-info/entry_points.txt\n'}
+[1.852333] (go2_vision) StdoutLine: {'line': b'writing requirements to ../../build/go2_vision/go2_vision.egg-info/requires.txt\n'}
+[1.852455] (go2_nav) StdoutLine: {'line': b'running egg_info\n'}
+[1.852643] (go2_vision) StdoutLine: {'line': b'writing top-level names to ../../build/go2_vision/go2_vision.egg-info/top_level.txt\n'}
+[1.853956] (go2_nav) StdoutLine: {'line': b'writing ../../build/go2_nav/go2_nav.egg-info/PKG-INFO\n'}
+[1.854406] (go2_nav) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_nav/go2_nav.egg-info/dependency_links.txt\n'}
+[1.854589] (go2_nav) StdoutLine: {'line': b'writing entry points to ../../build/go2_nav/go2_nav.egg-info/entry_points.txt\n'}
+[1.855051] (go2_nav) StdoutLine: {'line': b'writing requirements to ../../build/go2_nav/go2_nav.egg-info/requires.txt\n'}
+[1.855274] (go2_nav) StdoutLine: {'line': b'writing top-level names to ../../build/go2_nav/go2_nav.egg-info/top_level.txt\n'}
+[1.855501] (go2_vision) StdoutLine: {'line': b"reading manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'\n"}
+[1.856740] (go2_vision) StdoutLine: {'line': b"writing manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'\n"}
+[1.857141] (go2_vision) StdoutLine: {'line': b'running build\n'}
+[1.857380] (go2_vision) StdoutLine: {'line': b'running build_py\n'}
+[1.857522] (go2_vision) StdoutLine: {'line': b'copying go2_vision/cameraaccess.py -> /workspace/build/go2_vision/build/lib/go2_vision\n'}
+[1.858831] (go2_vision) StdoutLine: {'line': b'running install\n'}
+[1.859270] (go2_nav) StdoutLine: {'line': b"reading manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[1.859510] (go2_vision) StdoutLine: {'line': b'running install_lib\n'}
+[1.859752] (go2_vision) StdoutLine: {'line': b'copying /workspace/build/go2_vision/build/lib/go2_vision/cameraaccess.py -> /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision\n'}
+[1.860506] (go2_nav) StdoutLine: {'line': b"writing manifest file '../../build/go2_nav/go2_nav.egg-info/SOURCES.txt'\n"}
+[1.860933] (go2_nav) StdoutLine: {'line': b'running build\n'}
+[1.861095] (go2_vision) StdoutLine: {'line': b'byte-compiling /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision/cameraaccess.py to cameraaccess.cpython-310.pyc\n'}
+[1.861222] (go2_nav) StdoutLine: {'line': b'running build_py\n'}
+[1.862020] (go2_nav) StdoutLine: {'line': b'running install\n'}
+[1.862479] (go2_vision) StdoutLine: {'line': b'running install_data\n'}
+[1.862730] (go2_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.862950] (go2_nav) StdoutLine: {'line': b'running install_lib\n'}
+[1.865576] (go2_nav) StdoutLine: {'line': b'running install_data\n'}
+[1.866064] (go2_vision) StdoutLine: {'line': b"removing '/workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.866248] (go2_nav) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.866706] (go2_vision) StdoutLine: {'line': b'Copying ../../build/go2_vision/go2_vision.egg-info to /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision-0.0.0-py3.10.egg-info\n'}
+[1.868296] (go2_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[1.869911] (go2_nav) StdoutLine: {'line': b"removing '/workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.870606] (go2_nav) StdoutLine: {'line': b'Copying ../../build/go2_nav/go2_nav.egg-info to /workspace/install/go2_nav/lib/python3.10/site-packages/go2_nav-0.0.0-py3.10.egg-info\n'}
+[1.872587] (go2_nav) StdoutLine: {'line': b'running install_scripts\n'}
+[1.907257] (go2_vision) StdoutLine: {'line': b'Installing cameraimg script to /workspace/install/go2_vision/lib/go2_vision\n'}
+[1.908041] (go2_vision) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/go2_vision/install.log'\n"}
+[1.909209] (go2_nav) StdoutLine: {'line': b'Installing go2_sport_bridge script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[1.909567] (go2_nav) StdoutLine: {'line': b'Installing odom_broadcast script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[1.909793] (go2_nav) StdoutLine: {'line': b'Installing restamp_node script to /workspace/install/go2_nav/lib/go2_nav\n'}
+[1.910462] (go2_nav) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/go2_nav/install.log'\n"}
+[1.929433] (-) TimerEvent: {}
+[1.978976] (go2_nav) CommandEnded: {'returncode': 0}
+[1.992243] (go2_nav) JobEnded: {'identifier': 'go2_nav', 'rc': 0}
+[1.995953] (go2_vision) CommandEnded: {'returncode': 0}
+[2.008384] (go2_vision) JobEnded: {'identifier': 'go2_vision', 'rc': 0}
+[2.029556] (-) TimerEvent: {}
+[2.049401] (unitree_sdk2py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/unitree_sdk2py', 'build', '--build-base', '/workspace/build/unitree_sdk2py/build', 'install', '--record', '/workspace/build/unitree_sdk2py/install.log', '--single-version-externally-managed'], 'cwd': '/workspace/sdk/unitree_sdk2_python', 'env': {'HOSTNAME': 'ubuntu', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/install/cyclonedds/lib:/workspace/install/multirobot_map_merge/lib:/workspace/install/explore_lite_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/workspace/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/workspace/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/workspace/install/cyclonedds/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/workspace/install/cyclonedds/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'CYCLONEDDS_HOME': '/workspace/cyclonedds/install', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/workspace/install/multirobot_map_merge:/workspace/install/go2_vision:/workspace/install/go2_nav:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs:/opt/ros/humble', 'PWD': '/workspace/build/unitree_sdk2py', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/build/unitree_sdk2py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/unitree_sdk2py/lib/python3.10/site-packages:/workspace/install/go2_vision/lib/python3.10/site-packages:/workspace/install/go2_nav/lib/python3.10/site-packages:/workspace/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspace/install/cyclonedds:/workspace/install/multirobot_map_merge:/workspace/install/explore_lite:/workspace/install/explore_lite_msgs'}, 'shell': False}
+[2.129681] (-) TimerEvent: {}
+[2.230263] (-) TimerEvent: {}
+[2.330867] (-) TimerEvent: {}
+[2.373450] (unitree_sdk2py) StdoutLine: {'line': b'running egg_info\n'}
+[2.374327] (unitree_sdk2py) StdoutLine: {'line': b'writing ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/PKG-INFO\n'}
+[2.374855] (unitree_sdk2py) StdoutLine: {'line': b'writing dependency_links to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/dependency_links.txt\n'}
+[2.375200] (unitree_sdk2py) StdoutLine: {'line': b'writing requirements to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/requires.txt\n'}
+[2.375557] (unitree_sdk2py) StdoutLine: {'line': b'writing top-level names to ../../build/unitree_sdk2py/unitree_sdk2py.egg-info/top_level.txt\n'}
+[2.386081] (unitree_sdk2py) StdoutLine: {'line': b"reading manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[2.387195] (unitree_sdk2py) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.390763] (unitree_sdk2py) StdoutLine: {'line': b"writing manifest file '../../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[2.391073] (unitree_sdk2py) StdoutLine: {'line': b'running build\n'}
+[2.391256] (unitree_sdk2py) StdoutLine: {'line': b'running build_py\n'}
+[2.412284] (unitree_sdk2py) StdoutLine: {'line': b'running install\n'}
+[2.412851] (unitree_sdk2py) StdoutLine: {'line': b'running install_lib\n'}
+[2.428124] (unitree_sdk2py) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.430936] (-) TimerEvent: {}
+[2.431356] (unitree_sdk2py) StdoutLine: {'line': b"removing '/workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py-1.0.1-py3.10.egg-info' (and everything under it)\n"}
+[2.431943] (unitree_sdk2py) StdoutLine: {'line': b'Copying ../../build/unitree_sdk2py/unitree_sdk2py.egg-info to /workspace/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py-1.0.1-py3.10.egg-info\n'}
+[2.433108] (unitree_sdk2py) StdoutLine: {'line': b'running install_scripts\n'}
+[2.476528] (unitree_sdk2py) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/unitree_sdk2py/install.log'\n"}
+[2.531051] (-) TimerEvent: {}
+[2.538886] (unitree_sdk2py) CommandEnded: {'returncode': 0}
+[2.568684] (unitree_sdk2py) JobEnded: {'identifier': 'unitree_sdk2py', 'rc': 0}
+[2.571238] (-) EventReactorShutdown: {}

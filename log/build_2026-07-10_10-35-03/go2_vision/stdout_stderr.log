@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/go2_vision/go2_vision.egg-info/PKG-INFO
+writing dependency_links to ../../build/go2_vision/go2_vision.egg-info/dependency_links.txt
+writing entry points to ../../build/go2_vision/go2_vision.egg-info/entry_points.txt
+writing requirements to ../../build/go2_vision/go2_vision.egg-info/requires.txt
+writing top-level names to ../../build/go2_vision/go2_vision.egg-info/top_level.txt
+reading manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'
+writing manifest file '../../build/go2_vision/go2_vision.egg-info/SOURCES.txt'
+running build
+running build_py
+copying go2_vision/cameraaccess.py -> /workspace/build/go2_vision/build/lib/go2_vision
+running install
+running install_lib
+copying /workspace/build/go2_vision/build/lib/go2_vision/cameraaccess.py -> /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision
+byte-compiling /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision/cameraaccess.py to cameraaccess.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/go2_vision/go2_vision.egg-info to /workspace/install/go2_vision/lib/python3.10/site-packages/go2_vision-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cameraimg script to /workspace/install/go2_vision/lib/go2_vision
+writing list of installed files to '/workspace/build/go2_vision/install.log'

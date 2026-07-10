@@ -1,31 +1,19 @@
+import os, sys, time
+os.environ["RMW_IMPLEMENTATION"] = "rmw_fastrtps_cpp"
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image
-import os, sys, time
+from sensor_msgs.msg import CompressedImage
 import cv2
-from cv_bridge import CvBridge
 import numpy as np
-
-# Dynamically inject local Unitree SDK into sys.path by climbing up to the workspace root
-current_dir = os.path.dirname(os.path.abspath(__file__))
-SDK_PATH = None
-while current_dir != os.path.dirname(current_dir):  # Stop if we hit the filesystem root '/'
-    possible_sdk = os.path.join(current_dir, "sdk", "unitree_sdk2_python")
-    if os.path.exists(possible_sdk):
-        SDK_PATH = possible_sdk
-        break
-    current_dir = os.path.dirname(current_dir)
-
-if SDK_PATH and SDK_PATH not in sys.path:
-    sys.path.append(SDK_PATH)
-else:
-    print(f"Warning: Could not find Unitree SDK path dynamically!", file=sys.stderr)
 
 # Unitree SDK Imports
 from unitree_sdk2py.core.channel import ChannelFactoryInitialize
 from unitree_sdk2py.go2.video.video_client import VideoClient
 
 NETWORK_INTERFACE = "eth0"
+
+# JPEG quality: 0-100. 80 is a good balance of size vs visual quality.
+JPEG_QUALITY = 80
 
 
 class cameraimg(Node):
@@ -42,8 +30,14 @@ class cameraimg(Node):
         self.client.SetTimeout(3.0)  # matches Unitree's own example; 30s was unnecessarily long
         self.client.Init()
 
-        self.publisher = self.create_publisher(Image, 'go2/camera', 10)
-        self.bridge = CvBridge()
+        # Publishing CompressedImage instead of raw Image -- a raw 1920x1080
+        # bgr8 frame is ~6.22 MB uncompressed. At 12.5 Hz that needs ~77 MB/s
+        # of sustained throughput, which no ordinary ethernet/WiFi link can
+        # sustain -- that bandwidth ceiling was the actual cause of the
+        # "latency" (frames queuing up faster than the network could drain
+        # them). JPEG at quality 80 typically shrinks each frame to
+        # ~100-300 KB, a 20-60x reduction.
+        self.publisher = self.create_publisher(CompressedImage, 'go2/camera/compressed', 10)
 
         self.timer_period = 0.08  # ~12.5 Hz, easier on the video RPC channel than 25 Hz
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
@@ -52,7 +46,7 @@ class cameraimg(Node):
         self.consecutive_failures = 0
         self.max_consecutive_failures = 10
 
-        self.get_logger().info("Go2 Camera Node has started.")
+        self.get_logger().info("Go2 Camera Node has started (publishing CompressedImage).")
 
     def timer_callback(self):
         try:
@@ -69,10 +63,18 @@ class cameraimg(Node):
                 cv_image = cv2.imdecode(image_data, cv2.IMREAD_COLOR)
 
                 if cv_image is not None:
-                    ros_image_msg = self.bridge.cv2_to_imgmsg(cv_image, encoding="bgr8")
-                    ros_image_msg.header.stamp = self.get_clock().now().to_msg()
-                    ros_image_msg.header.frame_id = "base_link"
-                    self.publisher.publish(ros_image_msg)
+                    success, encoded = cv2.imencode(
+                        '.jpg', cv_image, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY]
+                    )
+                    if success:
+                        msg = CompressedImage()
+                        msg.header.stamp = self.get_clock().now().to_msg()
+                        msg.header.frame_id = "base_link"
+                        msg.format = "jpeg"
+                        msg.data = encoded.tobytes()
+                        self.publisher.publish(msg)
+                    else:
+                        self.get_logger().warn("JPEG encoding failed.", throttle_duration_sec=5.0)
                 else:
                     self.get_logger().warn("Decoded image is empty.", throttle_duration_sec=5.0)
 
