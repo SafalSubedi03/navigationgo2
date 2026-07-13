@@ -1,4 +1,0 @@
-Invoking command in '/workspace/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble /usr/bin/cmake --build /workspace/build/explore_lite_msgs -- -j8 -l8
-Invoked command in '/workspace/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble /usr/bin/cmake --build /workspace/build/explore_lite_msgs -- -j8 -l8
-Invoking command in '/workspace/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble /usr/bin/cmake --install /workspace/build/explore_lite_msgs
-Invoked command in '/workspace/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/go2_vision:/workspace/install/go2_nav:/opt/ros/humble /usr/bin/cmake --install /workspace/build/explore_lite_msgs

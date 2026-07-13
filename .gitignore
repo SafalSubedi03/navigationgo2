@@ -2,5 +2,16 @@ sdk/
 .vscode/
 build/
 install/
-log/cyclonedds/
 cyclonedds/
+log/
+*.pt
+*.omnx
+*.engine
+
+*.whl
+wheels/
+
+__pycache__/
+*.pyc
+
+*.onnx
