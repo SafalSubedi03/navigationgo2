@@ -1,99 +1,172 @@
-import os
-import sys
-
-# We keep this because your camera node forces ROS 2 to use FastRTPS.
-# Both nodes must match to see each other's topics.
-os.environ["RMW_IMPLEMENTATION"] = "rmw_fastrtps_cpp"
+import time
+import cv2
+import numpy as np
+import torch
 
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import CompressedImage
-import cv2
-import numpy as np
+from vision_msgs.msg import Detection2DArray, Detection2D, ObjectHypothesisWithPose
 from ultralytics import YOLO
 
-ENGINE_PATH = "/workspace/yolo11n.engine"
-PROCESS_EVERY_N_FRAMES = 2  
-CONFIDENCE_THRESHOLD = 0.5
+# Hardware-specific: engines are hardware/TensorRT-version specific, always
+# re-export directly on this machine, never copy from sim/another device.
+MODEL_PATH = 'yolo26n.engine'  # or '/workspace/yolo26n.engine' once exported here
+
+CAMERA_TOPIC = "/go2/camera/compressed"   # hardware topic, not /front_camera/image_raw
+CONF_THRESHOLD = 0.5
+TARGET_CLASSES = None
+DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 JPEG_QUALITY = 80
 
+# Throttle inference relative to the ~12.5 Hz camera feed, to leave
+# GPU/CPU headroom for SLAM/Nav2/explore_lite running in the go2nav
+# container concurrently.
+PROCESS_EVERY_N_FRAMES = 2
 
-class YoloDetector(Node):
+
+class YoloCameraNode(Node):
     def __init__(self):
-        super().__init__('yolo_detector')
+        super().__init__("yolo_camera_node")
 
-        self.get_logger().info(f"Loading TensorRT engine from {ENGINE_PATH} ...")
-        self.model = YOLO(ENGINE_PATH, task='detect')
-        self.get_logger().info("Model loaded.")
+        self.get_logger().info(f"Loading {MODEL_PATH} onto device = {DEVICE}")
+        self.model = YOLO(MODEL_PATH)
 
         self.frame_counter = 0
+        self._device_confirmed = False
+        self.locked_track_id = None
+        self.last_seen_time = time.time()
 
-        # Subscribing using the relative topic name matching your camera node
-        self.subscription = self.create_subscription(
-            CompressedImage,
-            '/go2/camera/compressed',
-            self.image_callback,
-            10
+        self.sub = self.create_subscription(
+            CompressedImage, CAMERA_TOPIC, self.image_callback, 10
         )
-
-        # Publishing the output topic
         self.annotated_pub = self.create_publisher(
-            CompressedImage, 'go2/camera/detections', 10
+            CompressedImage, "/yolo/annotated_image/compressed", 10
+        )
+        self.detections_pub = self.create_publisher(
+            Detection2DArray, "/yolo/detections", 10
         )
 
         self.get_logger().info(
-            f"YOLO detector started. Subscribed to go2/camera/compressed, "
-            f"publishing annotated frames to go2/camera/detections."
+            f"YOLO tracker started. Subscribed to {CAMERA_TOPIC}, "
+            f"publishing to /yolo/annotated_image/compressed and /yolo/detections "
+            f"(processing every {PROCESS_EVERY_N_FRAMES} frames)."
         )
 
     def image_callback(self, msg: CompressedImage):
-        self.get_logger().info("--> RECEIVED A FRAME! Running YOLO inference...")
         self.frame_counter += 1
         if self.frame_counter % PROCESS_EVERY_N_FRAMES != 0:
             return
 
-        # Decode the incoming compressed JPEG frame
         arr = np.frombuffer(msg.data, dtype=np.uint8)
-        img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
-        if img is None:
+        frame = cv2.imdecode(arr, cv2.IMREAD_COLOR)
+        if frame is None:
             self.get_logger().warn("Failed to decode incoming frame.", throttle_duration_sec=5.0)
             return
 
-        # Run YOLO Inference
+        t0 = time.time()
         try:
-            results = self.model.predict(img, conf=CONFIDENCE_THRESHOLD, verbose=False)
+            results = self.model.track(
+                frame,
+                conf=CONF_THRESHOLD,
+                persist=True,
+                verbose=False,
+                device=DEVICE,
+                tracker="botsort.yaml"
+            )[0]
         except Exception as e:
             self.get_logger().error(f"Inference failed: {str(e)}", throttle_duration_sec=5.0)
             return
+        inference_ms = (time.time() - t0) * 1000.0
 
-        # Draw bounding boxes onto the frame
-        annotated = results[0].plot()
+        if not self._device_confirmed:
+            # Check if model has PyTorch parameters; if not (like with TensorRT engines), default to CUDA
+            if hasattr(self.model, 'model') and not isinstance(self.model.model, str):
+                actual_device = next(self.model.model.parameters()).device
+            else:
+                actual_device = "cuda:0"
+            self.get_logger().info(
+                f"Model is running on: {actual_device} (requested: {DEVICE})"
+            )
+            if str(actual_device) != DEVICE and DEVICE != "cpu":
+                self.get_logger().warn(
+                    "Requested GPU but model is NOT on GPU — check CUDA/torch install."
+                )
+            self._device_confirmed = True
 
-        # Re-compress the annotated image back to JPEG to save network bandwidth
-        success, encoded = cv2.imencode('.jpg', annotated, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY])
-        if not success:
+        det_array = Detection2DArray()
+        det_array.header = msg.header
+
+        if results.boxes is not None and results.boxes.id is not None:
+            for box in results.boxes:
+                cls_id = int(box.cls[0])
+                cls_name = self.model.names[cls_id]
+
+                if TARGET_CLASSES is not None and cls_name not in TARGET_CLASSES:
+                    continue
+
+                track_id = int(box.id[0])
+
+                if self.locked_track_id is None:
+                    self.locked_track_id = track_id
+                    self.last_seen_time = time.time()
+                    self.get_logger().info(f"*** LOCKED ONTO {cls_name} (ID: {track_id}) ***")
+
+                if self.locked_track_id is not None:
+                    if time.time() - self.last_seen_time > 5.0:
+                        self.get_logger().warn("Locked target lost. Resetting tracker!")
+                        self.locked_track_id = None
+
+                if track_id != self.locked_track_id:
+                    continue
+
+                self.last_seen_time = time.time()
+                conf = float(box.conf[0])
+                x1, y1, x2, y2 = map(float, box.xyxy[0])
+
+                det = Detection2D()
+                det.header = msg.header
+                det.bbox.center.position.x = (x1 + x2) / 2.0
+                det.bbox.center.position.y = (y1 + y2) / 2.0
+                det.bbox.size_x = x2 - x1
+                det.bbox.size_y = y2 - y1
+
+                hyp = ObjectHypothesisWithPose()
+                hyp.hypothesis.class_id = cls_name
+                hyp.hypothesis.score = conf
+                det.results.append(hyp)
+
+                det_array.detections.append(det)
+
+                cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 0, 255), 3)
+                label_y = min(int(y2) + 18, frame.shape[0] - 5)
+                cv2.putText(
+                    frame, f"LOCKED: {cls_name} ID:{track_id} {conf:.2f}", (int(x1), label_y),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2
+                )
+
+                break  # only process the locked target
+
+        self.detections_pub.publish(det_array)
+
+        success, encoded = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY])
+        if success:
+            out_msg = CompressedImage()
+            out_msg.header = msg.header
+            out_msg.format = "jpeg"
+            out_msg.data = encoded.tobytes()
+            self.annotated_pub.publish(out_msg)
+        else:
             self.get_logger().warn("Failed to encode annotated frame.", throttle_duration_sec=5.0)
-            return
-
-        # Publish the annotated frame
-        out_msg = CompressedImage()
-        out_msg.header = msg.header
-        out_msg.format = "jpeg"
-        out_msg.data = encoded.tobytes()
-        self.annotated_pub.publish(out_msg)
-
-        num_detections = len(results[0].boxes)
-        if num_detections > 0:
-            self.get_logger().info(f"Detected {num_detections} object(s)", throttle_duration_sec=3.0)
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = YoloDetector()
+    node = YoloCameraNode()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().info("Shutting down YOLO detector...")
+        pass
     finally:
         node.destroy_node()
         rclpy.shutdown()
