@@ -35,6 +35,7 @@ setup(
             'go2_sport_bridge = go2_nav.moveapinode:main',
             'odom_broadcast = go2_nav.odomBroadcast:main',
             'restamp_node = go2_nav.restamp_node:main',
+            'cameraimg = go2_vision.cameraaccess:main',
         ],
     },
 )
