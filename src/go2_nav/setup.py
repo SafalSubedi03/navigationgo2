@@ -36,6 +36,8 @@ setup(
             'odom_broadcast = go2_nav.odomBroadcast:main',
             'restamp_node = go2_nav.restamp_node:main',
             'cameraimg = go2_vision.cameraaccess:main',
+            'object_client = follow_object_client:main',
+            'object_server= follow_object_server:main',
         ],
     },
 )
