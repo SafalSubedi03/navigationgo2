@@ -14,6 +14,7 @@ from launch_ros.actions import Node, SetRemap
 from ament_index_python.packages import get_package_share_directory
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction, GroupAction
 from ament_index_python.packages import get_package_share_directory
+from launch.conditions import IfCondition
 def generate_launch_description():
 
     this_package = FindPackageShare('go2_nav')
@@ -35,6 +36,12 @@ def generate_launch_description():
     #     'config',
     #     'explore_lite_params.yaml'
     # )
+
+    declare_explore = DeclareLaunchArgument(
+        'explore',
+        default_value='true',
+        description='Start exploration or not'
+    )
 
     # -------------------------------------------------------------------
     # 1. RTAB-Map SLAM (included from slam_explore_sim.launch.py)
@@ -77,6 +84,7 @@ def generate_launch_description():
     explore_node = Node(
         package='explore_lite',
         executable='explore',
+        condition = IfCondition(LaunchConfiguration('explore')),
         name='explore_node',
         output='screen',
         parameters=[{
@@ -98,6 +106,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         declare_use_sim_time,
+        declare_explore,
         restamp_node,          
         TimerAction(
             period=3.0,        

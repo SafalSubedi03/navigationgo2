@@ -1,0 +1,12 @@
+# Goal
+string target_class
+---
+# Result
+bool target_lost
+geometry_msgs/PoseStamped final_pose
+string message
+---
+# Feedback
+geometry_msgs/PoseStamped current_pose
+bool locked_on
+int32 consecutive_hits
