@@ -32,6 +32,6 @@ def generate_launch_description():
             arguments=['--x', '0.28945', '--y', '0', '--z', '-0.046825',
                        '--roll', '0', '--pitch', '2.8782', '--yaw', '0',
                        '--frame-id', 'base_link',
-                       '--child-frame-id', '<REAL_LIDAR_FRAME>'],  # fill this in
+                       '--child-frame-id', 'utlidar/lidar'],  # fill this in
         )
     ])

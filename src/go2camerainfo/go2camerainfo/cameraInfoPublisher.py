@@ -12,10 +12,16 @@ class CameraInfoPublisher(Node):
     def __init__(self):
         super().__init__('camera_info_publisher')
 
-        default_calib = os.path.join(
-            get_package_share_directory('go2camerainfo'),
-            'config', 'go2_front_calib.json'
-        )
+        try:
+            default_calib = os.path.join(
+                get_package_share_directory('go2_camera_info'),
+                'config', 'go2_front_calib.json'
+            )
+        except Exception:
+            default_calib = os.path.join(
+                get_package_share_directory('go2camerainfo'),
+                'config', 'go2_front_calib.json'
+            )
 
         self.declare_parameter('calib_path', default_calib)
         self.declare_parameter('topic', '/front_camera/camera_info')

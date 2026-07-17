@@ -35,12 +35,10 @@ setup(
             'go2_sport_bridge = go2_nav.moveapinode:main',
             'odom_broadcast = go2_nav.odomBroadcast:main',
             'restamp_node = go2_nav.restamp_node:main',
-            'cameraimg = go2_vision.cameraaccess:main',
-            'object_client = follow_object_client:main',
-            'object_server= follow_object_server:main',
+            'cameraimg = go2_nav.cameraaccess:main',
+            'object_client = go2_nav.follow_object_client:main',
+            'object_server = go2_nav.follow_object_server:main',
+            'object_tracker = go2_nav.object_tracking_fusion:main',
         ],
     },
 )
-
-
-
