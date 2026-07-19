@@ -1,5 +1,5 @@
 import os, sys, time
-os.environ["RMW_IMPLEMENTATION"] = "rmw_fastrtps_cpp"
+# os.environ["RMW_IMPLEMENTATION"] = "rmw_fastrtps_cpp"
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import CompressedImage

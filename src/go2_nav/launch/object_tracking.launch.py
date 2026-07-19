@@ -49,7 +49,7 @@ def generate_launch_description():
             name='object_pursuit_node',
             output='screen',
             parameters=[{
-                'target_class': 'chair',
+                'target_class': 'person',
             }]
         ),
     ])
