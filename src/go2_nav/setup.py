@@ -19,8 +19,8 @@ setup(
         # Include all launch files
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         
-        # Include all config files (.yaml)
-        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
+        # Include all config files (.yaml and .json)
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml') + glob('config/*.json')),
         
         # Include all map files (.yaml and .pgm layout files)
         (os.path.join('share', package_name, 'maps'), glob('maps/*')),
@@ -38,7 +38,8 @@ setup(
             'cameraimg = go2_nav.cameraaccess:main',
             'object_client = go2_nav.follow_object_client:main',
             'object_server = go2_nav.follow_object_server:main',
-            'object_tracker = go2_nav.object_tracking_fusion:main',
+            'object_pursuit_node = go2_nav.object_tracking_fusion:main',
+            'camera_info_publisher = go2_nav.cameraInfoPublisher:main',
         ],
     },
 )

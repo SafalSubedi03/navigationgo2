@@ -58,21 +58,25 @@ All project packages are located in the `/workspace/src/` folder. Below is the t
 │   ├── go2_nav/
 │   │   ├── __init__.py
 │   │   ├── cameraaccess.py   # Grabs video samples from Unitree SDK, compresses to JPEG, and publishes
+│   │   ├── cameraInfoPublisher.py # Publishes CameraInfo parameters on /front_camera/camera_info (Integrated)
 │   │   ├── moveapicall.py    # Low-level movement calls using Unitree python bindings
 │   │   ├── moveapinode.py    # Go2SportapiBridge node subscribing to /cmd_vel_manual
 │   │   ├── odomBroadcast.py  # OdomTFBroadcaster publishing odom -> base_link
 │   │   ├── restamp_node.py   # RestampNode correcting the 126s clock offset on lidar/odom topics
 │   │   ├── follow_object_client.py  # Action client for FollowObject action (Mission Supervisor)
-│   │   └── follow_object_server.py  # Action server implementing depth projection & YOLO bounding box mapping
+│   │   ├── follow_object_server.py  # Action server implementing depth projection & YOLO bounding box mapping
+│   │   └── object_tracking_fusion.py # Unified tracking & depth-lifting sensor fusion node (Integrated)
 │   ├── config/
 │   │   ├── explore_lite_params.yaml # Frontier exploration parameters
 │   │   ├── nav2_params.yaml         # Standalone navigation parameters
-│   │   └── nav2_slam_params.yaml    # Navigation with SLAM parameters
+│   │   ├── nav2_slam_params.yaml    # Navigation with SLAM parameters
+│   │   └── go2_front_calib.json     # Calibrated camera intrinsic parameters (Integrated)
 │   ├── launch/
 │   │   ├── explore_slam.launch.py   # Full SLAM + Nav2 + frontier exploration launch file
 │   │   ├── slam_explore.launch.py   # RTAB-Map SLAM standalone launcher
 │   │   ├── navigatio.launch.py      # Nav2 bringup launcher
-│   │   └── detectionnavigate.launch.py # Target follow-object navigation launch file
+│   │   ├── detectionnavigate.launch.py # Target follow-object navigation launch file
+│   │   └── object_tracking.launch.py # Integrated launch file for transforms, camera info & tracker (Integrated)
 │   ├── maps/                 # Map storage directory
 │   ├── package.xml
 │   └── setup.py
@@ -82,17 +86,6 @@ All project packages are located in the `/workspace/src/` folder. Below is the t
 │   │   └── FollowObject.action      # ROS 2 action definition for object tracking missions
 │   ├── CMakeLists.txt
 │   └── package.xml
-│
-├── go2camerainfo/            # Static TF Publishers & Camera Intrinsic Matrix Broadcaster
-│   ├── go2camerainfo/
-│   │   ├── __init__.py
-│   │   ├── base2camera.py
-│   │   ├── base2lidar.py
-│   │   └── cameraInfoPublisher.py   # Publishes CameraInfo messages on /front_camera/camera_info
-│   ├── launch/
-│   │   └── camera_info.launch.py    # Spawns broadcasters for camera info, camera tf, and lidar tf
-│   ├── package.xml
-│   └── setup.py
 │
 └── m-explore-ros2/           # Frontier-based Exploration Package (explore_lite)
     ├── explore/              # explore_lite package source directory
@@ -115,11 +108,13 @@ All project packages are located in the `/workspace/src/` folder. Below is the t
 * **Target Container**: `go2nav` (runs control loops, TF tree transforms, and links with CycloneDDS)
 * **Key Scripts**:
   * [cameraaccess.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/cameraaccess.py): Instantiates the `cameraimg` node. Communicates with the Unitree SDK's custom video RPC service via `VideoClient` to grab raw camera frames. Compresses them into JPEG format (using `JPEG_QUALITY = 80` to restrict bandwidth usage to ~100–300 KB per frame) and publishes them on `/go2/camera/compressed` at 12.5 Hz.
+  * [cameraInfoPublisher.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/cameraInfoPublisher.py): Instantiates the `camera_info_publisher` node. Publishes static, calibrated camera parameters (`CameraInfo`) on `/front_camera/camera_info` at 30 Hz based on the local JSON config file (`go2_front_calib.json`).
   * [moveapinode.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/moveapinode.py): Instantiates the `go2_Sportapi_bridge` node. Connects to the Unitree Go2 SDK `SportClient` over the local network interface. Subscribes to the `/cmd_vel_manual` topic and converts incoming velocity commands into direct leg motion SDK calls (`Move(vx, vy, vyaw)`). Implements safety velocity limit clamping.
   * [restamp_node.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/restamp_node.py): Instantiates `restamp_node`. A crucial utility that catches `/utlidar/cloud_deskewed` (LiDAR) and `/utlidar/robot_odom` (Odometry) and overwrites their timestamps with current ROS clock time. This solves a hardware-specific ~126-second clock offset that would otherwise break ROS 2 TF lookups and synchronization filters.
   * [odomBroadcast.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/odomBroadcast.py): Instantiates `odom_tf_broadcaster`. Subscribes to the restamped `/utlidar/robot_odom_restamped` topic and publishes the TF transformation `odom` $\rightarrow$ `base_link`.
-  * [follow_object_server.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/follow_object_server.py): Instantiates the `follow_object_server` Action Server. It manages sensor-fusion by subscribing to camera parameters (`/front_camera/camera_info`), 2D bounding boxes (`/yolo/detections`), and point cloud data (`/utlidar/robot_odom_restamped` - *see Note below*). It projects 3D point cloud points onto the 2D camera image using a pinhole model, isolates the lidar points falling within the YOLO bounding box, computes their 3D centroid, and transforms this target location into a `map`-frame `PoseStamped` which it publishes to `/goal_pose`.
+  * [follow_object_server.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/follow_object_server.py): Instantiates the `follow_object_server` Action Server. It manages sensor-fusion by subscribing to camera parameters (`/front_camera/camera_info`), 2D bounding boxes (`/yolo/detections`), and point cloud data (`/utlidar/cloud_deskewed_restamped`). It projects 3D point cloud points onto the 2D camera image using a pinhole model, isolates the lidar points falling within the YOLO bounding box, computes their 3D centroid, and transforms this target location into a `map`-frame `PoseStamped` which it publishes to `/goal_pose`.
   * [follow_object_client.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/follow_object_client.py): Instantiates the `mission_supervisor_node` Action Client. Sends goals (e.g. track `person`) to `follow_object_server` and handles retry loops and status feedback.
+  * [object_tracking_fusion.py](file:///home/safal/Desktop/unitreego2nav/src/go2_nav/go2_nav/object_tracking_fusion.py): Instantiates `object_tracking_fusion`. A unified standalone node combining YOLO 2D tracking inputs, calibrated CameraInfo parameters, and LiDAR point clouds to directly estimate and publish `/goal_pose` without request cycles.
 
 ### 3. `go2_vision_msgs`
 * **ROS Package Name**: `go2_vision_msgs`
@@ -129,15 +124,6 @@ All project packages are located in the `/workspace/src/` folder. Below is the t
     * **Goal**: `string target_class`
     * **Result**: `bool target_lost`, `geometry_msgs/PoseStamped final_pose`, `string message`
     * **Feedback**: `geometry_msgs/PoseStamped current_pose`, `bool locked_on`, `int32 consecutive_hits`
-
-### 4. `go2camerainfo`
-* **ROS Package Name**: `go2_camera_info`
-* **Target Container**: `go2nav` (provides coordinate frames and parameters for sensor projection)
-* **Key Script**:
-  * [cameraInfoPublisher.py](file:///home/safal/Desktop/unitreego2nav/src/go2camerainfo/go2camerainfo/cameraInfoPublisher.py): Publishes static, calibrated camera parameters (`CameraInfo`) on `/front_camera/camera_info` based on a local JSON file (`go2_front_calib.json`).
-  * [camera_info.launch.py](file:///home/safal/Desktop/unitreego2nav/src/go2camerainfo/launch/camera_info.launch.py): Spawns the static transform publishers:
-    * `base_link` $\rightarrow$ `camera_link` (translation: `[0.28, 0.0, 0.05]`)
-    * `base_link` $\rightarrow$ `utlidar_lidar` (translation: `[0.28945, 0.0, -0.046825]`, pitch: `2.8782` rad)
 
 ### 5. `m-explore-ros2`
 * **ROS Package Name**: `explore_lite`
@@ -168,7 +154,7 @@ flowchart TD
         CamAccess["cameraimg<br><i>go2_nav</i>"]
         Restamp["restamp_node<br><i>go2_nav</i>"]
         OdomTF["odom_tf_broadcaster<br><i>go2_nav</i>"]
-        CamInfoPub["camera_info_publisher<br><i>go2camerainfo</i>"]
+        CamInfoPub["camera_info_publisher<br><i>go2_nav</i>"]
         
         FObjectServer["follow_object_server<br><i>go2_nav</i>"]
         FObjectClient["mission_supervisor_node<br><i>go2_nav</i>"]

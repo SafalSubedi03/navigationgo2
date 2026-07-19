@@ -23,22 +23,26 @@ The source space is mapped as follows:
 ├── go2_nav/                  # Control, Bridges, and Sensor Fusion Package (runs in go2nav container)
 │   ├── go2_nav/
 │   │   ├── __init__.py
+│   │   ├── cameraInfoPublisher.py # Publishes CameraInfo parameters on /front_camera/camera_info (Integrated)
 │   │   ├── cameraaccess.py   # Grabs video samples from Unitree SDK, compresses to JPEG, and publishes
 │   │   ├── moveapicall.py    # Low-level movement calls using Unitree python bindings
 │   │   ├── moveapinode.py    # Go2SportapiBridge node subscribing to /cmd_vel_manual
 │   │   ├── odomBroadcast.py  # OdomTFBroadcaster publishing odom -> base_link
 │   │   ├── restamp_node.py   # RestampNode correcting the 126s clock offset on lidar/odom topics
 │   │   ├── follow_object_client.py  # Action client for FollowObject action (Mission Supervisor)
-│   │   └── follow_object_server.py  # Action server implementing depth projection & YOLO bounding box mapping
+│   │   ├── follow_object_server.py  # Action server implementing depth projection & YOLO bounding box mapping
+│   │   └── object_tracking_fusion.py # Unified tracking & depth-lifting sensor fusion node (Integrated)
 │   ├── config/
 │   │   ├── explore_lite_params.yaml # Frontier exploration parameters
 │   │   ├── nav2_params.yaml         # Standalone navigation parameters
-│   │   └── nav2_slam_params.yaml    # Navigation with SLAM parameters
+│   │   ├── nav2_slam_params.yaml    # Navigation with SLAM parameters
+│   │   └── go2_front_calib.json     # Calibrated camera intrinsic parameters (Integrated)
 │   ├── launch/
 │   │   ├── explore_slam.launch.py   # Full SLAM + Nav2 + frontier exploration launch file
 │   │   ├── slam_explore.launch.py   # RTAB-Map SLAM standalone launcher
 │   │   ├── navigatio.launch.py      # Nav2 bringup launcher
-│   │   └── detectionnavigate.launch.py # Target follow-object navigation launch file
+│   │   ├── detectionnavigate.launch.py # Target follow-object navigation launch file
+│   │   └── object_tracking.launch.py # Integrated launch file for transforms, camera info & tracker (Integrated)
 │   ├── maps/                 # Map storage directory
 │   ├── package.xml
 │   └── setup.py
@@ -48,17 +52,6 @@ The source space is mapped as follows:
 │   │   └── FollowObject.action      # ROS 2 action definition for object tracking missions
 │   ├── CMakeLists.txt
 │   └── package.xml
-│
-├── go2camerainfo/            # Static TF Publishers & Camera Intrinsic Matrix Broadcaster
-│   ├── go2camerainfo/
-│   │   ├── __init__.py
-│   │   ├── base2camera.py
-│   │   ├── base2lidar.py
-│   │   └── cameraInfoPublisher.py   # Publishes CameraInfo messages on /front_camera/camera_info
-│   ├── launch/
-│   │   └── camera_info.launch.py    # Spawns broadcasters for camera info, camera tf, and lidar tf
-│   ├── package.xml
-│   └── setup.py
 │
 └── m-explore-ros2/           # Frontier-based Exploration Package (explore_lite)
     ├── explore/              # explore_lite package source directory
@@ -90,7 +83,7 @@ flowchart TD
         CamAccess["cameraimg<br><i>go2_nav</i>"]
         Restamp["restamp_node<br><i>go2_nav</i>"]
         OdomTF["odom_tf_broadcaster<br><i>go2_nav</i>"]
-        CamInfoPub["camera_info_publisher<br><i>go2camerainfo</i>"]
+        CamInfoPub["camera_info_publisher<br><i>go2_nav</i>"]
         
         FObjectServer["follow_object_server<br><i>go2_nav</i>"]
         FObjectClient["mission_supervisor_node<br><i>go2_nav</i>"]
