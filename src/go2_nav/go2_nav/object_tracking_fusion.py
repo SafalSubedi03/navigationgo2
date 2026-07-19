@@ -122,10 +122,29 @@ class ObjectPursuitNode(Node):
             self.get_logger().debug(f"TF Lidar->Camera failed: {e}")
             return
 
-        cloud_in_cam = do_transform_cloud(cloud_msg, transform)
-        points_struct = pc2.read_points(cloud_in_cam, field_names=("x", "y", "z"), skip_nans=True)
-        points = np.stack([points_struct["x"], points_struct["y"], points_struct["z"]], axis=-1).astype(np.float32)
+        # Read x/y/z from the ORIGINAL cloud (no transform yet) -- avoids
+        # do_transform_cloud's buggy full-message repacking, which crashes on
+        # Unitree's non-standard PointCloud2 field layout.
+        points_struct = pc2.read_points(cloud_msg, field_names=("x", "y", "z"), skip_nans=True)
+        points_raw = np.stack([points_struct["x"], points_struct["y"], points_struct["z"]], axis=-1).astype(np.float64)
 
+        # Apply the LiDAR->camera transform manually via a rotation matrix + translation,
+        # instead of transforming the whole message.
+        t = transform.transform.translation
+        q = transform.transform.rotation
+        translation = np.array([t.x, t.y, t.z])
+
+        def quat_to_rot_matrix(q):
+            x, y, z, w = q.x, q.y, q.z, q.w
+            return np.array([
+                [1 - 2*(y*y + z*z),     2*(x*y - z*w),         2*(x*z + y*w)],
+                [2*(x*y + z*w),         1 - 2*(x*x + z*z),     2*(y*z - x*w)],
+                [2*(x*z - y*w),         2*(y*z + x*w),         1 - 2*(x*x + y*y)],
+            ])
+
+        R = quat_to_rot_matrix(q)
+        points = (R @ points_raw.T).T + translation
+        points = points.astype(np.float32)
         optical_x = -points[:, 1]
         optical_y = -points[:, 2]
         optical_z = points[:, 0]

@@ -39,7 +39,7 @@ def generate_launch_description():
             arguments=['--x', '0.28945', '--y', '0', '--z', '-0.046825',
                        '--roll', '0', '--pitch', '2.8782', '--yaw', '0',
                        '--frame-id', 'base_link',
-                       '--child-frame-id', '<REAL_LIDAR_FRAME>'],
+                       '--child-frame-id', 'odom'],
         ),
 
         # --- Merged sensor-fusion + pursuit node ---
@@ -49,7 +49,7 @@ def generate_launch_description():
             name='object_pursuit_node',
             output='screen',
             parameters=[{
-                'target_class': 'person',
+                'target_class': 'chair',
             }]
         ),
     ])
