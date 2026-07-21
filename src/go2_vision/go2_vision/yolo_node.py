@@ -15,7 +15,7 @@ MODEL_PATH = 'yolo26n.engine'  # or '/workspace/yolo26n.engine' once exported he
 
 CAMERA_TOPIC = "/go2/camera/compressed"   # hardware topic, not /front_camera/image_raw
 CONF_THRESHOLD = 0.5
-TARGET_CLASSES = None
+TARGET_CLASSES = "person"
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 JPEG_QUALITY = 80
 

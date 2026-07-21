@@ -21,7 +21,7 @@ work end-to-end -- see the architecture discussion for details.
 """
 import threading
 import numpy as np
-
+import math 
 import rclpy
 from rclpy.node import Node
 from rclpy.duration import Duration
@@ -187,6 +187,8 @@ class ObjectPursuitNode(Node):
         pose_cam.pose.position.y = float(mech_y)
         pose_cam.pose.position.z = float(mech_z)
 
+        
+
         try:
             # Zero time here deliberately requests the LATEST available
             # transform rather than one at the exact historical stamp --
@@ -199,6 +201,38 @@ class ObjectPursuitNode(Node):
             # (e.g. SLAM isn't running), you'd never know why nothing works.
             self.get_logger().warn(f"TF camera->map failed: {e}", throttle_duration_sec=5.0)
             return
+        
+        
+
+        STANDOFF_DISTANCE = 1.0  # meters -- stop this far short of the object, facing it
+
+        # Get the robot's current position in the map frame
+        try:
+            robot_tf = self.tf_buffer.lookup_transform("map", "base_link", rclpy.time.Time())
+        except Exception as e:
+            self.get_logger().warn(f"Could not get robot pose for goal orientation: {e}", throttle_duration_sec=5.0)
+            robot_tf = None
+
+        if robot_tf is not None:
+            rx = robot_tf.transform.translation.x
+            ry = robot_tf.transform.translation.y
+
+            dx = pose_map.pose.position.x - rx
+            dy = pose_map.pose.position.y - ry
+            distance = math.hypot(dx, dy)
+            yaw = math.atan2(dy, dx)
+
+            # Pull the goal back by STANDOFF_DISTANCE along the same line, so the
+            # robot stops short of the object instead of trying to walk into it
+            if distance > STANDOFF_DISTANCE:
+                pose_map.pose.position.x = rx + (distance - STANDOFF_DISTANCE) * math.cos(yaw)
+                pose_map.pose.position.y = ry + (distance - STANDOFF_DISTANCE) * math.sin(yaw)
+
+            # Set orientation to face the object (yaw only, quadruped stays upright)
+            pose_map.pose.orientation.z = math.sin(yaw / 2.0)
+            pose_map.pose.orientation.w = math.cos(yaw / 2.0)
+            pose_map.pose.orientation.x = 0.0
+            pose_map.pose.orientation.y = 0.0
 
         with self.state_lock:
             self.latest_pose = pose_map
