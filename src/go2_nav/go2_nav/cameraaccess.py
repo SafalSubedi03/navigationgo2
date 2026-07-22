@@ -12,7 +12,7 @@ from unitree_sdk2py.go2.video.video_client import VideoClient
 
 NETWORK_INTERFACE = "eth0"
 
-# JPEG quality: 0-100. 80 is a good balance of size vs visual quality.
+
 JPEG_QUALITY = 80
 
 
@@ -27,16 +27,10 @@ class cameraimg(Node):
 
         # 2. Setup Unitree Video Client
         self.client = VideoClient()
-        self.client.SetTimeout(3.0)  # matches Unitree's own example; 30s was unnecessarily long
+        self.client.SetTimeout(3.0)  
         self.client.Init()
 
-        # Publishing CompressedImage instead of raw Image -- a raw 1920x1080
-        # bgr8 frame is ~6.22 MB uncompressed. At 12.5 Hz that needs ~77 MB/s
-        # of sustained throughput, which no ordinary ethernet/WiFi link can
-        # sustain -- that bandwidth ceiling was the actual cause of the
-        # "latency" (frames queuing up faster than the network could drain
-        # them). JPEG at quality 80 typically shrinks each frame to
-        # ~100-300 KB, a 20-60x reduction.
+
         self.publisher = self.create_publisher(CompressedImage, 'go2/camera/compressed', 10)
 
         self.timer_period = 0.08  # ~12.5 Hz, easier on the video RPC channel than 25 Hz

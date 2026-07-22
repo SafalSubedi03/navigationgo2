@@ -9,19 +9,16 @@ from sensor_msgs.msg import CompressedImage
 from vision_msgs.msg import Detection2DArray, Detection2D, ObjectHypothesisWithPose
 from ultralytics import YOLO
 
-# Hardware-specific: engines are hardware/TensorRT-version specific, always
-# re-export directly on this machine, never copy from sim/another device.
-MODEL_PATH = 'yolo26n.engine'  # or '/workspace/yolo26n.engine' once exported here
 
-CAMERA_TOPIC = "/go2/camera/compressed"   # hardware topic, not /front_camera/image_raw
+MODEL_PATH = 'yolo26n.engine'
+
+CAMERA_TOPIC = "/go2/camera/compressed"  
 CONF_THRESHOLD = 0.5
-TARGET_CLASSES = "person"
+TARGET_CLASSES = ("person","sports ball")
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 JPEG_QUALITY = 80
 
-# Throttle inference relative to the ~12.5 Hz camera feed, to leave
-# GPU/CPU headroom for SLAM/Nav2/explore_lite running in the go2nav
-# container concurrently.
+
 PROCESS_EVERY_N_FRAMES = 2
 
 
@@ -101,7 +98,8 @@ class YoloCameraNode(Node):
             for box in results.boxes:
                 cls_id = int(box.cls[0])
                 cls_name = self.model.names[cls_id]
-
+                track_id = int(box.id[0]) if box.id is not None else -1
+                self.get_logger().debug(f"raw detection: class={cls_name}, track_id={track_id}, conf={float(box.conf[0]):.2f}")
                 if TARGET_CLASSES is not None and cls_name not in TARGET_CLASSES:
                     continue
 
@@ -119,6 +117,8 @@ class YoloCameraNode(Node):
 
                 if track_id != self.locked_track_id:
                     continue
+
+
 
                 self.last_seen_time = time.time()
                 conf = float(box.conf[0])

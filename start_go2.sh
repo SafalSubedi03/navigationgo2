@@ -43,7 +43,7 @@ if [ $? != 0 ]; then
   tmux send-keys -t $SESSION:3 "1" C-m
   sleep 1
   tmux send-keys -t $SESSION:3 \
-    "docker exec -it -w /workspace go2nav bash -c 'sleep 35 && source /nav_build/install/setup.bash && ros2 launch go2_nav object_pursuit.launch.py; bash'" C-m
+    "docker exec -it -w /workspace go2nav bash -c 'sleep 35 && source /nav_build/install/setup.bash && ros2 launch go2_nav object_tracking.launch.py; bash'" C-m
 
   # --- Window 4: scratch ---
   tmux new-window -t $SESSION -n "scratch"

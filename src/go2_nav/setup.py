@@ -36,8 +36,6 @@ setup(
             'odom_broadcast = go2_nav.odomBroadcast:main',
             'restamp_node = go2_nav.restamp_node:main',
             'cameraimg = go2_nav.cameraaccess:main',
-            'object_client = go2_nav.follow_object_client:main',
-            'object_server = go2_nav.follow_object_server:main',
             'object_pursuit_node = go2_nav.object_tracking_fusion:main',
             'camera_info_publisher = go2_nav.cameraInfoPublisher:main',
         ],
