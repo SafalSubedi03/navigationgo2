@@ -30,7 +30,7 @@ from rclpy.executors import MultiThreadedExecutor
 
 from sensor_msgs.msg import PointCloud2, CameraInfo
 from vision_msgs.msg import Detection2DArray
-from geometry_msgs.msg import PoseStamped
+from geometry_msgs.msg import PoseStamped, Twist
 from std_msgs.msg import String
 from message_filters import Subscriber, ApproximateTimeSynchronizer
 import sensor_msgs_py.point_cloud2 as pc2
@@ -51,7 +51,14 @@ class ObjectPursuitNode(Node):
         # Configurable via launch file / ros2 param, defaults to "person"
         self.declare_parameter('target_class', 'person')
         self.target_class = self.get_parameter('target_class').value
-        self.create_subscription(String,'/go2/select_target_class',self.targetInfo,10)
+
+        self.declare_parameter('search_yaw_rate', 0.4)
+        self.search_yaw_rate = float(self.get_parameter('search_yaw_rate').value)
+
+        self.declare_parameter('sync_slop', 0.3)
+        self.sync_slop = float(self.get_parameter('sync_slop').value)
+
+        self.create_subscription(String, '/go2/select_target_class', self.targetInfo, 10)
 
         self.sensor_cb_group = MutuallyExclusiveCallbackGroup()
         self.timer_cb_group = MutuallyExclusiveCallbackGroup()
@@ -60,6 +67,7 @@ class ObjectPursuitNode(Node):
         self.latest_pose = None
         self.last_seen_time = self.get_clock().now()
         self.consecutive_hits = 0
+        self.was_searching = False
 
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
@@ -73,25 +81,24 @@ class ObjectPursuitNode(Node):
 
         det_sub = Subscriber(self, Detection2DArray, "/yolo/detections")
         cloud_sub = Subscriber(self, PointCloud2, "/utlidar/cloud_deskewed_restamped")
-        self.sync = ApproximateTimeSynchronizer([det_sub, cloud_sub], queue_size=10, slop=0.05)
+        self.sync = ApproximateTimeSynchronizer([det_sub, cloud_sub], queue_size=10, slop=self.sync_slop)
         self.sync.registerCallback(self.synced_callback)
 
         self.goal_pose_pub = self.create_publisher(PoseStamped, '/goal_pose', 10)
+        self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel_manual', 10)
 
-        # Simple periodic status/timeout check, replacing the old Action
-        # feedback/retry loop -- just logs state for now, no explicit
-        # success/failure result since there's no Action client to report to.
+        # Simple periodic status/timeout check and search spin timer
         self.status_timer = self.create_timer(
             0.5, self.status_check, callback_group=self.timer_cb_group
         )
 
         self.get_logger().info(
-            f"Object Pursuit Node started. Target class: '{self.target_class}'"
+            f"Object Pursuit Node started. Target class: '{self.target_class}', Search Yaw Rate: {self.search_yaw_rate} rad/s"
         )
 
-    def targetInfo(self,msg:String):
+    def targetInfo(self, msg: String):
         self.target_class = msg.data.strip()
-        self.get_logger().info(f"Object Pursuit Node started. Target class: '{self.target_class}'")
+        self.get_logger().info(f"Target class updated to: '{self.target_class}'")
 
     def camera_info_callback(self, msg: CameraInfo):
         if self.cam_model is None:
@@ -100,14 +107,11 @@ class ObjectPursuitNode(Node):
             self.get_logger().info("Camera model initialized.")
 
     def synced_callback(self, det_array, cloud_msg):
-        # FIX: guard against camera_info not having arrived yet -- without
-        # this, the fx/fy/cx/cy lookup below throws AttributeError the
-        # instant real data arrives.
+        # FIX: guard against camera_info not having arrived yet
         if self.cam_model is None:
             self.get_logger().warn("Waiting for camera_info...", throttle_duration_sec=5.0)
             return
 
-        
         if len(det_array.detections) == 0:
             with self.state_lock:
                 self.consecutive_hits = 0
@@ -116,23 +120,27 @@ class ObjectPursuitNode(Node):
         target_det = det_array.detections[0]
 
         try:
-            transform = self.tf_buffer.lookup_transform(
-                "camera_link",
-                cloud_msg.header.frame_id,
-                cloud_msg.header.stamp,
-                timeout=Duration(seconds=0.1))
+            try:
+                transform = self.tf_buffer.lookup_transform(
+                    "camera_link",
+                    cloud_msg.header.frame_id,
+                    cloud_msg.header.stamp,
+                    timeout=Duration(seconds=0.1))
+            except Exception:
+                transform = self.tf_buffer.lookup_transform(
+                    "camera_link",
+                    cloud_msg.header.frame_id,
+                    rclpy.time.Time(),
+                    timeout=Duration(seconds=0.1))
         except Exception as e:
-            self.get_logger().debug(f"TF Lidar->Camera failed: {e}")
+            self.get_logger().warn(f"TF Lidar->Camera failed ({cloud_msg.header.frame_id} -> camera_link): {e}", throttle_duration_sec=5.0)
             return
 
-        # Read x/y/z from the ORIGINAL cloud (no transform yet) -- avoids
-        # do_transform_cloud's buggy full-message repacking, which crashes on
-        # Unitree's non-standard PointCloud2 field layout.
+        # Read x/y/z from the ORIGINAL cloud (no transform yet)
         points_struct = pc2.read_points(cloud_msg, field_names=("x", "y", "z"), skip_nans=True)
         points_raw = np.stack([points_struct["x"], points_struct["y"], points_struct["z"]], axis=-1).astype(np.float64)
 
-        # Apply the LiDAR->camera transform manually via a rotation matrix + translation,
-        # instead of transforming the whole message.
+        # Apply the LiDAR->camera transform manually via rotation matrix + translation
         t = transform.transform.translation
         q = transform.transform.rotation
         translation = np.array([t.x, t.y, t.z])
@@ -168,6 +176,7 @@ class ObjectPursuitNode(Node):
         in_box = (us >= x1) & (us <= x2) & (vs >= y1) & (vs <= y2)
         box_points = points[in_box]
         if box_points.shape[0] < 5:
+            self.get_logger().warn(f"Insufficient LiDAR points ({box_points.shape[0]}) projected into detection box.", throttle_duration_sec=5.0)
             with self.state_lock:
                 self.consecutive_hits = 0
             return
@@ -190,22 +199,12 @@ class ObjectPursuitNode(Node):
         pose_cam.pose.position.y = float(mech_y)
         pose_cam.pose.position.z = float(mech_z)
 
-        
-
         try:
-            # Zero time here deliberately requests the LATEST available
-            # transform rather than one at the exact historical stamp --
-            # reasonable since map<->camera_link doesn't change quickly.
             pose_cam.header.stamp = rclpy.time.Time().to_msg()
             pose_map = self.tf_buffer.transform(pose_cam, "map", timeout=Duration(seconds=0.1))
         except Exception as e:
-            # FIX: this used to be a bare "except: return" with NO logging --
-            # completely silent failure. If "map" frame doesn't exist yet
-            # (e.g. SLAM isn't running), you'd never know why nothing works.
             self.get_logger().warn(f"TF camera->map failed: {e}", throttle_duration_sec=5.0)
             return
-        
-        
 
         STANDOFF_DISTANCE = 1.0  # meters -- stop this far short of the object, facing it
 
@@ -225,13 +224,11 @@ class ObjectPursuitNode(Node):
             distance = math.hypot(dx, dy)
             yaw = math.atan2(dy, dx)
 
-            # Pull the goal back by STANDOFF_DISTANCE along the same line, so the
-            # robot stops short of the object instead of trying to walk into it
             if distance > STANDOFF_DISTANCE:
                 pose_map.pose.position.x = rx + (distance - STANDOFF_DISTANCE) * math.cos(yaw)
                 pose_map.pose.position.y = ry + (distance - STANDOFF_DISTANCE) * math.sin(yaw)
 
-            # Set orientation to face the object (yaw only, quadruped stays upright)
+            # Set orientation to face the object (yaw only)
             pose_map.pose.orientation.z = math.sin(yaw / 2.0)
             pose_map.pose.orientation.w = math.cos(yaw / 2.0)
             pose_map.pose.orientation.x = 0.0
@@ -254,10 +251,21 @@ class ObjectPursuitNode(Node):
         locked_on = hits >= LOCK_ON_HITS
 
         if time_since_last_seen > Duration(seconds=TIMEOUT_SECONDS):
-            self.get_logger().warn(
-                f"No '{self.target_class}' seen for >{TIMEOUT_SECONDS}s.",
-                throttle_duration_sec=5.0
+            if not self.was_searching:
+                self.get_logger().info(
+                    f"*** ROTATING SEARCH: Target '{self.target_class}' lost for >{TIMEOUT_SECONDS}s. Starting in-place rotation at {self.search_yaw_rate} rad/s on /cmd_vel_manual ***"
+                )
+                self.was_searching = True
+
+            self.get_logger().info(
+                f"[SEARCHING] Robot actively rotating in place (yaw rate: {self.search_yaw_rate} rad/s) looking for '{self.target_class}'...",
+                throttle_duration_sec=2.0
             )
+
+            # Rotate in place to search for target
+            cmd_msg = Twist()
+            cmd_msg.angular.z = self.search_yaw_rate
+            self.cmd_vel_pub.publish(cmd_msg)
         elif pose is not None:
             status = "LOCKED" if locked_on else "SEARCHING"
             self.get_logger().info(
@@ -265,6 +273,14 @@ class ObjectPursuitNode(Node):
                 f"X={pose.pose.position.x:.2f}, Y={pose.pose.position.y:.2f}",
                 throttle_duration_sec=1.0
             )
+            # Stop rotation command once target is spotted
+            if self.was_searching:
+                self.get_logger().info(
+                    f"*** TARGET SPOTTED: Stopping search rotation on /cmd_vel_manual ***"
+                )
+                cmd_msg = Twist()
+                self.cmd_vel_pub.publish(cmd_msg)
+                self.was_searching = False
 
 
 def main(args=None):
