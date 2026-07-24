@@ -1,3 +1,4 @@
+import os
 import time
 import cv2
 import numpy as np
@@ -9,6 +10,7 @@ from sensor_msgs.msg import CompressedImage
 from vision_msgs.msg import Detection2DArray, Detection2D, ObjectHypothesisWithPose
 from ultralytics import YOLO
 from std_msgs.msg import String
+from ament_index_python.packages import get_package_share_directory
 
 MODEL_PATH = 'yolo26n.engine'
 
@@ -26,7 +28,20 @@ class YoloCameraNode(Node):
     def __init__(self):
         super().__init__("yolo_camera_node")
 
+        # Resolve path to custom tracker configuration (custombotsort.yaml)
+        try:
+            package_share_dir = get_package_share_directory('go2_vision')
+            default_tracker_path = os.path.join(package_share_dir, 'config', 'custombotsort.yaml')
+        except Exception:
+            default_tracker_path = os.path.abspath(
+                os.path.join(os.path.dirname(__file__), '..', 'config', 'custombotsort.yaml')
+            )
+
+        self.declare_parameter("tracker_config", default_tracker_path)
+        self.tracker_config = self.get_parameter("tracker_config").get_parameter_value().string_value
+
         self.get_logger().info(f"Loading {MODEL_PATH} onto device = {DEVICE}")
+        self.get_logger().info(f"Using tracker configuration: {self.tracker_config}")
         self.model = YOLO(MODEL_PATH)
 
         self.frame_counter = 0
@@ -80,7 +95,7 @@ class YoloCameraNode(Node):
                 persist=True,
                 verbose=False,
                 device=DEVICE,
-                tracker="botsort.yaml"
+                tracker=self.tracker_config
             )[0]
         except Exception as e:
             self.get_logger().error(f"Inference failed: {str(e)}", throttle_duration_sec=5.0)

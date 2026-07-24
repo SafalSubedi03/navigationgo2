@@ -7,23 +7,6 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 
 
-# # Dynamically inject local Unitree SDK into sys.path by climbing up to the workspace root
-# current_dir = os.path.dirname(os.path.abspath(__file__))
-# SDK_PATH = None
-
-# while current_dir != os.path.dirname(current_dir):  # Stop if we hit the filesystem root '/'
-#     possible_sdk = os.path.join(current_dir, "sdk", "unitree_sdk2_python")
-#     if os.path.exists(possible_sdk):
-#         SDK_PATH = possible_sdk
-#         break
-#     current_dir = os.path.dirname(current_dir)
-
-# if SDK_PATH and SDK_PATH not in sys.path:
-#     sys.path.append(SDK_PATH)
-# else:
-#     # Quick fallback warning if the folder structure is completely altered
-#     print(f"Warning: Could not find Unitree SDK path dynamically!", file=sys.stderr)
-
 # Unitree SDK Imports
 from unitree_sdk2py.core.channel import ChannelFactoryInitialize
 from unitree_sdk2py.go2.sport.sport_client import SportClient
