@@ -8,13 +8,13 @@ from rclpy.node import Node
 from sensor_msgs.msg import CompressedImage
 from vision_msgs.msg import Detection2DArray, Detection2D, ObjectHypothesisWithPose
 from ultralytics import YOLO
-
+from std_msgs.msg import String
 
 MODEL_PATH = 'yolo26n.engine'
 
 CAMERA_TOPIC = "/go2/camera/compressed"  
 CONF_THRESHOLD = 0.5
-TARGET_CLASSES = ("person","sports ball")
+DEFAULT_CLASS = ("person")
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 JPEG_QUALITY = 80
 
@@ -32,6 +32,7 @@ class YoloCameraNode(Node):
         self.frame_counter = 0
         self._device_confirmed = False
         self.locked_track_id = None
+        self.target_class = DEFAULT_CLASS[0]  
         self.last_seen_time = time.time()
 
         self.sub = self.create_subscription(
@@ -49,6 +50,16 @@ class YoloCameraNode(Node):
             f"publishing to /yolo/annotated_image/compressed and /yolo/detections "
             f"(processing every {PROCESS_EVERY_N_FRAMES} frames)."
         )
+        self.create_subscription(String,'/go2/select_target_class',self.on_target_change,10)
+
+    def on_target_change(self, msg:String):
+        new_class = msg.data.strip()
+        if not new_class:
+            return 
+        self.target_class = new_class
+        self.locked_track_id = None
+        self.get_logger().info(f"*** Target class switched to: '{self.target_class}' ***")
+        
 
     def image_callback(self, msg: CompressedImage):
         self.frame_counter += 1
@@ -100,7 +111,9 @@ class YoloCameraNode(Node):
                 cls_name = self.model.names[cls_id]
                 track_id = int(box.id[0]) if box.id is not None else -1
                 self.get_logger().debug(f"raw detection: class={cls_name}, track_id={track_id}, conf={float(box.conf[0]):.2f}")
-                if TARGET_CLASSES is not None and cls_name not in TARGET_CLASSES:
+
+
+                if  cls_name != self.target_class:
                     continue
 
                 track_id = int(box.id[0])

@@ -31,7 +31,7 @@ from rclpy.executors import MultiThreadedExecutor
 from sensor_msgs.msg import PointCloud2, CameraInfo
 from vision_msgs.msg import Detection2DArray
 from geometry_msgs.msg import PoseStamped
-
+from std_msgs.msg import String
 from message_filters import Subscriber, ApproximateTimeSynchronizer
 import sensor_msgs_py.point_cloud2 as pc2
 from image_geometry import PinholeCameraModel
@@ -51,6 +51,7 @@ class ObjectPursuitNode(Node):
         # Configurable via launch file / ros2 param, defaults to "person"
         self.declare_parameter('target_class', 'person')
         self.target_class = self.get_parameter('target_class').value
+        self.create_subscription(String,'/go2/select_target_class',self.targetInfo,10)
 
         self.sensor_cb_group = MutuallyExclusiveCallbackGroup()
         self.timer_cb_group = MutuallyExclusiveCallbackGroup()
@@ -88,6 +89,10 @@ class ObjectPursuitNode(Node):
             f"Object Pursuit Node started. Target class: '{self.target_class}'"
         )
 
+    def targetInfo(self,msg:String):
+        self.target_class = msg.data.strip()
+        self.get_logger().info(f"Object Pursuit Node started. Target class: '{self.target_class}'")
+
     def camera_info_callback(self, msg: CameraInfo):
         if self.cam_model is None:
             self.cam_model = PinholeCameraModel()
@@ -102,15 +107,13 @@ class ObjectPursuitNode(Node):
             self.get_logger().warn("Waiting for camera_info...", throttle_duration_sec=5.0)
             return
 
-        # Filter detections down to the target class first
-        matching = [d for d in det_array.detections
-                    if any(r.hypothesis.class_id == self.target_class for r in d.results)]
-        if len(matching) == 0:
+        
+        if len(det_array.detections) == 0:
             with self.state_lock:
                 self.consecutive_hits = 0
             return
 
-        target_det = matching[0]
+        target_det = det_array.detections[0]
 
         try:
             transform = self.tf_buffer.lookup_transform(
