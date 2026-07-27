@@ -42,6 +42,9 @@ from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud
 
 TIMEOUT_SECONDS = 2.0
 LOCK_ON_HITS = 3
+STANDOFF_DISTANCE = 1.0  # meters -- stop this far short of the object, facing it
+ARRIVAL_TOLERANCE = 1
+
 
 
 class ObjectPursuitNode(Node):
@@ -52,13 +55,14 @@ class ObjectPursuitNode(Node):
         self.declare_parameter('target_class', 'person')
         self.target_class = self.get_parameter('target_class').value
 
-        self.declare_parameter('search_yaw_rate', 0.4)
+        self.declare_parameter('search_yaw_rate', 0.6)
         self.search_yaw_rate = float(self.get_parameter('search_yaw_rate').value)
 
         self.declare_parameter('sync_slop', 0.3)
         self.sync_slop = float(self.get_parameter('sync_slop').value)
 
         self.create_subscription(String, '/go2/select_target_class', self.targetInfo, 10)
+        
 
         self.sensor_cb_group = MutuallyExclusiveCallbackGroup()
         self.timer_cb_group = MutuallyExclusiveCallbackGroup()
@@ -93,7 +97,7 @@ class ObjectPursuitNode(Node):
         )
 
         self.get_logger().info(
-            f"Object Pursuit Node started. Target class: '{self.target_class}', Search Yaw Rate: {self.search_yaw_rate} rad/s"
+            f"Object Pursuit Node started. Target class: Safal '{self.target_class}', Search Yaw Rate: {self.search_yaw_rate} rad/s"
         )
 
     def targetInfo(self, msg: String):
@@ -107,7 +111,7 @@ class ObjectPursuitNode(Node):
             self.get_logger().info("Camera model initialized.")
 
     def synced_callback(self, det_array, cloud_msg):
-        # FIX: guard against camera_info not having arrived yet
+        
         if self.cam_model is None:
             self.get_logger().warn("Waiting for camera_info...", throttle_duration_sec=5.0)
             return
@@ -206,7 +210,6 @@ class ObjectPursuitNode(Node):
             self.get_logger().warn(f"TF camera->map failed: {e}", throttle_duration_sec=5.0)
             return
 
-        STANDOFF_DISTANCE = 1.0  # meters -- stop this far short of the object, facing it
 
         # Get the robot's current position in the map frame
         try:
@@ -214,7 +217,7 @@ class ObjectPursuitNode(Node):
         except Exception as e:
             self.get_logger().warn(f"Could not get robot pose for goal orientation: {e}", throttle_duration_sec=5.0)
             robot_tf = None
-
+      
         if robot_tf is not None:
             rx = robot_tf.transform.translation.x
             ry = robot_tf.transform.translation.y
@@ -237,9 +240,12 @@ class ObjectPursuitNode(Node):
         with self.state_lock:
             self.latest_pose = pose_map
             self.last_seen_time = self.get_clock().now()
-            self.consecutive_hits += 1
+            self.consecutive_hits += 1            
 
         self.goal_pose_pub.publish(pose_map)
+
+
+
 
     def status_check(self):
         with self.state_lock:
@@ -248,39 +254,52 @@ class ObjectPursuitNode(Node):
             pose = self.latest_pose
 
         time_since_last_seen = self.get_clock().now() - last_seen
-        locked_on = hits >= LOCK_ON_HITS
+        locked_on = hits >= LOCK_ON_HITS           
+        
+        #State-1, Idle / Robot can see the object before timeout
+        if time_since_last_seen < Duration(seconds=TIMEOUT_SECONDS):
+            if locked_on:
+                self.get_logger().info("Robot is locked on the object")               
+            else:
+                self.get_logger().info("Robot is actively searching for the object")  
+            return         
+               
 
-        if time_since_last_seen > Duration(seconds=TIMEOUT_SECONDS):
-            if not self.was_searching:
-                self.get_logger().info(
-                    f"*** ROTATING SEARCH: Target '{self.target_class}' lost for >{TIMEOUT_SECONDS}s. Starting in-place rotation at {self.search_yaw_rate} rad/s on /cmd_vel_manual ***"
-                )
-                self.was_searching = True
+        #State-2 when object timeout has occured
+        self.get_logger().info("heheDetection Timed Out. Moving to Last Seen Position")
+        if pose is None:
+            self.get_logger().warn("Pose Not Received")
 
-            self.get_logger().info(
-                f"[SEARCHING] Robot actively rotating in place (yaw rate: {self.search_yaw_rate} rad/s) looking for '{self.target_class}'...",
-                throttle_duration_sec=2.0
-            )
+            return
+            
+        try:
+            robot_tf = self.tf_buffer.lookup_transform("map", "base_link", rclpy.time.Time())
+        except Exception as e:
+            self.get_logger().warn(f"Could not get robot pose for goal orientation: {e}", throttle_duration_sec=5.0)
+            return 
 
-            # Rotate in place to search for target
+        rx = robot_tf.transform.translation.x
+        ry = robot_tf.transform.translation.y    
+
+        distance = math.hypot(pose.pose.position.x - rx, pose.pose.position.y - ry)
+        self.get_logger().info(f"Distance =  {distance}, Arrival_Tolerance = {ARRIVAL_TOLERANCE} ")
+
+        if distance <= ARRIVAL_TOLERANCE:
             cmd_msg = Twist()
             cmd_msg.angular.z = self.search_yaw_rate
             self.cmd_vel_pub.publish(cmd_msg)
-        elif pose is not None:
-            status = "LOCKED" if locked_on else "SEARCHING"
-            self.get_logger().info(
-                f"[{status}] Hits: {hits} | "
-                f"X={pose.pose.position.x:.2f}, Y={pose.pose.position.y:.2f}",
-                throttle_duration_sec=1.0
-            )
-            # Stop rotation command once target is spotted
-            if self.was_searching:
-                self.get_logger().info(
-                    f"*** TARGET SPOTTED: Stopping search rotation on /cmd_vel_manual ***"
-                )
-                cmd_msg = Twist()
-                self.cmd_vel_pub.publish(cmd_msg)
-                self.was_searching = False
+            self.get_logger().info("Rotation Cmd Sent")
+
+       
+
+        status = "LOCKED" if locked_on else "SEARCHING"
+        self.get_logger().info(
+            f"[{status}] Hits: {hits} | "
+            f"X={pose.pose.position.x:.2f}, Y={pose.pose.position.y:.2f}",
+            throttle_duration_sec=1.0
+    )
+    
+    
 
 
 def main(args=None):
