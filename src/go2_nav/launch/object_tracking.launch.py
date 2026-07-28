@@ -32,15 +32,15 @@ def generate_launch_description():
         # actually present in the restamped point cloud's header. Find it with:
         #   ros2 topic echo /utlidar/cloud_deskewed_restamped --field header.frame_id --once
         # then replace the placeholder below before launching.
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='lidar_tf_broadcaster',
-            arguments=['--x', '0.28945', '--y', '0', '--z', '-0.046825',
-                       '--roll', '0', '--pitch', '2.8782', '--yaw', '0',
-                       '--frame-id', 'base_link',
-                       '--child-frame-id', 'odom'],
-        ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='lidar_tf_broadcaster',
+        #     arguments=['--x', '0.28945', '--y', '0', '--z', '-0.046825',
+        #                '--roll', '0', '--pitch', '2.8782', '--yaw', '0',
+        #                '--frame-id', 'base_link',
+        #                '--child-frame-id', 'odom'],
+        # ),
 
         # --- Merged sensor-fusion + pursuit node ---
         Node(
