@@ -63,6 +63,8 @@ class ObjectPursuitNode(Node):
 
         self.create_subscription(String, '/go2/select_target_class', self.targetInfo, 10)
         
+        self.declare_parameter('cloud_topic', '/utlidar/cloud_deskewed_restamped')
+        self.cloud_topic = self.get_parameter('cloud_topic').value
 
         self.sensor_cb_group = MutuallyExclusiveCallbackGroup()
         self.timer_cb_group = MutuallyExclusiveCallbackGroup()
@@ -84,7 +86,7 @@ class ObjectPursuitNode(Node):
         )
 
         det_sub = Subscriber(self, Detection2DArray, "/yolo/detections")
-        cloud_sub = Subscriber(self, PointCloud2, "/utlidar/cloud_deskewed_restamped")
+        cloud_sub = Subscriber(self, PointCloud2, self.cloud_topic)
         self.sync = ApproximateTimeSynchronizer([det_sub, cloud_sub], queue_size=10, slop=self.sync_slop)
         self.sync.registerCallback(self.synced_callback)
 
@@ -99,6 +101,7 @@ class ObjectPursuitNode(Node):
         self.get_logger().info(
             f"Object Pursuit Node started. Target class: Safal '{self.target_class}', Search Yaw Rate: {self.search_yaw_rate} rad/s"
         )
+
 
     def targetInfo(self, msg: String):
         self.target_class = msg.data.strip()
