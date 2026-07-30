@@ -22,14 +22,14 @@ if [ $? != 0 ]; then
   tmux send-keys -t $SESSION:0 "1" C-m
   sleep 1
   tmux send-keys -t $SESSION:0 \
-    "docker exec -it -w /workspace go2nav bash -c 'source /nav_build/install/setup.bash && ros2 launch go2_nav explore_slam.launch.py explore:=false; bash'" C-m
+    "docker exec -it -w /workspace go2nav bash -c 'source /nav_build/install/setup.bash && ros2 launch go2_nav explore_slam.launch.py explore:=false lidar_source:=livox; bash'" C-m
 
   # --- Window 1: camera ---
   tmux new-window -t $SESSION -n "camera"
   tmux send-keys -t $SESSION:1 "1" C-m
   sleep 1
   tmux send-keys -t $SESSION:1 \
-    "docker exec -it -w /workspace go2nav bash -c 'sleep 5 && source /nav_build/install/setup.bash && RMW_IMPLEMENTATION=rmw_fastrtps_cpp ros2 run go2_nav cameraimg; bash'" C-m
+    "docker exec -it -w /workspace go2nav bash -c 'sleep 5 && source /nav_build/install/setup.bash && ros2 run go2_nav cameraimg; bash'" C-m
 
   # --- Window 2: yolo ---
   tmux new-window -t $SESSION -n "yolo"

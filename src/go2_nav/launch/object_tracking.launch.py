@@ -1,22 +1,34 @@
 from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.conditions import IfCondition
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
+    lidar_source = LaunchConfiguration('lidar_source')
+
+    declare_lidar_source = DeclareLaunchArgument(
+        'lidar_source',
+        default_value='internal',
+        description="'internal' (Unitree onboard LiDAR) or 'external' (Livox Mid-360)"
+    )
+
+    cloud_topic = PythonExpression([
+        "'/utlidar/cloud_deskewed_restamped' if '", lidar_source, "' == 'internal' else '/livox/lidar'"
+    ])
+
     return LaunchDescription([
-        # --- Static camera intrinsics ---
+        declare_lidar_source,
+
         Node(
             package='go2_nav',
             executable='camera_info_publisher',
             name='camera_info_publisher',
             output='screen',
-            parameters=[{
-                'frame_id': 'camera_link',
-                'publish_rate_hz': 30.0,
-            }]
+            parameters=[{'frame_id': 'camera_link', 'publish_rate_hz': 30.0}]
         ),
 
-        # --- Static TF: base_link -> camera_link ---
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
@@ -27,22 +39,8 @@ def generate_launch_description():
                        '--child-frame-id', 'camera_link'],
         ),
 
-        # --- Static TF: base_link -> LiDAR ---
-        # IMPORTANT: <REAL_LIDAR_FRAME> must exactly match the frame_id
-        # actually present in the restamped point cloud's header. Find it with:
-        #   ros2 topic echo /utlidar/cloud_deskewed_restamped --field header.frame_id --once
-        # then replace the placeholder below before launching.
-        # Node(
-        #     package='tf2_ros',
-        #     executable='static_transform_publisher',
-        #     name='lidar_tf_broadcaster',
-        #     arguments=['--x', '0.28945', '--y', '0', '--z', '-0.046825',
-        #                '--roll', '0', '--pitch', '2.8782', '--yaw', '0',
-        #                '--frame-id', 'base_link',
-        #                '--child-frame-id', 'odom'],
-        # ),
 
-        # --- Merged sensor-fusion + pursuit node ---
+
         Node(
             package='go2_nav',
             executable='object_pursuit_node',
@@ -50,6 +48,7 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 'target_class': 'person',
+                'cloud_topic': cloud_topic,
             }]
         ),
     ])
