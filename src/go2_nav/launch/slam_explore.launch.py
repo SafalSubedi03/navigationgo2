@@ -96,7 +96,7 @@ def generate_launch_description():
         output='screen',
         arguments=[
             '--x', '0.05', '--y', '0', '--z', '0',
-            '--roll', '0', '--pitch', '0', '--yaw', '0',
+            '--roll', '0', '--pitch', '0.17453', '--yaw', '0',
             '--frame-id', 'base_link', '--child-frame-id', 'livox_frame'
         ],
         condition=IfCondition(PythonExpression(["'", lidar_source, "' == 'livox'"])),
