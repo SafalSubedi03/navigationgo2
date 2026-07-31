@@ -42,7 +42,7 @@ class YoloCameraNode(Node):
 
         self.get_logger().info(f"Loading {MODEL_PATH} onto device = {DEVICE}")
         self.get_logger().info(f"Using tracker configuration: {self.tracker_config}")
-        self.model = YOLO(MODEL_PATH)
+        self.model = YOLO(MODEL_PATH, task='detect')
 
         self.frame_counter = 0
         self._device_confirmed = False

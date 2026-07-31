@@ -16,7 +16,7 @@ NETWORK_INTERFACE = "eth0"
 #Limiters Optional, though kept for absolute safety
 vxlimit = 0.5
 vylimit = 0.5
-vyawlimit = 0.6
+vyawlimit = 1
 
 class Go2SportapiBridge(Node):
     def __init__(self):

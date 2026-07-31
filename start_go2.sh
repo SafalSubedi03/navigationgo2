@@ -29,7 +29,7 @@ if [ $? != 0 ]; then
   tmux send-keys -t $SESSION:1 "1" C-m
   sleep 1
   tmux send-keys -t $SESSION:1 \
-    "docker exec -it -w /workspace go2nav bash -c 'sleep 5 && source /nav_build/install/setup.bash && ros2 run go2_nav cameraimg; bash'" C-m
+    "unset RMW_IMPLEMENTATION && docker exec -it -w /workspace go2nav bash -c 'sleep 5 && source /nav_build/install/setup.bash && ros2 run go2_nav cameraimg; bash'" C-m
 
   # --- Window 2: yolo ---
   tmux new-window -t $SESSION -n "yolo"
@@ -51,6 +51,13 @@ if [ $? != 0 ]; then
   sleep 1
   # Drops you directly into an interactive bash shell in /workspace
   tmux send-keys -t $SESSION:4 "docker exec -it -w /workspace go2nav bash" C-m
+
+   # --- Window 5: livox ---
+  tmux new-window -t $SESSION -n "livox"
+  sleep 1
+  tmux send-keys -t $SESSION:5 "1" C-m
+  sleep 1
+  tmux send-keys -t $SESSION:5 "cd .. && cd livox_ws && source install/setup.bash && ros2 launch livox_ros_driver2 msg_MID360_launch.py" C-m
 fi
 
 # Attach to the session

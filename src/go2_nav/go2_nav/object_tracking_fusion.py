@@ -42,8 +42,8 @@ from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud
 
 TIMEOUT_SECONDS = 2.0
 LOCK_ON_HITS = 3
-STANDOFF_DISTANCE = 1.0  # meters -- stop this far short of the object, facing it
-ARRIVAL_TOLERANCE = 0.6
+STANDOFF_DISTANCE = 0.5  # meters -- stop this far short of the object, facing it
+ARRIVAL_TOLERANCE = 0.3
 
 
 
