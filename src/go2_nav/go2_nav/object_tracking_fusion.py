@@ -1,24 +1,6 @@
 #!/usr/bin/env python3
-"""
-object_pursuit_node.py
 
-Merged version of follow_object_server + mission_supervisor, collapsed into
-a single node for simplified testing. Drops the ROS2 Action layer entirely
-for now -- no go2_vision_msgs package needed yet. Reintroduce the Action
-interface later once this core sensor-fusion logic is proven solid; the
-math/logic here is unchanged from the tested server code.
 
-*** IMPORTANT, UNRESOLVED ARCHITECTURE RISK ***
-This node needs BOTH:
-  - /utlidar/cloud_deskewed_restamped  (published under CycloneDDS by restamp_node)
-  - /yolo/detections                    (published under FastRTPS by yolo_camera_node)
-in the SAME process. A single process can only use one RMW_IMPLEMENTATION.
-Test which one (if either) actually receives both reliably, e.g. run this
-node under fastrtps and check:
-    ros2 topic hz /utlidar/cloud_deskewed_restamped
-If that shows zero data, a proper DDS bridge is needed before this node can
-work end-to-end -- see the architecture discussion for details.
-"""
 import threading
 import numpy as np
 import math 
@@ -37,8 +19,7 @@ import sensor_msgs_py.point_cloud2 as pc2
 from image_geometry import PinholeCameraModel
 
 import tf2_ros
-import tf2_geometry_msgs  # noqa: F401 -- registers PoseStamped support in tf2
-from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud
+
 
 TIMEOUT_SECONDS = 2.0
 LOCK_ON_HITS = 3
@@ -244,7 +225,7 @@ class ObjectPursuitNode(Node):
             self.latest_pose = pose_map
             self.last_seen_time = self.get_clock().now()
             self.consecutive_hits += 1            
-
+        self.get_logger().info("[SYNC] Publishing Goal Message")
         self.goal_pose_pub.publish(pose_map)
 
 
@@ -269,12 +250,10 @@ class ObjectPursuitNode(Node):
                
 
         #State-2 when object timeout has occured
-        self.get_logger().info("heheDetection Timed Out. Moving to Last Seen Position")
+        
         if pose is None:
             self.get_logger().warn("Pose Not Received")
-
-            return
-            
+            return            
         try:
             robot_tf = self.tf_buffer.lookup_transform("map", "base_link", rclpy.time.Time())
         except Exception as e:
@@ -285,16 +264,16 @@ class ObjectPursuitNode(Node):
         ry = robot_tf.transform.translation.y    
 
         distance = math.hypot(pose.pose.position.x - rx, pose.pose.position.y - ry)
-        self.get_logger().info(f"Distance =  {distance}, Arrival_Tolerance = {ARRIVAL_TOLERANCE} ")
+        self.get_logger().info(f"[Status] \n Distance =  {distance} \n Arrival_Tolerance = {ARRIVAL_TOLERANCE} ")
 
         if distance <= ARRIVAL_TOLERANCE:
             cmd_msg = Twist()
             cmd_msg.angular.z = self.search_yaw_rate
             self.cmd_vel_pub.publish(cmd_msg)
-            self.get_logger().info("Rotation Cmd Sent")
+            self.get_logger().warn("Rotation Cmd Sent")
 
        
-
+        
         status = "LOCKED" if locked_on else "SEARCHING"
         self.get_logger().info(
             f"[{status}] Hits: {hits} | "

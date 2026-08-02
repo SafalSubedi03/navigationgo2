@@ -77,8 +77,7 @@ class cameraimg(Node):
                                          throttle_duration_sec=5.0)
 
         else:
-            # Error 3104 is a known intermittent Unitree video-service hiccup.
-            # Don't spam the logs for every dropped frame; just track and throttle.
+           
             self.consecutive_failures += 1
 
             if self.consecutive_failures <= self.max_consecutive_failures:
@@ -88,8 +87,7 @@ class cameraimg(Node):
                     throttle_duration_sec=2.0
                 )
             else:
-                # Sustained failure — this is worth surfacing as a real error,
-                # but still throttled so it doesn't flood the log.
+               
                 self.get_logger().error(
                     f"GetImageSample has failed {self.consecutive_failures} times in a row "
                     f"(code: {code}). Check robot connection / network interface.",
