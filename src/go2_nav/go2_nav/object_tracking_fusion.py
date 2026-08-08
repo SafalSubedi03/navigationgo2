@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 import threading
 import numpy as np
 import math 
@@ -49,6 +47,16 @@ class ObjectPursuitNode(Node):
         self.declare_parameter('cloud_topic', '/utlidar/cloud_deskewed_restamped')
         self.cloud_topic = self.get_parameter('cloud_topic').value
 
+        # --- Goal Pose Optimization Parameters (now tunable via launch/ros2 param) ---
+        self.declare_parameter('cluster_threshold', 0.25)  # meters, depth gap that splits clusters
+        self.cluster_threshold = float(self.get_parameter('cluster_threshold').value)
+
+        self.declare_parameter('min_cluster_points', 10)
+        self.min_cluster_points = int(self.get_parameter('min_cluster_points').value)
+
+        self.declare_parameter('bbox_shrink_factor', 0.8)  # fraction of full bbox width/height kept, symmetric on both axes
+        self.bbox_shrink_factor = float(self.get_parameter('bbox_shrink_factor').value)
+
         self.sensor_cb_group = MutuallyExclusiveCallbackGroup()
         self.timer_cb_group = MutuallyExclusiveCallbackGroup()
 
@@ -57,6 +65,7 @@ class ObjectPursuitNode(Node):
         self.last_seen_time = self.get_clock().now()
         self.consecutive_hits = 0
         self.was_searching = False
+        self.last_target_depth = None  # camera-frame depth of last locked-on target, protected by state_lock
 
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
@@ -73,7 +82,7 @@ class ObjectPursuitNode(Node):
         self.sync = ApproximateTimeSynchronizer([det_sub, cloud_sub], queue_size=10, slop=self.sync_slop)
         self.sync.registerCallback(self.synced_callback)
 
-        self.goal_pose_pub = self.create_publisher(PoseStamped, '/goal_pose', 10)
+        self.goal_pose_pub = self.create_publisher(PoseStamped, '/folow_object/goal_pose_raw', 10)
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel_manual', 10)
 
         # Simple periodic status/timeout check and search spin timer
@@ -82,7 +91,7 @@ class ObjectPursuitNode(Node):
         )
 
         self.get_logger().info(
-            f"Object Pursuit Node started. Target class: Safal '{self.target_class}', Search Yaw Rate: {self.search_yaw_rate} rad/s"
+            f"Object Pursuit Node started. Target class: '{self.target_class}', Search Yaw Rate: {self.search_yaw_rate} rad/s"
         )
 
 
@@ -97,7 +106,7 @@ class ObjectPursuitNode(Node):
             self.get_logger().info("Camera model initialized.")
 
     def synced_callback(self, det_array, cloud_msg):
-        
+
         if self.cam_model is None:
             self.get_logger().warn("Waiting for camera_info...", throttle_duration_sec=5.0)
             return
@@ -105,6 +114,7 @@ class ObjectPursuitNode(Node):
         if len(det_array.detections) == 0:
             with self.state_lock:
                 self.consecutive_hits = 0
+                self.last_target_depth = None  # lost track -- don't compare future clusters to a stale depth
             return
 
         target_det = det_array.detections[0]
@@ -122,6 +132,8 @@ class ObjectPursuitNode(Node):
                     cloud_msg.header.frame_id,
                     rclpy.time.Time(),
                     timeout=Duration(seconds=0.1))
+                self.get_logger().warn(f"[TF] Using latest-available transform instead of exact timestamp",throttle_duration_sec=5.0)
+        
         except Exception as e:
             self.get_logger().warn(f"1TF Lidar->Camera failed ({cloud_msg.header.frame_id} -> camera_link): {e}", throttle_duration_sec=5.0)
             return
@@ -159,17 +171,85 @@ class ObjectPursuitNode(Node):
 
         cx_box = target_det.bbox.center.position.x
         cy_box = target_det.bbox.center.position.y
-        half_w, half_h = target_det.bbox.size_x / 2.0, target_det.bbox.size_y / 2.0
+        # Symmetric shrink on both axes, tunable via bbox_shrink_factor
+        # (previously width was hardcoded to a different shrink than height)
+        half_w = (target_det.bbox.size_x * self.bbox_shrink_factor*0.5) / 2.0
+        half_h = (target_det.bbox.size_y * self.bbox_shrink_factor) / 2.0
         x1, x2 = cx_box - half_w, cx_box + half_w
         y1, y2 = cy_box - half_h, cy_box + half_h
 
         in_box = (us >= x1) & (us <= x2) & (vs >= y1) & (vs <= y2)
         box_points = points[in_box]
-        if box_points.shape[0] < 5:
+        if box_points.shape[0] < 25:
             self.get_logger().warn(f"Insufficient LiDAR points ({box_points.shape[0]}) projected into detection box.", throttle_duration_sec=5.0)
             with self.state_lock:
                 self.consecutive_hits = 0
+                self.last_target_depth = None
             return
+
+        #Cluster Separation filtration and Selection
+
+        # Sort points by depth (camera-frame z) first -- clustering only makes
+        # sense on a depth-sorted array, otherwise "adjacent" points aren't
+        # actually neighbors in depth.
+        sort_idx = np.argsort(box_points[:, 2])
+        box_points = box_points[sort_idx]
+
+        clusters = []          # list of (start_index, end_index) boundaries into box_points
+        cluster_start = 0
+
+        for i in range(1, len(box_points)):
+            depth_gap = abs(box_points[i, 2] - box_points[i - 1, 2])
+
+            if depth_gap > self.cluster_threshold:
+                # Cluster boundary found -- close out the current cluster
+                cluster_len = i - cluster_start
+                if cluster_len >= self.min_cluster_points:
+                    clusters.append((cluster_start, i))
+                cluster_start = i
+
+        # Don't forget the final cluster after the loop ends
+        final_len = len(box_points) - cluster_start
+        if final_len >= self.min_cluster_points:
+            clusters.append((cluster_start, len(box_points)))
+
+        # If no valid cluster is found, return no lidar match
+        if len(clusters) == 0:
+            self.get_logger().warn(
+                "Too diverse lidar points to form valid clusters.",
+                throttle_duration_sec=5.0
+            )
+            with self.state_lock:
+                self.consecutive_hits = 0
+                self.last_target_depth = None
+            return
+
+        # Selection: use "currently locked on" (consecutive_hits) as the signal,
+        # not "has a pose ever been published" -- latest_pose never resets to
+        # None on its own, so it can't tell us whether the track is still live.
+        with self.state_lock:
+            is_locked = self.consecutive_hits >= LOCK_ON_HITS
+            last_depth = self.last_target_depth
+
+        if not is_locked or last_depth is None:
+            # Unlocked case: no trustworthy prior depth, fall back to nearest
+            # cluster (clusters[0], since box_points is sorted ascending by depth)
+            selected_start, selected_end = clusters[0]
+        else:
+            # Locked case: pick the cluster whose mean depth is closest to
+            # the last known target depth, not just nearest to the camera
+            best_diff = None
+            selected_start, selected_end = clusters[0]  # fallback default
+
+            for start, end in clusters:
+                cluster_depth = np.mean(box_points[start:end, 2])
+                diff = abs(cluster_depth - last_depth)
+
+                if best_diff is None or diff < best_diff:
+                    best_diff = diff
+                    selected_start, selected_end = start, end
+
+        box_points = box_points[selected_start:selected_end, :]
 
         z_vals = box_points[:, 2]
         lo, hi = np.percentile(z_vals, (10, 90))
@@ -226,7 +306,9 @@ class ObjectPursuitNode(Node):
         with self.state_lock:
             self.latest_pose = pose_map
             self.last_seen_time = self.get_clock().now()
-            self.consecutive_hits += 1            
+            self.consecutive_hits += 1
+            self.last_target_depth = float(centroid_cam[2])  # update only on a trusted, published detection
+
         self.get_logger().info("[SYNC] Publishing Goal Message")
         self.goal_pose_pub.publish(pose_map)
 
