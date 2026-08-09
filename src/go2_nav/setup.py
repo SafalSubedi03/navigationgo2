@@ -39,6 +39,8 @@ setup(
             'object_pursuit_node = go2_nav.object_tracking_fusion:main',
             'camera_info_publisher = go2_nav.cameraInfoPublisher:main',
             'lidar_deskewed = go2_nav.lidar_deskewed:main',
+            'goal_validator = go2_nav.goal_validator_node:main',
+
         ],
     },
 )

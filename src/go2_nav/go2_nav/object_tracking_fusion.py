@@ -64,7 +64,7 @@ class ObjectPursuitNode(Node):
         self.latest_pose = None
         self.last_seen_time = self.get_clock().now()
         self.consecutive_hits = 0
-        self.was_searching = False
+        
         self.last_target_depth = None  # camera-frame depth of last locked-on target, protected by state_lock
 
         self.tf_buffer = tf2_ros.Buffer()

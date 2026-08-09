@@ -51,4 +51,11 @@ def generate_launch_description():
                 'cloud_topic': cloud_topic,
             }]
         ),
+
+        Node(
+            package='go2_nav',
+            executable='goal_validator',
+            name='goal_validator',
+            output='screen',                
+        ),
     ])

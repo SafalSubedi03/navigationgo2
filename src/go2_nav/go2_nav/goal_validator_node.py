@@ -27,10 +27,14 @@ class check_goal_pose(Node):
         #per-request handles, set when a check starts, cleared when it ends
         self.current_goal_handle = None
         self.timeout_timer = None
+        self.get_logger().info('Running Pose Validation')
 
     def validity_check(self, msg : PoseStamped):
+        self.get_logger().info('Running Pose Validation..')
+
         #skip cb if there is a validity check going on. 
         if self.validity_check_flag:
+            self.get_logger().warn("Another pose validation is currently running")
             return
         
         self.validity_check_flag = 1 #Since a validation check is currently being processed
