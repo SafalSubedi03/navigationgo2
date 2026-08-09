@@ -94,7 +94,7 @@ class check_goal_pose(Node):
             return
 
         wrapped_result = future.result()
-        status = future.status
+        status = wrapped_result.status
 
         if status != GoalStatus.STATUS_SUCCEEDED:
             self.get_logger().warn(f'[VN] Planning action failed with status code: {status}')
@@ -104,7 +104,7 @@ class check_goal_pose(Node):
         result = wrapped_result.result
         path = result.path
 
-        if result.error_code !=0 or len(path.poses) == 0:
+        if len(path.poses) == 0:
             self.get_logger().warn(f'[VN] Could not Generate a path. Error Code = {result.error_code}')
             #point is unreacble in future add a mechanism to search available nearest path.
             self._cleanup_request()
@@ -120,7 +120,7 @@ class check_goal_pose(Node):
         goal_msg.pose.position.y = self.y
         goal_msg.pose.position.z = self.z
 
-        goal_msg.pose.orientation.w = 1
+        goal_msg.pose.orientation.w = 1.0
 
         self.valid_goal_pose.publish(goal_msg)
         self._cleanup_request()
@@ -135,4 +135,17 @@ class check_goal_pose(Node):
         self.current_goal_handle = None
         self.validity_check_flag = 0
 
-    
+def main(args=None):
+    rclpy.init(args=args)
+    node = check_goal_pose()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
