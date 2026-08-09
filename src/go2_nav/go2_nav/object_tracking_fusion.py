@@ -135,7 +135,7 @@ class ObjectPursuitNode(Node):
                 self.get_logger().warn(f"[TF] Using latest-available transform instead of exact timestamp",throttle_duration_sec=5.0)
         
         except Exception as e:
-            self.get_logger().warn(f"1TF Lidar->Camera failed ({cloud_msg.header.frame_id} -> camera_link): {e}", throttle_duration_sec=5.0)
+            self.get_logger().warn(f"TF Lidar->Camera failed ({cloud_msg.header.frame_id} -> camera_link): {e}", throttle_duration_sec=5.0)
             return
 
         # Read x/y/z from the ORIGINAL cloud (no transform yet)
@@ -250,6 +250,7 @@ class ObjectPursuitNode(Node):
                     selected_start, selected_end = start, end
 
         box_points = box_points[selected_start:selected_end, :]
+        self.get_logger().info(f"Selected cluster: x {box_points[0,0]}, y {box_points[0,1]} ")
 
         z_vals = box_points[:, 2]
         lo, hi = np.percentile(z_vals, (10, 90))
@@ -311,6 +312,7 @@ class ObjectPursuitNode(Node):
 
         self.get_logger().info("[SYNC] Publishing Goal Message")
         self.goal_pose_pub.publish(pose_map)
+        
 
 
 

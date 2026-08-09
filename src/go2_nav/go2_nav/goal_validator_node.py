@@ -134,3 +134,5 @@ class check_goal_pose(Node):
 
         self.current_goal_handle = None
         self.validity_check_flag = 0
+
+    
