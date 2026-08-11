@@ -39,6 +39,9 @@ class ObjectPursuitNode(Node):
         self.declare_parameter('search_yaw_rate', 0.6)
         self.search_yaw_rate = float(self.get_parameter('search_yaw_rate').value)
 
+        self.declare_parameter('use_cluster', False)
+        self.goalposemethod = float(self.get_parameter('use_cluster').value)
+
         self.declare_parameter('sync_slop', 0.3)
         self.sync_slop = float(self.get_parameter('sync_slop').value)
 
@@ -173,14 +176,14 @@ class ObjectPursuitNode(Node):
         cy_box = target_det.bbox.center.position.y
         # Symmetric shrink on both axes, tunable via bbox_shrink_factor
         # (previously width was hardcoded to a different shrink than height)
-        half_w = (target_det.bbox.size_x * self.bbox_shrink_factor*0.5) / 2.0
+        half_w = (target_det.bbox.size_x * self.bbox_shrink_factor) / 2.0
         half_h = (target_det.bbox.size_y * self.bbox_shrink_factor) / 2.0
         x1, x2 = cx_box - half_w, cx_box + half_w
         y1, y2 = cy_box - half_h, cy_box + half_h
 
         in_box = (us >= x1) & (us <= x2) & (vs >= y1) & (vs <= y2)
         box_points = points[in_box]
-        if box_points.shape[0] < 25:
+        if box_points.shape[0] < 5:
             self.get_logger().warn(f"Insufficient LiDAR points ({box_points.shape[0]}) projected into detection box.", throttle_duration_sec=5.0)
             with self.state_lock:
                 self.consecutive_hits = 0
@@ -188,68 +191,69 @@ class ObjectPursuitNode(Node):
             return
 
         #Cluster Separation filtration and Selection
+        if(self.goalposemethod):
+            # Sort points by depth (camera-frame z) first -- clustering only makes
+            # sense on a depth-sorted array, otherwise "adjacent" points aren't
+            # actually neighbors in depth.
+            sort_idx = np.argsort(box_points[:, 2])
+            box_points = box_points[sort_idx]
 
-        # Sort points by depth (camera-frame z) first -- clustering only makes
-        # sense on a depth-sorted array, otherwise "adjacent" points aren't
-        # actually neighbors in depth.
-        sort_idx = np.argsort(box_points[:, 2])
-        box_points = box_points[sort_idx]
+            clusters = []          # list of (start_index, end_index) boundaries into box_points
+            cluster_start = 0
 
-        clusters = []          # list of (start_index, end_index) boundaries into box_points
-        cluster_start = 0
+            for i in range(1, len(box_points)):
+                depth_gap = abs(box_points[i, 2] - box_points[i - 1, 2])
 
-        for i in range(1, len(box_points)):
-            depth_gap = abs(box_points[i, 2] - box_points[i - 1, 2])
+                if depth_gap > self.cluster_threshold:
+                    # Cluster boundary found -- close out the current cluster
+                    cluster_len = i - cluster_start
+                    if cluster_len >= self.min_cluster_points:
+                        clusters.append((cluster_start, i))
+                    cluster_start = i
 
-            if depth_gap > self.cluster_threshold:
-                # Cluster boundary found -- close out the current cluster
-                cluster_len = i - cluster_start
-                if cluster_len >= self.min_cluster_points:
-                    clusters.append((cluster_start, i))
-                cluster_start = i
+            # Don't forget the final cluster after the loop ends
+            final_len = len(box_points) - cluster_start
+            if final_len >= self.min_cluster_points:
+                clusters.append((cluster_start, len(box_points)))
 
-        # Don't forget the final cluster after the loop ends
-        final_len = len(box_points) - cluster_start
-        if final_len >= self.min_cluster_points:
-            clusters.append((cluster_start, len(box_points)))
+            # If no valid cluster is found, return no lidar match
+            if len(clusters) == 0:
+                self.get_logger().warn(
+                    "Too diverse lidar points to form valid clusters.",
+                    throttle_duration_sec=5.0
+                )
+                with self.state_lock:
+                    self.consecutive_hits = 0
+                    self.last_target_depth = None
+                return
 
-        # If no valid cluster is found, return no lidar match
-        if len(clusters) == 0:
-            self.get_logger().warn(
-                "Too diverse lidar points to form valid clusters.",
-                throttle_duration_sec=5.0
-            )
+            # Selection: use "currently locked on" (consecutive_hits) as the signal,
+            # not "has a pose ever been published" -- latest_pose never resets to
+            # None on its own, so it can't tell us whether the track is still live.
             with self.state_lock:
-                self.consecutive_hits = 0
-                self.last_target_depth = None
-            return
+                is_locked = self.consecutive_hits >= LOCK_ON_HITS
+                last_depth = self.last_target_depth
 
-        # Selection: use "currently locked on" (consecutive_hits) as the signal,
-        # not "has a pose ever been published" -- latest_pose never resets to
-        # None on its own, so it can't tell us whether the track is still live.
-        with self.state_lock:
-            is_locked = self.consecutive_hits >= LOCK_ON_HITS
-            last_depth = self.last_target_depth
+            if not is_locked or last_depth is None:
+                # Unlocked case: no trustworthy prior depth, fall back to nearest
+                # cluster (clusters[0], since box_points is sorted ascending by depth)
+                selected_start, selected_end = clusters[0]
+            else:
+                # Locked case: pick the cluster whose mean depth is closest to
+                # the last known target depth, not just nearest to the camera
+                best_diff = None
+                selected_start, selected_end = clusters[0]  # fallback default
 
-        if not is_locked or last_depth is None:
-            # Unlocked case: no trustworthy prior depth, fall back to nearest
-            # cluster (clusters[0], since box_points is sorted ascending by depth)
-            selected_start, selected_end = clusters[0]
-        else:
-            # Locked case: pick the cluster whose mean depth is closest to
-            # the last known target depth, not just nearest to the camera
-            best_diff = None
-            selected_start, selected_end = clusters[0]  # fallback default
+                for start, end in clusters:
+                    cluster_depth = np.mean(box_points[start:end, 2])
+                    diff = abs(cluster_depth - last_depth)
 
-            for start, end in clusters:
-                cluster_depth = np.mean(box_points[start:end, 2])
-                diff = abs(cluster_depth - last_depth)
+                    if best_diff is None or diff < best_diff:
+                        best_diff = diff
+                        selected_start, selected_end = start, end
 
-                if best_diff is None or diff < best_diff:
-                    best_diff = diff
-                    selected_start, selected_end = start, end
-
-        box_points = box_points[selected_start:selected_end, :]
+            box_points = box_points[selected_start:selected_end, :]
+            
         self.get_logger().info(f"Selected cluster: x {box_points[0,0]}, y {box_points[0,1]} ")
 
         z_vals = box_points[:, 2]
