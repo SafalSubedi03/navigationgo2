@@ -14,12 +14,21 @@ def generate_launch_description():
         description="'internal' (Unitree onboard LiDAR) or 'external' (Livox Mid-360)"
     )
 
+    use_cluster = LaunchConfiguration('use_cluster')
+
+    declare_use_cluster = DeclareLaunchArgument(
+        'use_cluster',
+        default_value='false',
+        description="Use depth-cluster-based target selection instead of simple bbox filtering"
+    )
+
     cloud_topic = PythonExpression([
         "'/utlidar/cloud_deskewed_restamped' if '", lidar_source, "' == 'internal' else '/livox/lidar'"
     ])
 
     return LaunchDescription([
         declare_lidar_source,
+        declare_use_cluster,
 
         Node(
             package='go2_nav',
@@ -49,6 +58,7 @@ def generate_launch_description():
             parameters=[{
                 'target_class': 'person',
                 'cloud_topic': cloud_topic,
+                'use_cluster': use_cluster,
             }]
         ),
 

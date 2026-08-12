@@ -41,6 +41,7 @@ class ObjectPursuitNode(Node):
 
         self.declare_parameter('use_cluster', False)
         self.goalposemethod = float(self.get_parameter('use_cluster').value)
+        self.get_logger().info("Got fa")
 
         self.declare_parameter('sync_slop', 0.3)
         self.sync_slop = float(self.get_parameter('sync_slop').value)
@@ -191,7 +192,8 @@ class ObjectPursuitNode(Node):
             return
 
         #Cluster Separation filtration and Selection
-        if(self.goalposemethod):
+        if(not self.goalposemethod):
+            self.get_logger().info("[FUSION] Using Cluster based selection")
             # Sort points by depth (camera-frame z) first -- clustering only makes
             # sense on a depth-sorted array, otherwise "adjacent" points aren't
             # actually neighbors in depth.

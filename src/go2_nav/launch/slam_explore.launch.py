@@ -18,6 +18,12 @@ def generate_launch_description():
         'lidar_source', default_value='unitree',
         description="Which lidar to use for mapping: 'unitree' or 'livox'"
     )
+    rtabmap_viz = LaunchConfiguration('rtabmap_viz')
+    
+    declare_rtabmap_viz = DeclareLaunchArgument(
+        'rtabmap_viz', default_value='false',
+        description='Launch the RTAB-Map visualizer'
+    )
 
     scan_cloud_topic = PythonExpression([
         "'/livox/lidar' if '", lidar_source, "' == 'livox' else '/utlidar/cloud_deskewed_restamped'"
@@ -79,6 +85,7 @@ def generate_launch_description():
         output='screen',
         parameters=[rtabmap_parameters],
         remappings=remappings,
+        condition=IfCondition(rtabmap_viz),
     )
 
     odomtfBroadcaster = Node(
@@ -106,6 +113,7 @@ def generate_launch_description():
         declare_use_sim_time,
         declare_lidar_source,
         odomtfBroadcaster,
+        declare_rtabmap_viz,   
         livox_static_tf,
         # icp_odometry_node,
         rtabmap_node,

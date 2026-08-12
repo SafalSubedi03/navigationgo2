@@ -224,8 +224,9 @@ behavior_server:
     costmap_topic: local_costmap/costmap_raw
     footprint_topic: local_costmap/published_footprint
     cycle_frequency: 10.0
-    behavior_plugins: ["backup", "wait"]
-   
+    behavior_plugins: ["backup", "wait", "spin"]
+    spin:
+      plugin: "nav2_behaviors/Spin"
     backup:
       plugin: "nav2_behaviors/BackUp"
     wait:

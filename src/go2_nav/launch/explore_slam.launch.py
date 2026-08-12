@@ -48,6 +48,12 @@ def generate_launch_description():
         description='Start exploration or not'
     )
 
+    declare_rtabmap_viz = DeclareLaunchArgument(
+        'rtabmap_viz',
+        default_value='false',
+        description='Launch the RTAB-Map visualizer'
+    )
+
     # -------------------------------------------------------------------
     # 1. RTAB-Map SLAM (included from slam_explore.launch.py)
     # -------------------------------------------------------------------
@@ -56,6 +62,7 @@ def generate_launch_description():
         launch_arguments={
             'use_sim_time': use_sim_time,
             'lidar_source': lidar_source,
+            'rtabmap_viz': LaunchConfiguration('rtabmap_viz'),
         }.items(),
     )
 
@@ -82,6 +89,7 @@ def generate_launch_description():
             launch_arguments={
                 'use_sim_time': use_sim_time,
                 'params_file':  rewritten_nav2_params,
+                
             }.items(),
         ),
     ])
@@ -126,6 +134,7 @@ def generate_launch_description():
         declare_use_sim_time,
         declare_explore,
         declare_lidar_source,
+        declare_rtabmap_viz,
         restamp_node,          
         TimerAction(
             period=3.0,        
